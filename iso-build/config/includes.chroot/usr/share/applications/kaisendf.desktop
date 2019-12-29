@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=df
+Name[fr]=df
+Comment=Tool for viewing free space
+Comment[fr]=Outil pour connaitre l'espace libre 
+Exec=terminator -e "zsh -c 'df -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis

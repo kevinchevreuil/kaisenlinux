@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=docker
+Name[fr]=docker
+Comment=Tool for make contenairisation
+Comment[fr]=Outil pour faire de la conteneurisation
+Exec=terminator -e "zsh -c 'docker --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SystemSecurity

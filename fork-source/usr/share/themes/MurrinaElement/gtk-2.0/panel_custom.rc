@@ -1,0 +1,159 @@
+#################### PANEL BACKGROUND #########################xx
+
+style "panel"
+{
+  xthickness            			= 2
+  ythickness            			= 0
+
+  fg[NORMAL]		= "#FFFFFF"
+  fg[PRELIGHT]		= "#FFFFFF"
+  fg[ACTIVE]		= "#FFFFFF"
+  fg[SELECTED]		= "#FFFFFF"
+  fg[INSENSITIVE]	= "#8A857C"
+
+  text[NORMAL]		= "#161616"
+  text[PRELIGHT]		= "#FFFFFF"
+  text[ACTIVE]		= "#000000"
+  text[SELECTED]	= "#FFFFFF"
+  text[INSENSITIVE]	= "#8A857C"
+
+  bg_pixmap[NORMAL]		= "Panel/panel.png"
+}
+
+style "panel2"
+{
+  xthickness                  = 0
+	ythickness                  = 0
+		  
+	fg[NORMAL]    = "#FFFFFF"
+	fg[PRELIGHT]    = "#FFFFFF"
+	fg[ACTIVE]    = "#FFFFFF"
+	fg[SELECTED]    = "#FFFFFF"
+	fg[INSENSITIVE] = "#8A857C"
+
+	text[NORMAL]    = "#161616"
+	text[PRELIGHT]    = "#FFFFFF"
+	text[ACTIVE]    = "#000000" 
+	text[SELECTED]  = "#FFFFFF"
+	text[INSENSITIVE] = "#8A857C"
+
+	bg_pixmap[NORMAL]   = "Panel/panel2.png"
+}
+
+##################### PANEL BUTTONS ###############################
+
+style "panelbuttons" = "default"
+{
+
+  fg[NORMAL]		= "#000000" # very dark brown
+  fg[PRELIGHT]		= "#000000" # text on buttons (hover)
+  fg[ACTIVE]		= "#FFFFFF" # text on unfocused tabs
+  fg[SELECTED]		= "#000000" # selected text on lists
+  fg[INSENSITIVE]	= "#000000" # greyed "unused" text
+
+  xthickness	= 2
+  ythickness	= 1
+
+  GtkWidget::focus_padding = 2
+
+	engine "pixmap" {
+
+		image
+		{
+			function	= BOX
+			recolorable	= TRUE
+			state		= NORMAL
+			file		= "Panel/button.png"
+			border		= { 4, 4, 4, 4 }
+			stretch		= TRUE
+		}
+
+#		image
+#		{
+#			function	= BOX
+#			recolorable	= TRUE
+#			state		= PRELIGHT
+#			file		= "Panel/button-mouseover.png"
+#			border		= { 4, 4, 4, 4 }
+#			stretch		= TRUE
+#		}
+
+		image
+		{
+			function	= BOX
+			recolorable	= TRUE
+			shadow		= OUT
+			state		= PRELIGHT
+			file		= "Panel/button-mouseover.png"
+			border		= { 4, 4, 4, 4 }
+			stretch		= TRUE
+			#overlay_file	= "panelbutton2.png"
+			#overlay_border	= { 4, 4, 4, 4 }
+			#overlay_stretch	= TRUE
+		}
+
+		image
+		{
+			function	= BOX
+			recolorable	= TRUE
+			shadow		= IN
+			state		= PRELIGHT
+			file		= "Panel/button-pressed-mouseover.png"
+			border		= { 4, 4, 4, 4 }
+			stretch		= TRUE
+			#overlay_file	= "panelbutton2.png"
+			#overlay_border	= { 4, 4, 4, 4 }
+			#overlay_stretch	= TRUE
+		}
+
+		image
+		{
+			function	= BOX
+			recolorable	= TRUE
+			state		= ACTIVE
+			file		= "Panel/button-pressed.png"
+			border		= { 4, 4, 4, 4 }
+			stretch		= TRUE
+		}
+
+		image
+		{
+			function	= BOX
+			recolorable	= TRUE
+			state		= INSENSITIVE
+			file		= "Panel/button.png"
+			border		= { 4, 4, 4, 4 }
+			stretch		= TRUE
+		}  
+
+	}
+
+}
+
+widget "*PanelWidget*" style "panel"
+widget "*PanelApplet*" style "panel"
+class "PanelApp*" style "panel"
+class "PanelToplevel*" style "panel"
+widget_class "*Mail*" style "panel"
+widget_class "*notif*" style "panel"
+widget_class "*Notif*" style "panel"
+widget_class "*Tray*" style "panel2"
+widget_class "*tray*" style "panel2"
+
+####### PER APPLICATIONS HACKS #################
+widget_class "*Netstatus*I*" style "panel2"
+widget_class "*Tomboy*Tray*" style "panel"
+widget "*fast-user-switch*" style "panel"
+################################################
+
+class "*notif*" style "panel"
+class "*Notif*" style "panel"
+class "*Tray*" style "panel"
+class "*tray*" style "panel"
+# widget_class "*BonoboDockItem" style "panel"
+# class "*BonoboDockItem" style "panel"
+widget_class "PanelToplevel*GtkToggleButton" style "panelbuttons"
+widget_class "PanelToplevel*GtkButton" style "panelbuttons"
+
+widget_class "*PanelApplet*GtkToggleButton*" style "panelbuttons"
+widget_class "*PanelApplet*GtkButton*" style "panelbuttons"

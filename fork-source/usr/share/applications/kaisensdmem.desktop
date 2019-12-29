@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=sdmem
+Name[fr]=sdmem
+Comment=Tool for securely erase free RAM
+Comment[fr]=Outil pour effacer l'espace libre en RAM
+Exec=terminator -e "zsh -c 'sudo sdmem -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Partitioning

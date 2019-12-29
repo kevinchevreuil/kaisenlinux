@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=minicom
+Name[fr]=minicom
+Comment=Tool for administration on equipment with the console port
+Comment[fr]=Outil pour administrer un équipement avec le port console
+Exec=terminator -e "zsh -c 'minicom -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ConsolePort

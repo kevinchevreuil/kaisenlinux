@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=foremost
+Name[fr]=foremost
+Comment=Tool for recovery datas
+Comment[fr]=Outils pour la récupération de données
+Exec=terminator -e "zsh -c 'foremost -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

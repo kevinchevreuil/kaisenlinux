@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=nslookup
+Name[fr]=nslookup
+Comment=Tool for check DNS servers
+Comment[fr]=Outil pour vérfier les serveurs DNS
+Exec=terminator -e "zsh -c 'nslookup;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

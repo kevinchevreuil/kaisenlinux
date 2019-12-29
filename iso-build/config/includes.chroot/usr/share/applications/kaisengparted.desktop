@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=GParted
+Name[fr]=Gparted
+X-GNOME-FullName=GParted Partition Editor
+X-GNOME-FullName[Fr]=Editeur de partition Gparted
+Comment=Create, reorganize, and delete partitions
+Comment[fr]=Créer, réorganiser et supprimer des partitions
+Exec=sh -c "gksudo gparted"
+Icon=gparted
+Terminal=false
+Type=Application
+Categories=Partitioning;
+StartupNotify=true

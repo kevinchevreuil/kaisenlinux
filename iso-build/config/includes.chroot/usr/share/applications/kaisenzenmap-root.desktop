@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Zenmap (root)
+Name[fr]=Zenmap (root)
+Comment=Tool for scanner ports with nmap GUI mode 
+Comment[fr]=Outil pour scanner des ports avec nmap en mode GUI 
+Exec=sh -c "gksudo zenmap"
+Icon=/usr/share/zenmap/pixmaps/zenmap.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gddrescue
+Name[fr]=gddrescue
+Comment=Tool for recovery data in damaged disk
+Comment[fr]=Outil pour récupérer des données sur un disque endommagé
+Exec=terminator -e "zsh -c 'sudo ddrescue --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

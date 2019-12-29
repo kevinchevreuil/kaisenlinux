@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=extundelete
+Name[fr]=extundelete
+Comment=Tool for recovery data in EXT filesystems
+Comment[fr]=Outil de récupération de données sur les systèmes de fichiers EXT.
+Exec=terminator -e "zsh -c 'extundelete --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

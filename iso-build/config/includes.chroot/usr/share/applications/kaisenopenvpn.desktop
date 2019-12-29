@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=openvpn
+Name[fr]=openvpn
+Comment=Tool for connecting in VPN
+Comment[fr]=Outil pour se connecter à un VPN
+Exec=terminator -e "zsh -c 'sudo openvpn --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

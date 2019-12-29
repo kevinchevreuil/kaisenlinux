@@ -1,0 +1,6 @@
+TeamViewer® End-User License Agreement
+ 
+
+This End-user License Agreement including its Annex ("EULA") applies to you and TeamViewer Germany GmbH ("TeamViewer" or "We") for the licensing and use of our software, which includes the TeamViewer software and all versions, features, applications and modules thereto ("Software"). This EULA also covers any associated media, printed materials and electronic documentation that we make available to you (with our Software and "Product"). Future releases of our Product may warrant amendments to this EULA.
+
+BY CLICKING "ACCEPT", DOWNLOADING OR OTHERWISE USING OUR SOFTWARE, YOU AGREE TO ALL TERMS AND CONDITIONS OF THIS EULA. IF YOU DO NOT AGREE TO ANY OF THE TERMS OF THIS EULA, PLEASE IMMEDIATELY RETURN, DELETE OR DESTROY ALL COPIES OF OUR SOFTWARE IN YOUR POSSESSION.

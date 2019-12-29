@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=iptables-persistent
+Name[fr]=iptables-persistent
+Comment=Tool for iptables persistent in your system
+Comment[fr]=Outil pour rendre les règles iptables persistentes sur votre système
+Exec=terminator -e "zsh -c 'sudo iptables -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

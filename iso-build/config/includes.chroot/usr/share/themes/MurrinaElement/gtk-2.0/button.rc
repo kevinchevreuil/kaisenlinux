@@ -1,0 +1,51 @@
+style "button"
+{
+
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      detail			= "buttondefault"
+      recolorable		= TRUE
+      file				= "Buttons/button-active.png"
+      border			= {3, 3, 3, 3}
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= PRELIGHT
+      recolorable		= TRUE
+      file				= "Buttons/button-active.png"
+      border			= {3, 3, 3, 3}
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= ACTIVE
+      file				= "Buttons/button-pressed.png"
+      border			= {3, 3, 3, 3}
+      stretch			= TRUE
+    }	
+    image 
+   {
+     function			= BOX
+     state				= INSENSITIVE
+     file				= "Buttons/button-unactive.png"
+     border			= {3, 3, 3, 3}
+     stretch			= TRUE
+    }
+    image 
+    {
+      function			= BOX
+      file				= "Buttons/button.png"		
+      border			= {3, 3, 3, 3}
+      stretch			= TRUE
+    }	
+  }
+
+  xthickness = 3
+  ythickness = 3
+}

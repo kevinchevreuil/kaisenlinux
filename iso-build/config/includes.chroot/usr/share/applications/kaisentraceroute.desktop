@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=traceroute
+Name[fr]=traceroute
+Comment=Tool for trace on packet in route
+Comment[fr]=Outil pour tracer un paquet sur le réseau
+Exec=terminator -e "zsh -c 'traceroute --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

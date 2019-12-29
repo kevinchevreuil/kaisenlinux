@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Boot repair
+Name[fr]=Réparation du démarrage
+Comment=Tools for boot repair
+Comment[fr]=Outils pour réparer le démarrage
+Icon=boot
+Type=Directory

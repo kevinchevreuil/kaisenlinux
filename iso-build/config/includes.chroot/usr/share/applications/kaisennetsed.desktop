@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=netsed
+Name[fr]=netsed
+Comment=Modification editor on network packets
+Comment[fr]=Editeur de modifications de paquets réseaux
+Exec=terminator -e "zsh -c 'netsed -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

@@ -1,0 +1,133 @@
+
+function InitProfile()
+{
+  InitFonts
+  SetupEnv          || return 1
+  InitLocalSettings || return 1
+
+  echo "ok (profile)"
+}
+
+function InitFonts()
+{
+  # check if we are not installed
+  isInstalledTV && return 0
+
+  # apply workaround for fontconfig 2.10+ (attribute prefix="xdg")
+  # (force fontconfig dir to be created inside the profile dir, not adjacent to it)
+  if isQuickSupport; then
+    export FONTCONFIG_FILE="$TV_SCRIPT_DIR/fonts_quick.conf"
+  elif [ -e '/etc/fonts/fonts.conf' ]; then
+    export FONTCONFIG_FILE="$TV_SCRIPT_DIR/fonts_portable.conf"
+  fi
+
+  [ -n "$FONTCONFIG_FILE" ] && echo "FONTCONFIG_FILE: $FONTCONFIG_FILE"
+  true
+}
+
+function SetupEnv()
+{
+  make_path "$TV_CFG_DIR" 0700	|| die 'SetupEnv failed (cfg)'
+  make_path "$TV_LOG_DIR" 0700	|| die 'SetupEnv failed (log)'
+
+  SetupEnvTAR
+}
+
+function SetupEnvTAR()
+{
+  isInstalledTV && return					# only for TAR_NI / QS / CQS
+
+  local dtdst="$TV_BASE_DIR/teamviewer.desktop"
+  local dtsrc="$TV_DESKTOP_DIR/teamviewer.desktop.template"
+  local ticon="$TV_DESKTOP_DIR/teamviewer.png"
+  local texec="$TV_SCRIPT_DIR/teamviewer"
+
+  [ -e "$dtdst" ] && grep -q "$texec" "$dtdst" && return	# already exists, proper path
+
+  # Create desktop shortcut
+  sed -e "s|EXEC|$texec|g" \
+      -e "s|ICON|$ticon|g" \
+      "$dtsrc" > "$dtdst"
+}
+
+function InitGlobalSettings()
+{
+  ImportTV10Settings && return
+  ImportTV9Settings  && return
+  true
+}
+
+function InitLocalSettings()
+{
+  # check if we are installed
+  isInstalledTV || return 0
+
+  ImportTV10SettingsClient   && return
+  ImportTV9Settings 'client' && return
+  true
+
+#  ImportDefaults	# this functionality has been removed. Put defaults in global.conf DefaultSettings\...
+}
+
+function ImportTV9Settings()
+{
+  local conftype="$1"
+  local globalConf="$TV_BASE_DIR/config/global.conf"
+  local clientConf="$TV_CFG_DIR/client.conf"
+  local globalConfOld='/opt/teamviewer9/config/global.conf'
+  local copy='n'
+  local oldpath
+  local newpath
+
+  grep -q '9.0.32150' "$globalConfOld" 2>/dev/null && copy='y'
+
+  if [ "$conftype" = 'client' ]; then
+    newpath="$clientConf"
+    oldpath="${newpath/teamviewer/teamviewer9}"
+  else
+    newpath="$globalConf"
+    oldpath="$globalConfOld"
+  fi
+
+  [ -f "$oldpath" ] || return 1		# need old file
+  [ -f "$newpath" ] && return 1		# don't overwrite existing settings
+
+  if [ "$copy" = 'y' ]; then
+    cp "$oldpath" "$newpath" || die "ImportTV9Settings: Could not copy '$oldpath' to '$newpath'"
+  else
+    grep -v '\[bin  \]' "$oldpath" > "$newpath"
+  fi
+}
+
+function ImportTV10Settings()
+{
+  local newpath="$TV_BASE_DIR/config/global.conf"
+  local oldpath='/opt/teamviewer/config.old/global.conf'
+
+  [ -f "$oldpath" ] || return 1		# need old file
+  [ -f "$newpath" ] && return 1		# don't overwrite existing settings
+
+  cp "$oldpath" "$newpath" || die "ImportTV10Settings: Could not copy '$oldpath' to '$newpath'"
+}
+
+function ImportTV10SettingsClient()
+{
+  local newpath="$TV_CFG_DIR/client.conf"
+  local oldpath="${newpath/teamviewer/'teamviewer10/config'}"
+
+  [ -f "$oldpath" ] || return 1		# need old file
+  [ -f "$newpath" ] && return 1		# don't overwrite existing settings
+
+  cp "$oldpath" "$newpath" || die "ImportTV10Settings: Could not copy '$oldpath' to '$newpath'"
+}
+
+#function ImportDefaults()
+#{
+#  local clientConf="$TV_CFG_DIR/client.conf"
+#  local clientDflt="$TV_BASE_DIR/config/client.template.conf"
+#
+#  [ -f "$clientDflt" ] || return 0		# need template
+#  [ -f "$clientConf" ] && return 0		# don't overwrite existing settings
+#
+#  cp "$clientDflt" "$clientConf" || die "ImportDefaults: Could not copy '$clientDflt' to '$clientConf'"
+#}

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=wondershaper
+Name[fr]=wondershaper
+Comment=Tool for install QoS in your system
+Comment[fr]=Outil pour installer une QoS sur votre système
+Exec=terminator -e "zsh -c 'man wondershaper;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

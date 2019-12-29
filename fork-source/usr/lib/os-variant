@@ -1,0 +1,8 @@
+PRETTY_NAME="Kaisen Linux 20191229"
+NAME="Kaisen Linux"
+VERSION_ID="20191229"
+VERSION="20191229"
+VERSION_CODENAME=20191229
+ID=Kaisen
+ID_LIKE=debian
+HOME_URL="https://www.kaisen-linux.org/"

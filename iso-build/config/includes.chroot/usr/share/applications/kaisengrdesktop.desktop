@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open 
+
+[Desktop Entry]
+Name=Remote desktop client
+Comment=Connect to a remote Windows Terminal-Server
+Comment=Se connecter sur un serveur Windows distant
+Exec=grdesktop
+Icon=grdesktop
+Terminal=false
+Type=Application
+Categories=RemoteAdministration

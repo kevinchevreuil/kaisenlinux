@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ddrescueview
+Name[fr]=ddrescueview
+Comment=Tool for check your health disk
+Comment[fr]=Outil pour vérifier la santé du disque
+Exec=ddrescueview
+Icon=ddrescueview
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

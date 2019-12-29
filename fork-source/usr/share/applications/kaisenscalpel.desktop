@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=scalpel
+Name[fr]=scalpel
+Comment=Tool for recovery data based in Foremost
+Comment[fr]=Outil de récupération de données basé sur Foremost
+Exec=terminator -e "zsh -c 'scalpel -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

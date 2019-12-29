@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ClamTk
+Name[fr]=ClamTk
+Comment=Tool for scanning virus with GUI 
+Comment[fr]=Outil pour scanner des virus avec GUI
+Exec=clamtk
+Icon=clamtk
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=VirusAnalysis
+

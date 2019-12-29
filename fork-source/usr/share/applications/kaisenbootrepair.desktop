@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=boot-repair
+Name[fr]=boot-repair
+Comment=Tool for repair boot in GNU/Linux systems and Windows
+Comment[fr]=Outil pour réparer le démarrage sur les systèmes GNU/Linux et Windows
+Exec=sh -c "gksudo boot-repair"
+Icon=/usr/share/boot-sav/x-boot-repair.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Boot

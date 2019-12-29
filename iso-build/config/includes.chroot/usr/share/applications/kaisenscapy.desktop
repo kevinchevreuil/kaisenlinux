@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=scapy
+Name[fr]=scapy
+Comment=Tool for generator traffic and sniffing 
+Comment[fr]=Outil pour générer du trafic et sniffing
+Exec=terminator -e "zsh -c 'scapy -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

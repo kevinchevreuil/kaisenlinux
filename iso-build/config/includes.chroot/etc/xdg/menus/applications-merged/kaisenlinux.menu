@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Layout>
+    <Menuname>User Applications</Menuname>
+    <Menuname>Kaisen Linux</Menuname>
+
+    <Merge type="all"/>
+  </Layout>
+
+  <Menu>
+    <Name>User Applications</Name>
+    <Directory>user-apps.directory</Directory>
+    <!-- This is the target of <Move> at the end ... -->
+  </Menu>
+
+  <Menu>
+    <Name>Kaisen Linux</Name>
+    <Directory>kaisenlinux.directory</Directory>
+    <Menu>
+      <Name>Tools for technicians</Name>
+      <Directory>kaisenlinux-technicians.directory</Directory>
+    <Menu>
+      <Name>Boot</Name>
+      <Directory>kaisenlinux-boot.directory</Directory>
+      <Include>
+        <And>
+          <Category>Boot</Category>
+        </And>
+      </Include>
+     </Menu>
+    <Menu>
+      <Name>Remote Maintenance</Name>
+      <Directory>kaisenlinux-remotemaintenance.directory</Directory>
+      <Include>
+        <And>
+          <Category>RemoteMaintenance</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Recovery</Name>
+      <Directory>kaisenlinux-recovery.directory</Directory>
+      <Include>
+        <And>
+          <Category>Recovery</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Passwords</Name>
+      <Directory>kaisenlinux-passwords.directory</Directory>
+      <Include>
+        <And>
+          <Category>Passwords</Category>
+        </And>
+      </Include>
+    </Menu>      
+    <Menu>
+      <Name>Disks analysis</Name>
+      <Directory>kaisenlinux-disks.directory</Directory>
+      <Include>
+        <And>
+          <Category>DisksAnalysis</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>USB boot</Name>
+      <Directory>kaisenlinux-usbboot.directory</Directory>
+      <Include>
+        <And>
+          <Category>USBBoot</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Cloning</Name>
+      <Directory>kaisenlinux-cloning.directory</Directory>
+      <Include>
+        <And>
+          <Category>Cloning</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Virus analysis</Name>
+      <Directory>kaisenlinux-virusanalysis.directory</Directory>
+      <Include>
+        <And>
+          <Category>VirusAnalysis</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Partitioning and formatting</Name>
+      <Directory>kaisenlinux-partitioning.directory</Directory>
+      <Include>
+        <And>
+          <Category>Partitioning</Category>
+        </And>
+      </Include>
+    </Menu>
+    </Menu>
+    <Menu>
+      <Name>Tools for systems administrators</Name>
+      <Directory>kaisenlinux-administrators.directory</Directory>
+    <Menu>
+      <Name>Network</Name>
+      <Directory>kaisenlinux-network.directory</Directory>
+      <Include>
+        <And>
+          <Category>NetworkSecurity</Category>
+      </And>
+        </Include>
+          <Menu>
+      <Name>Console port</Name>
+      <Directory>kaisenlinux-consoleport.directory</Directory>
+      <Include>
+        <And>
+          <Category>ConsolePort</Category>
+        </And>
+      </Include>
+    </Menu>
+    </Menu>
+    <Menu>
+      <Name>System</Name>
+      <Directory>kaisenlinux-systems.directory</Directory>
+      <Include>
+        <And>
+          <Category>SystemSecurity</Category>
+        </And>
+      </Include>
+    <Menu>
+      <Name>Remote Administration</Name>
+      <Directory>kaisenlinux-remoteadministration.directory</Directory>
+      <Include>
+        <And>
+          <Category>RemoteAdministration</Category>
+        </And>
+      </Include>
+    </Menu>    
+    </Menu>
+    </Menu>
+    </Menu>
+
+  <!-- Move default top-level menus one level deeper -->
+  <Move>
+    <Old>Accessories</Old>
+    <New>User Applications/Accessories</New>
+  </Move>
+  <Move>
+    <Old>Universal Access</Old>
+    <New>User Applications/Universal Access</New>
+  </Move>
+  <Move>
+    <Old>Electronics</Old>
+    <New>User Applications/Electronics</New>
+  </Move>
+  <Move>
+    <Old>Development</Old>
+    <New>User Applications/Development</New>
+  </Move>
+  <Move>
+    <Old>Education</Old>
+    <New>User Applications/Education</New>
+  </Move>
+  <Move>
+    <Old>Science</Old>
+    <New>User Applications/Science</New>
+  </Move>
+  <Move>
+    <Old>Games</Old>
+    <New>User Applications/Games</New>
+  </Move>
+  <Move>
+    <Old>Graphics</Old>
+    <New>User Applications/Graphics</New>
+  </Move>
+  <Move>
+    <Old>Internet</Old>
+    <New>User Applications/Internet</New>
+  </Move>
+  <Move>
+    <Old>Web Applications</Old>
+    <New>User Applications/Web Applications</New>
+  </Move>
+  <Move>
+    <Old>Multimedia</Old>
+    <New>User Applications/Multimedia</New>
+  </Move>
+  <Move>
+    <Old>Office</Old>
+    <New>User Applications/Office</New>
+  </Move>
+  <Move>
+    <Old>Sundry</Old>
+    <New>User Applications/Sundry</New>
+  </Move>
+  <Move>
+    <Old>System</Old>
+    <New>User Applications/System</New>
+  </Move>
+  <Move>
+    <Old>System Settings</Old>
+    <New>User Applications/System Settings</New>
+  </Move>
+  <Move>
+    <Old>Utilities</Old>
+    <New>User Applications/Utilities</New>
+  </Move>
+  <Move>
+    <Old>Other</Old>
+    <New>User Applications/Other</New>
+  </Move>
+  <Move>
+    <Old>Hamradio</Old>
+    <New>User Applications/Hamradio</New>
+  </Move>
+</Menu>

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=myrescue
+Name[fr]=myrescue
+Comment=Tool for recovery data in damaged disk
+Comment[fr]=Outil pour récupérer des données sur un disque endommagé
+Exec=terminator -e "zsh -c 'sudo myrescue -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

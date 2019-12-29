@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "rollForwardOnNoCandidateFx": 2,
+    "configProperties": {
+      "System.Runtime.TieredCompilation": true
+    }
+  }
+}

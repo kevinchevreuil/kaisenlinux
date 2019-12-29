@@ -1,0 +1,26 @@
+ioperm support for Windows
+=========================
+
+This software adds support for ioperm()/iopl() functions to Cygwin.
+
+ioperm package is free software, covered by the GNU General Public License,
+and you are welcome to change it and/or distribute copies of it under certain
+conditions. There is absolutely no warranty for ioperm. Please read COPYING
+file for more info.
+
+Warning: Current release of this software may decrease your system security
+on Windows NT/2000/XP because enables access to system I/O ports for all
+processes, including non-privileged. If you are not sure, please do not use it
+on Windows NT/2000/XP.
+
+
+Download
+--------
+
+Source tarball is available from ioperm homepage:
+http://openwince.sourceforge.net/ioperm/
+
+CmosPwd
+--------
+CmosPwd is shipped with a modified version of ioperm for cygwin and mingw32.
+Patched files can be found in the admin subdirectory.

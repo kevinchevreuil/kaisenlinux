@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Kaisen-Grey-Material
+Comment=Official Kaisen Linux Theme Grey-Material Mode
+Encoding=UTF-8
+
+
+[X-GNOME-Metatheme]
+GtkTheme=Kaisen-Grey-Material
+MetacityTheme=Kaisen-Grey-Material
+IconTheme=Kaisen-MATE
+CursorTheme=Kaisen
+ButtonLayout=menu:minimize,maximize,close

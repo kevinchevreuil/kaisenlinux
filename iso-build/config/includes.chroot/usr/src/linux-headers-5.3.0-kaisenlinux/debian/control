@@ -1,0 +1,128 @@
+Source: linux-source-5.3.0-kaisenlinux
+Section: devel
+Priority: optional
+Maintainer:  Unknown Kernel Package Maintainer <unknown@unconfigured.in.etc.kernel-pkg.conf>
+Build-Depends: po-debconf, gettext, file
+Standards-Version: 3.5.9.0
+
+Package: linux-headers-5.3.0-kaisenlinux
+Architecture: any
+Depends: ${shlibs:Depends}
+Section: devel
+Priority: optional
+Recommends: libc6-dev | libc-dev, gcc | c-compiler, make (>= 3.80-10), binutils (>= 2.12), util-linux (>= 2.10o)
+Suggests: kmod, e2fsprogs (>= 1.29)
+Provides: linux-headers, linux-headers-5.3
+Description: Header files related to Linux kernel, specifically,
+ version 5.3.0-kaisenlinux
+ .
+ This package provides kernel header files for sites
+ that want the latest kernel headers for version
+ 5.3.0-kaisenlinux.
+ Please read
+ /usr/share/doc/linux-headers-5.3.0-kaisenlinux/debian.README.gz
+ for details
+
+Package: linux-source-5.3.0-kaisenlinux
+Architecture: all
+Section: devel
+Priority: optional
+Provides: linux-source, linux-source-5.3
+Depends: binutils, bzip2, file
+Recommends: libc6-dev | libc-dev, gcc | c-compiler, make (>= 3.80-10), po-debconf, gettext, binutils (>= 2.12), util-linux (>= 2.10o), kmod, debianutils (>= 2.30)
+Suggests: libncurses-dev | ncurses-dev, kernel-package, xmlto, libdb3-dev, libncurses-dev, docbook-utils, e2fsprogs (>= 1.29), linux-initramfs-tool
+Description: Linux kernel source for version 5.3.0-kaisenlinux
+ This package provides the source code for the Linux kernel, specifically,
+ version 5.3.0-kaisenlinux.
+ .
+ You may configure the kernel to your setup by typing "make config"
+ and following instructions, but you could get ncursesX.X-dev and try
+ "make menuconfig" for a jazzier, and easier to use interface. There
+ are options to use QT or GNOME based configuration interfaces, but they
+ need additional packages to be installed. Also, please read the detailed
+ documentation in the file README.headers.gz in the documentation directory
+ /usr/share/doc/linux-source-5.3.0-kaisenlinux/.
+ .
+ If you wish to use this package to create a custom Linux kernel, then
+ it is suggested that you investigate the package kernel-package,
+ which has been designed to ease the task of creating kernel image
+ packages.
+
+Package: linux-image-5.3.0-kaisenlinux
+Architecture: amd64
+Section: kernel
+Priority: optional
+Provides: linux-image,  linux-image-5.3, linux-modules-5.3
+Pre-Depends: debconf (>= 0.2.17) | debconf-2.0
+Depends:  coreutils (>= 5.96)
+Recommends: initramfs-tools | linux-initramfs-tool, kernel-common
+Suggests: fdutils, linux-doc-5.3.0-kaisenlinux | linux-source-5.3.0-kaisenlinux, linux-image-5.3.0-kaisenlinux-dbg, linux-manual-5.3.0-kaisenlinux
+Description: Linux kernel binary image for version 5.3.0-kaisenlinux
+ This package contains the Linux kernel image for version
+ 5.3.0-kaisenlinux.
+ .
+ It also contains the corresponding System.map file, and the modules
+ built by the packager.  It also contains scripts that try to ensure
+ that the system is not left in a unbootable state after an update.
+ .
+ Kernel image packages are generally produced using kernel-package,
+ and it is suggested that you install that package if you wish to
+ create a custom kernel from the sources. Please look at kernel-img.conf(5),
+ and /usr/share/doc/kernel-package/README.gz  from the package kernel-package
+ for details on how to tailor the  installation of this or any other kernel
+ image package
+
+Package: linux-image-5.3.0-kaisenlinux-dbg
+Architecture: amd64
+Section: debug
+Priority: optional
+Depends: initramfs-tools | linux-initramfs-tool, linux-image-5.3.0-kaisenlinux
+Provides: linux-debug,  linux-debug-5.3, linux-debug-5.3.0-kaisenlinux
+Conflicts: linux-debug
+Suggests: systemtap
+Description: Linux kernel debug image for version 5.3.0-kaisenlinux
+ This package contains the Linux kernel debug image for version
+  5.3.0-kaisenlinux.
+ This means the debugging information for the modules in the kernel
+ image package, and the uncompressed vmlinux image; it is not intended
+ to be bootable. This is useful for debugging the Linux kernel.
+
+
+Package: linux-doc-5.3.0-kaisenlinux
+Architecture: all
+Section: doc
+Priority: optional
+Provides: linux-doc-5.3
+Suggests: linux-image-5.3.0-kaisenlinux, linux-manual-5.3.0-kaisenlinux
+Description: Linux kernel specific documentation for version 5.3.0-kaisenlinux
+ This package provides various Readme's in the 5.3.0-kaisenlinux
+ kernel Documentation/ subdirectory: these typically contain
+ kernel-specific installation notes for some drivers. for
+ example. Please see
+ /usr/share/doc/linux-doc-X.X.XX/Documentation/00-INDEX
+ for a list of contents.  Please also read the Changes file, as it
+ contains information about the problems which may result by upgrading
+ your kernel.
+
+Package: linux-manual-5.3.0-kaisenlinux
+Architecture: all
+Section: doc
+Priority: optional
+Provides: linux-manual-5.3
+Conflicts: linux-manual-5.3
+Suggests: linux-image-5.3.0-kaisenlinux, linux-doc-5.3.0-kaisenlinux
+Description: Linux kernel section 9 manual pages for version 5.3.0-kaisenlinux
+ This package provides various Section 9 manual pages included with the kernel.
+
+Package: linux-uml-5.3.0-kaisenlinux
+Architecture: amd64
+Section: utils
+Priority: optional
+Provides: linux-uml,  linux-uml-5.3, user-mode-linux
+Depends:  coreutils (>= 5.96) | fileutils (>= 4.0)
+Suggests: fdutils, kernel-doc-5.3.0-kaisenlinux | kernel-source-5.3.0-kaisenlinux, uml-utilities
+Conflicts: user-mode-linux (<= 2.6)
+Replaces: user-mode-linux (<= 2.6)
+Description: Linux uml kernel binary image for version 5.3.0-kaisenlinux
+ This package contains the Linux uml kernel image for version 5.3.0-kaisenlinux
+ and the modules built by the packager.

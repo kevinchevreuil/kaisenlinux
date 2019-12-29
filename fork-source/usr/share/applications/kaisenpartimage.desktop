@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=partimage
+Name[fr]=partimage
+Comment=Tool for cloning a Windows NTFS partition
+Comment[fr]=Outil pour cloner une partition Windows NTFS
+Exec=terminator -e "zsh -c 'sudo partimage;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Cloning

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=john
+Name[fr]=john
+Comment=Tool for password lost cracker
+Comment[fr]=Outil pour forcer un mot de passe perdu
+Exec=terminator -e "zsh -c 'sudo john;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Passwords

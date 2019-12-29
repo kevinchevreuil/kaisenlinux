@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ndisc6
+Name[fr]=ndisc6
+Comment=Tool for reshearch IPV6 link
+Comment[fr]=Outil pour rechercher un lien IPV6
+Exec=terminator -e "zsh -c 'ndisc6 -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

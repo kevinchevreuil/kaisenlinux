@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=testdisk
+Name[fr]=testdisk
+Comment=Tool for advanced testing disk 
+Comment[fr]=Outil pour une analyse avancée d'un disque  
+Exec=terminator -e "zsh -c 'cd /opt/testdisk-7.1;sudo ./testdisk_static;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis
