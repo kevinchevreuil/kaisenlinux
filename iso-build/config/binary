@@ -21,12 +21,12 @@ LB_BOOTAPPEND_INSTALL=""
 LB_BOOTAPPEND_LIVE_FAILSAFE="boot=live nopersistence noeject autologin username=kaisen hostname=kaisenlinux user-default-group=kaisen,sudo user-fullname=Kaisen components locales=fr_FR.UTF-8 keyboard-layouts=fr noapic noapm nodma nomce nolapic nomodeset nosmp nosplash"
 
 # $LB_BOOTLOADERS: set bootloaders
-# (Default: syslinux)
-LB_BOOTLOADERS="syslinux"
+# (Default: syslinux,grub-efi)
+LB_BOOTLOADERS="syslinux,grub-efi"
 
 # $LB_CHECKSUMS: set checksums
-# (Default: md5)
-LB_CHECKSUMS="md5"
+# (Default: sha256)
+LB_CHECKSUMS="sha256"
 
 # $LB_COMPRESSION: set compression
 # (Default: none)
@@ -98,12 +98,12 @@ LB_JFFS2_ERASEBLOCK=""
 LB_MEMTEST="memtest86+"
 
 # $LB_LOADLIN: set loadlin
-# (Default: false)
-LB_LOADLIN="false"
+# (Default: true)
+LB_LOADLIN="true"
 
 # $LB_WIN32_LOADER: set win32-loader
-# (Default: false)
-LB_WIN32_LOADER="false"
+# (Default: true)
+LB_WIN32_LOADER="true"
 
 # $LB_NET_ROOT_FILESYSTEM: set netboot filesystem
 # (Default: nfs)
@@ -166,5 +166,5 @@ LB_SWAP_FILE_PATH=""
 LB_SWAP_FILE_SIZE="512"
 
 # $LB_UEFI_SECURE_BOOT: enable/disable UEFI secure boot
-# (Default: enable)
-LB_UEFI_SECURE_BOOT="enable"
+# (Default: disable)
+LB_UEFI_SECURE_BOOT="disable"

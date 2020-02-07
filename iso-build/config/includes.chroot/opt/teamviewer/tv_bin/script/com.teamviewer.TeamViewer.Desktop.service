@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=com.teamviewer.TeamViewer.Desktop
-Exec=/opt/teamviewer/tv_bin/TeamViewer_Desktop

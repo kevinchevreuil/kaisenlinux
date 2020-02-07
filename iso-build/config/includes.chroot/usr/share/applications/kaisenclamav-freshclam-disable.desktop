@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=clamav-freshclam-disable
+Name[fr]=clamav-freshclam-désactivé
+Comment=Disable clamav freshclam
+Comment[fr]=Désactiver clamav freshclam
+Exec=terminator -e "zsh -c 'cd /opt/services;./clamav-freshclam-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

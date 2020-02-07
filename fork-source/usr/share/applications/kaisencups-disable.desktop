@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cups-disable
+Name[fr]=cups-désactivé
+Comment=Disable cups daemon
+Comment[fr]=Désactiver service cups
+Exec=terminator -e "zsh -c 'cd /opt/services;./cups-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

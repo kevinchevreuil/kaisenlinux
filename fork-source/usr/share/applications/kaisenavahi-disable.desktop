@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=avahi-disable
+Name[fr]=avahi-désactivé
+Comment=Disable avahi daemon
+Comment[fr]=Désactiver service avahi
+Exec=terminator -e "zsh -c 'cd /opt/services;./avahi-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

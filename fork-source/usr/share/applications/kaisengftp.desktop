@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gFTP
+Name[fr]=gFTP
+Comment=Tool for send data with FTP protocol in GUI mode 
+Comment[fr]=Outil pour envoyer des données avec le protocole FTP en interface graphique
+Exec=gftp-gtk
+Icon=gftp.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SystemSecurity
+

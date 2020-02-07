@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e 
+
+dpkg -i /var/cache/apt/archives/base-files_10.3+deb10u2_amd64.deb
+dpkg -i /var/cache/apt/archives/adduser_3.118_all.deb

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e 
+
+cd /
+rm -f initrd.img
+rm -f initrd.img.old
+rm -f vmlinuz
+rm -f vmlinuz.old
+ln -s boot/initrd.img-5.3.0-kaisenlinux initrd.img
+ln -s boot/initrd.img-5.3.0-kaisenlinux initrd.img.old
+ln -s boot/vmlinuz-5.3.0-kaisenlinux vmlinuz
+ln -s boot/vmlinuz-5.3.0-kaisenlinux vmlinuz.old

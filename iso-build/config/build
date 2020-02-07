@@ -1,10 +1,11 @@
 [Image]
 Architecture: amd64
-Archive-Areas: main
-Distribution: Kaisen Linux
-Mirror-Bootstrap: http://ftp.fr.debian.org/debian/
+Archive-Areas: main contrib non-free
+Distribution-Chroot: buster
+Distribution-Binary: buster
+Mirror-Bootstrap: http://deb.debian.org/debian/
 
 [FIXME]
-Configuration-Version: 1:20190311
-Name: kaisenlinux20191229
+Configuration-Version: 1:20191221
+Name: kaisenlinux20200206
 Type: iso-hybrid

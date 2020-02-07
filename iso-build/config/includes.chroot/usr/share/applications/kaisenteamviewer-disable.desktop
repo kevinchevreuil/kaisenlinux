@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=teamviewer-disable
+Name[fr]=teamviewer-désactivé
+Comment=Disable teamviewer daemon
+Comment[fr]=Désactiver service teamviewer
+Exec=terminator -e "zsh -c 'cd /opt/services;./teamviewer-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

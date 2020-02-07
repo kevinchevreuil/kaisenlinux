@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Guymager
+Name[fr]=Guymager
+Comment=Fast forensic imager
+Comment[fr]=Outil foresic d'image disque
+Exec=sh -c "gksudo guymager"
+Icon=guymager_128.png
+Terminal=false
+Type=Application
+Categories=Cloning;
+StartupNotify=true
+

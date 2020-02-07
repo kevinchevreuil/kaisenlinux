@@ -17,8 +17,16 @@ LB_INTERACTIVE="false"
 LB_KEYRING_PACKAGES="debian-archive-keyring"
 
 # $LB_LINUX_FLAVOURS: set kernel flavour to use
+# This is kept for backwards compatibility
 # (Default: autodetected)
-LB_LINUX_FLAVOURS="amd64"
+if [ -n " amd64" ]
+then
+	LB_LINUX_FLAVOURS_WITH_ARCH=" amd64"
+fi
+
+# $LB_LINUX_FLAVOURS_WITH_ARCH: set kernel flavour to use (with arch)
+# (Default: autodetected)
+LB_LINUX_FLAVOURS_WITH_ARCH="amd64"
 
 # $LB_LINUX_PACKAGES: set kernel packages to use
 # (Default: autodetected)

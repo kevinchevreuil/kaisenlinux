@@ -1,24 +1,40 @@
 # config/bootstrap - options for live-build(7), bootstrap stage
 
 # $LB_DISTRIBUTION: select distribution to use
-# (Default: Kaisen Linux)
-LB_DISTRIBUTION="Kaisen Linux"
+# (Default: buster)
+LB_DISTRIBUTION="buster"
 
 # $LB_PARENT_DISTRIBUTION: select parent distribution to use
 # (Default: buster)
 LB_PARENT_DISTRIBUTION="buster"
+
+# $LB_DISTRIBUTION_CHROOT: select distribution to use in the chroot
+# (Default: buster)
+LB_DISTRIBUTION_CHROOT="buster"
+
+# $LB_PARENT_DISTRIBUTION_CHROOT: select parent distribution to use in the chroot
+# (Default: buster)
+LB_PARENT_DISTRIBUTION_CHROOT="buster"
+
+# $LB_DISTRIBUTION_BINARY: select distribution to use in the final image
+# (Default: buster)
+LB_DISTRIBUTION_BINARY="buster"
+
+# $LB_PARENT_DISTRIBUTION_BINARY: select parent distribution to use in the final image
+# (Default: buster)
+LB_PARENT_DISTRIBUTION_BINARY="buster"
 
 # $LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION: select parent distribution for debian-installer to use
 # (Default: buster)
 LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="buster"
 
 # $LB_PARENT_MIRROR_BOOTSTRAP: set parent mirror to bootstrap from
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_PARENT_MIRROR_BOOTSTRAP="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_PARENT_MIRROR_BOOTSTRAP="http://deb.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT: set parent mirror to fetch packages from
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_PARENT_MIRROR_CHROOT="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_PARENT_MIRROR_CHROOT="http://deb.debian.org/debian/"
 
 # $LB_PARENT_MIRROR_CHROOT_SECURITY: set security parent mirror to fetch packages from
 # (Default: http://security.debian.org/debian-security)
@@ -33,32 +49,32 @@ LB_PARENT_MIRROR_BINARY="http://deb.debian.org/debian/"
 LB_PARENT_MIRROR_BINARY_SECURITY="http://security.debian.org/debian-security/"
 
 # $LB_PARENT_MIRROR_DEBIAN_INSTALLER: set debian-installer parent mirror
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_PARENT_MIRROR_DEBIAN_INSTALLER="http://deb.debian.org/debian/"
 
 # $LB_MIRROR_BOOTSTRAP: set mirror to bootstrap from
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_MIRROR_BOOTSTRAP="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_MIRROR_BOOTSTRAP="http://deb.debian.org/debian/"
 
 # $LB_MIRROR_CHROOT: set mirror to fetch packages from
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_MIRROR_CHROOT="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_MIRROR_CHROOT="http://deb.debian.org/debian/"
 
 # $LB_MIRROR_CHROOT_SECURITY: set security mirror to fetch packages from
 # (Default: http://security.debian.org/debian-security/)
 LB_MIRROR_CHROOT_SECURITY="http://security.debian.org/debian-security/"
 
 # $LB_MIRROR_BINARY: set mirror which ends up in the image
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_MIRROR_BINARY="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_MIRROR_BINARY="http://deb.debian.org/debian/"
 
 # $LB_MIRROR_BINARY_SECURITY: set security mirror which ends up in the image
 # (Default: http://security.debian.org/debian-security/)
 LB_MIRROR_BINARY_SECURITY="http://security.debian.org/debian-security/"
 
 # $LB_MIRROR_DEBIAN_INSTALLER: set debian-installer mirror
-# (Default: http://ftp.fr.debian.org/debian/)
-LB_MIRROR_DEBIAN_INSTALLER="http://ftp.fr.debian.org/debian/"
+# (Default: http://deb.debian.org/debian/)
+LB_MIRROR_DEBIAN_INSTALLER="http://deb.debian.org/debian/"
 
 # $LB_BOOTSTRAP_QEMU_ARCHITECTURES: architectures to use foreign bootstrap
 # (Default: )

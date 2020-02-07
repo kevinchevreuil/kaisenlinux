@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cups-enable
+Name[fr]=cups-activé
+Comment=Enable cups daemon 
+Comment[fr]=Activer service cups
+Exec=terminator -e "zsh -c 'cd /opt/services;./cups-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

@@ -1,5 +1,5 @@
 #!/bin/sh
-#Build script for Kaisen Linux 
+#Build script for Kaisen Linux
 
 lb config noauto \
 --apt "apt" \
@@ -7,45 +7,38 @@ lb config noauto \
 --apt-recommends "true" \
 --apt-secure "true" \
 --architectures "amd64" \
+--archive-areas "main contrib non-free" \
 --binary-images  "iso-hybrid" \
 --binary-filesystem "fat32" \
---bootappend-live "boot=live nopersistence noeject autologin username=kaisen hostname=kaisenlinux user-default-group=kaisen,sudo user-fullname=Kaisen components locales=fr_FR.UTF-8 keyboard-layouts=fr" \
---bootappend-live-failsafe "boot=live nopersistence noeject autologin username=kaisen hostname=kaisenlinux user-default-group=kaisen,sudo user-fullname=Kaisen components locales=fr_FR.UTF-8 keyboard-layouts=fr noapic noapm nodma nomce nolapic nomodeset nosmp nosplash" \
---bootloaders "syslinux" \
+--bootloaders "syslinux,grub-efi" \
 --cache "true" \
 --cache-indices "yes" \
 --cache-packages "true" \
---cache-stages "true" \
---checksums "md5" \
+--cache-stages "bootstrap" \
+--checksums "sha256" \
 --clean \
 --debian-installer "live" \
 --debian-installer-distribution "buster" \
 --debian-installer-gui "true" \
---distribution "Kaisen Linux" \
+--distribution "buster" \
+--distribution-binary "buster" \
+--distribution-chroot "buster" \
+--firmware-binary "true" \
+--firmware-chroot "true" \
 --linux-flavours "amd64" \
 --linux-packages "linux-image" \
+--loadlin "true" \
 --iso-application "Kaisen Live" \
 --iso-preparer "Kaisen" \
 --iso-publisher "Kaisen" \
 --iso-volume "Kaisen Linux Live" \
 --keyring-package "debian-archive-keyring" \
 --memtest "memtest86+" \
---mode "debian" \
---system "live" \
 --security "true" \
 --source "false" \
---uefi-secure-boot "enable" \
+--system "live" \
+--uefi-secure-boot "disable" \
 --backports "false" \
 --updates "true" \
---parent-mirror-bootstrap "http://ftp.fr.debian.org/debian/" \
---parent-mirror-chroot "http://ftp.fr.debian.org/debian/" \
---parent-mirror-chroot-security "http://security.debian.org/debian-security" \
---parent-mirror-binary-security "http://security.debian.org/debian-security/" \
---parent-mirror-debian-installer "http://ftp.fr.debian.org/debian/" \
---mirror-bootstrap "http://ftp.fr.debian.org/debian/" \
---mirror-chroot "http://ftp.fr.debian.org/debian/" \
---mirror-chroot-security "http://security.debian.org/debian-security/" \
---mirror-binary "http://ftp.fr.debian.org/debian/" \
---mirror-binary-security "http://security.debian.org/debian-security/" \
---mirror-debian-installer "http://ftp.fr.debian.org/debian/" \
 --verbose \
+--win32-loader "true" \

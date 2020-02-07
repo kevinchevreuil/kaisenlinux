@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=clamav-freshclam-enable
+Name[fr]=clamav-freshclam-activé
+Comment=Enable avahi daemon
+Comment[fr]=Activer clamav freshclam
+Exec=terminator -e "zsh -c 'cd /opt/services;./clamav-freshclam-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

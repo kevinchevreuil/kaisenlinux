@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=00-all-services-disable
+Name[fr]=00-désactiver-tous-services
+Comment=Disable all additionnals daemon
+Comment[fr]=Désactiver tous les services additionnels activés
+Exec=terminator -e "zsh -c 'cd /opt/services;./all-services-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

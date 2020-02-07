@@ -143,6 +143,15 @@
     </Menu>    
     </Menu>
     </Menu>
+    <Menu>
+      <Name>Services</Name>
+      <Directory>kaisenlinux-services.directory</Directory>
+      <Include>
+        <And>
+          <Category>Services</Category>
+        </And>
+      </Include>
+    </Menu>
     </Menu>
 
   <!-- Move default top-level menus one level deeper -->

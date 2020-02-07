@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=docker-enable
+Name[fr]=docker-activé
+Comment=Enable docker daemon
+Comment[fr]=Activer service docker
+Exec=terminator -e "zsh -c 'cd /opt/services;./docker-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

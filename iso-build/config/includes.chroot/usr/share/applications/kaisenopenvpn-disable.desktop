@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=openvpn-disable
+Name[fr]=openvpn-désactivé
+Comment=Disable openvpn daemon
+Comment[fr]=Désactiver service openvpn
+Exec=terminator -e "zsh -c 'cd /opt/services;./openvpn-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

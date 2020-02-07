@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=rsync-disable
+Name[fr]=rsync-désactivé
+Comment=Disable rsync daemon
+Comment[fr]=Désactiver service rsync
+Exec=terminator -e "zsh -c 'cd /opt/services;./rsync-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Services
+

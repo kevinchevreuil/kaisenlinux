@@ -11,10 +11,12 @@ rm -f /usr/share/applications/ddrescue-gui.desktop
 rm -f /usr/share/applications/ddrescueview.desktop
 rm -f /usr/share/applications/designer-qt5.desktop
 rm -f /usr/share/applications/disk-manager.desktop
+rm -f /usr/share/applications/gftp.desktop
 rm -f /usr/share/applications/gksu.desktop
 rm -f /usr/share/applications/gparted.desktop
 rm -f /usr/share/applications/grdesktop.desktop
 rm -f /usr/share/applications/gsmartcontrol.desktop
+rm -f /usr/share/applications/guymager.desktop
 rm -f /usr/share/applications/htop.desktop
 rm -f /usr/share/applications/hydra-gtk.desktop
 rm -f /usr/share/applications/linguist-qt5.desktop
@@ -27,7 +29,6 @@ rm -f /usr/share/applications/terminator.desktop
 rm -f /usr/share/applications/unetbootin.desktop
 rm -f /usr/share/applications/virtualbox.desktop
 rm -f /usr/share/applications/wireshark.desktop
-rm -f /usr/share/applications/woeusbgui.desktop
 rm -f /usr/share/applications/xca.desktop
 rm -f /usr/share/applications/zenmap.desktop
 rm -f /usr/share/applications/zenmap-root.desktop
