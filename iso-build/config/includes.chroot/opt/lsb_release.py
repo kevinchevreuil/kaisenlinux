@@ -18,6 +18,8 @@
 #    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 #    02110-1301 USA
 
+#Modified by Kevin Chevreuil for Kaisen Linux distribution, lsb_release commands use /etc/os-variant file. 
+
 # Python3-compatible print() function
 from __future__ import print_function
 
@@ -317,7 +319,7 @@ def guess_debian_release():
 # Whatever is guessed above can be overridden in /usr/lib/os-release by derivatives
 def get_os_release():
     distinfo = {}
-    os_release = os.environ.get('LSB_OS_RELEASE', '/usr/lib/os-release')
+    os_release = os.environ.get('LSB_OS_RELEASE', '/usr/lib/os-variant')
     if os.path.exists(os_release):
         try:
             with open(os_release) as os_release_file:

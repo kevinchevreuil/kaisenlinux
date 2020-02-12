@@ -7,5 +7,5 @@ Mirror-Bootstrap: http://deb.debian.org/debian/
 
 [FIXME]
 Configuration-Version: 1:20191221
-Name: kaisenlinux20200206
+Name: kaisenlinux20200211
 Type: iso-hybrid

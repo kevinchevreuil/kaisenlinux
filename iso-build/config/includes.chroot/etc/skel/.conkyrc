@@ -130,4 +130,4 @@ ${voffset 2}${color0}${font ConkyColors:size=15}t${font}${color}${goto 32}${voff
 ${goto 32}Total: ${font Liberation Sans:style=Bold:size=8}${color2}${totaldown ppp0}${color}${font}
 ${voffset 2}${color0}${font ConkyColors:size=15}B${font}${color}${goto 32}${voffset -6}IP locale: ${alignr}${color2}${addr ppp0}${color}
 ${else}${voffset 4}${color0}${font ConkyColors:size=15}q${font}${color}${voffset -6}${goto 32}Réseau indisponible${voffset 14}${endif}${endif}${endif}${endif}
-Kaisen Linux 20200206
+Kaisen Linux 20200211
