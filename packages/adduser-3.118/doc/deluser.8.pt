@@ -1,0 +1,186 @@
+.\" Someone tell emacs that this is an -*- nroff -*- source file.
+.\" Copyright 1997, 1998, 1999 Guy Maor.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek,
+.\" With much borrowing from the original adduser copyright 1994 by
+.\" Ian Murdock.
+.\" This is free software; see the GNU General Public License version
+.\" 2 or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH DELUSER 8 "Versão VERSION" "Debian GNU/Linux" 
+.SH NOME
+deluser, delgroup \- remove um utilizador ou grupo do sistema
+.SH SINOPSE
+\fBdeluser\fP [opções] [\-\-force] [\-\-remove\-home] [\-\-remove\-all\-files]
+[\-\-backup] [\-\-backup\-to DIRECTÓRIO] utilizador
+.PP
+\fBdeluser\fP \-\-group [opções] grupo
+.br
+\fBdelgroup\fP [opções] [\-\-only\-if\-empty] grupo
+.PP
+\fBdeluser\fP [opções] utilizador grupo
+.SS "OPÇÕES COMUNS"
+.br
+[\-\-quiet] [\-\-system] [\-\-help] [\-\-version] [\-\-conf FICHEIRO]
+.SH DESCRIÇÃO
+.PP
+\fBdeluser\fP e \fBdelgroup\fP removem utilizadores e grupos do sistema de acordo
+com as opções de linha de comandos e informação de configuração em
+\fI/etc/deluser.conf\fP e \fI/etc/adduser.conf\fP. São frontends amigáveis para os
+programas \fBuserdel\fP e \fBgroupdel\fP, removendo o directório home como opção
+ou até todos os ficheiros no sistema cujo dono é o utilizador que vai ser
+removido, correndo um script personalizado, e outras
+funcionalidades. \fBdeluser\fP e \fBdelgroup\fP podem ser executados em um de três
+modos:
+.SS "Remove um utilizador normal"
+Se chamado com um argumento não\-opção e sem a opção \fB\-\-group\fP, \fBdeluser\fP
+irá remover um utilizador normal.
+
+Por predefinição, \fBdeluser\fP irá remover o utilizador sem remover o
+directório home, o spool de mail ou quaisquer outros ficheiros no sistema
+cujo dono é o utilizador em questão. Remover o directório home e o spool de
+mail pode ser conseguido usando a opção \fB\-\-remove\-home\fP.
+
+A opção \fB\-\-remove\-all\-files\fP remove todos os ficheiros no sistema cujo dono
+é o utilizador em questão. Note que se activar ambas as opções,
+\fB\-\-remove\-home\fP não irá produzir efeito porque todos os ficheiros incluindo
+o directório home e spool de mail já estão cobertos pela opção
+\fB\-\-remove\-all\-files\fP.
+
+Se deseja salvaguardar todos os ficheiros antes de os apagar, pode activar a
+opção \fB\-\-backup\fP a qual irá criar um ficheiro
+nome\-de\-utilizador.tar(.gz|.bz2) no directório especificado pela opção
+\fB\-\-backup\-to\fP (a predefinição é usar o directório de trabalho
+actual). Ambas as opções remove e backup podem também ser activadas por
+predefinição no ficheiro de configuração /etc/deluser.conf. Veja
+\fBdeluser.conf(5)\fP para mais detalhes.
+
+Se você quer remover a conta do root (uid 0), então use o parâmetro
+\fB\-\-force\fP; isto pode prevenir contra a remoção do utilizador root por
+acidente.
+
+Se o ficheiro \fB/usr/local/sbin/deluser.local\fP existir, será executado após
+a conta do utilizador ter sido removida de modo a fazer qualquer limpeza
+local. Os argumentos passados a \fBdeluser.local\fP são:
+.br
+nome\-de\-utilizador uid gid directório\-home
+
+.SS "Remover um grupo"
+Se \fBdeluser\fP for chamado com a opção \fB\-\-group\fP, ou \fBdelgroup\fP for
+chamado, será removido um grupo.
+
+Aviso: O grupo principal de um utilizador existente não pode ser removido.
+
+Se for fornecida a opção \fB\-\-only\-if\-empty\fP, o grupo não será removido se
+ainda possuir membros.
+
+.SS "Remover um utilizador de um grupo especifico"
+Se chamado com dois argumentos não\-opções. \fBdeluser\fP irá remover um
+utilizador de um grupo especifico.
+.SH OPÇÕES
+.TP 
+\fB\-\-conf FICHEIRO\fP
+Usa FICHEIRO em vez dos ficheiros predefinidos \fI/etc/deluser.conf\fP e
+\fI/etc/adduser.conf\fP
+.TP 
+\fB\-\-group\fP
+Remove um grupo. Esta é a acção predefinida se o programa for invocado como
+\fIdelgroup\fP.
+.TP 
+\fB\-\-help\fP
+Mostra instruções breves.
+.TP 
+\fB\-\-quiet\fP
+Suprime mensagens de progresso.
+.TP 
+\fB\-\-system\fP
+Apenas apaga se utilizador/grupo for um utilizador/grupo de sistema. Isto
+evita apagar acidentalmente utilizadores/grupos não\-sistema. Adicionalmente,
+se o utilizador não existir, nenhum valor de erro é devolvido. Esta opção é
+para uso principalmente em scripts de pacotes Debian.
+.TP 
+\fB\-\-only\-if\-empty\fP
+Apenas remove se nenhum membro ainda existir.
+.TP 
+\fB\-\-backup\fP
+Faz backup de todos os ficheiros contidos na home do utilizador e o ficheiro
+mailspool para um ficheiro chamado /$user.tar.bz2 ou /$user.tar.gz.
+.TP 
+\fB\-\-backup\-to\fP
+Coloca os ficheiros de backup não em / mas no directório especificado por
+este parâmetro. Isto também define \-\-backup implicitamente.
+.TP 
+\fB\-\-remove\-home\fP
+Remove o directório home do utilizador e o seu mailspool. Se \-\-backup for
+especificado, os ficheiros são apagados após a execução do backup.
+.TP 
+\fB\-\-remove\-all\-files\fP
+Remove todos os ficheiros do sistema cujo dono seja este utilizador. Nota:
+\-\-remove\-home não faz mais efeito. Se \-\-backup for especificado, os
+ficheiros são apagados após a execução do backup.
+.TP 
+\fB\-\-version\fP
+Mostra informação de versão e copyright.
+.SH "VALORES DE RETORNO"
+.TP 
+\fB0\fP
+A acção foi executada com sucesso.
+.TP 
+\fB1\fP
+O utilizador a apagar não era uma conta de sistema. Nenhuma acção foi
+executada.
+.TP 
+\fB2\fP
+Não existe tal utilizador. Nenhuma acção foi executada.
+.TP 
+\fB3\fP
+Não existe tal grupo. Nenhuma acção foi executada.
+.TP 
+\fB4\fP
+Erro interno. Nenhuma acção foi executada.
+.TP 
+\fB5\fP
+O grupo para apagar não está vazio. Nenhuma acção foi executada.
+.TP 
+\fB6\fP
+O utilizador não pertence ao grupo especificado. Nenhuma acção foi
+executada.
+.TP 
+\fB7\fP
+Não pode remover um utilizador do seu grupo principal. Nenhuma acção foi
+executada.
+.TP 
+\fB8\fP
+O pacote perl necessário 'perl modules' não está instalado. Este pacote é
+necessário para executar as acções requisitadas. Nenhuma acção foi
+executada.
+.TP 
+\fB9\fP
+Para remover a conta de root é necessário o parâmetro "\-\-force". Nenhuma
+acção foi executada.
+
+.SH FICHEIROS
+\fI/etc/deluser.conf\fP Default configuration file for deluser and delgroup
+.TP 
+\fI/usr/local/sbin/deluser.local\fP
+Adições personalizadas opcionais
+
+.SH "VEJA TAMBÉM"
+\fBadduser\fP(8), \fBdeluser.conf\fP(5), \fBgroupdel\fP(8), \fBuserdel\fP(8)
+
+.SH COPYRIGHT
+Copyright (C) 2000 Roland Bauerschmidt. Modificações (C) 2004 Marc Haber e
+Joerg Hoh.  Este manual e o programa deluser são baseados no adduser o qual
+é:
+.br
+Copyright (C) 1997, 1998, 1999 Guy Maor.
+.br
+Copyright (C) 1995 Ted Hajek, com muita coisa emprestada do \fBadduser\fP
+original de Debian
+.br
+Copyright (C) 1994 Ian Murdock.  \fBdeluser\fP é software livre; veja a GNU
+General Public Licence versão 2 ou posterior para condições de cópia.
+\fINão\fP há garantia.

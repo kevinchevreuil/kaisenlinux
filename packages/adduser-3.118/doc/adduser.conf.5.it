@@ -1,0 +1,141 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek
+.\"
+.\" This is free software; see the GNU General Public Lisence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH adduser.conf 5 "Versione VERSION" "Debian GNU/Linux" 
+.SH NOME
+/etc/adduser.conf \- file di configurazione per \fBadduser(8)\fP e
+\fBaddgroup(8)\fP.
+.SH DESCRIZIONE
+Il file \fI/etc/adduser.conf\fP contiene le impostazioni predefinite per i
+programmi \fBadduser(8)\fP, \fBaddgroup(8)\fP, \fBdeluser(8)\fP e
+\fBdelgroup(8)\fP. Ciascuna riga contiene una sola coppia nel formato
+\fIopzione\fP = \fIvalore\fP ed è consentito racchiudere i valori fra virgolette
+(") o apici (') e inserire degli spazi intorno al segno uguale (=). Le righe
+di commento devono avere il carattere cancelletto (#) nella prima colonna.
+
+Le opzioni di configurazione valide sono:
+.TP 
+\fBDSHELL\fP
+La shell di login da usare per tutti i nuovi utenti. Il valore predefinito è
+\fI/bin/bash\fP.
+.TP 
+\fBDHOME\fP
+La directory in cui sono create le nuove directory home. Il valore
+predefinito è \fI/home\fP.
+.TP 
+\fBGROUPHOMES\fP
+Se impostato a \fIyes\fP, le directory home sono create come
+\fI/home/[nomegruppo]/utente\fP. Il valore predefinito è \fIno\fP.
+.TP 
+\fBLETTERHOMES\fP
+Se impostato a \fIyes\fP, le directory home sono create all'interno di una
+directory aggiuntiva chiamata come la prima lettera del nome utente. Per
+esempio \fI/home/u/utente\fP. Il valore predefinito è \fIno\fP.
+.TP 
+\fBSKEL\fP
+La directory da cui copiare i file con lo scheletro della configurazione
+utente. Il valore predefinito è \fI/etc/skel\fP.
+.TP 
+\fBFIRST_SYSTEM_UID\fP e \fBLAST_SYSTEM_UID\fP
+specifica l'intervallo (estremi compresi) in cui possono essere allocati
+dinamicamente gli UID di sistema. Il valore predefinito è \fI100\fP \-
+\fI999\fP. Da notare che alcuni programmi di sistema, per esempio gli utenti
+allocati dal pacchetto base\-passwd, potrebbero dare per scontato che gli UID
+inferiori a 100 siano non allocati.
+.TP 
+\fBFIRST_UID\fP e \fBLAST_UID\fP
+specifica l'intervallo (estremi compresi) in cui possono essere allocati
+dinamicamente gli UID degli utenti normali. Il valore predefinito è \fI1000\fP
+\- \fI59999\fP.
+.TP 
+\fBFIRST_SYSTEM_GID\fP e \fBLAST_SYSTEM_GID\fP
+specifica l'intervallo (estremi compresi) in cui possono essere allocati
+dinamicamente i GID dei gruppi di sistema. Il valore predefinito è \fI100\fP \-
+\fI999\fP.
+.TP 
+\fBFIRST_GID\fP e \fBLAST_GID\fP
+specifica l'intervallo (estremi compresi) in cui possono essere allocati
+dinamicamente i GID dei gruppi normali. Il valore predefinito è \fI1000\fP \-
+\fI59999\fP.
+.TP 
+\fBUSERGROUPS\fP
+Se impostato a \fIyes\fP, a ogni nuovo utente creato riceve anche un proprio
+gruppo. In caso contrario, tutti i nuovi utenti sono inseriti nel gruppo con
+GID specificato da \fBUSERS_GID\fP (vedere sotto). Il valore predefinito è
+\fIyes\fP.
+.TP 
+\fBUSERS_GID\fP
+Se \fBUSERGROUPS\fP è impostato a \fIno\fP allora il valore di \fBUSERS_GID\fP è
+assegnato come GID a tutti i nuovi utenti. Il valore predefinito è \fI100\fP.
+.TP 
+\fBDIR_MODE\fP
+Se impostato a un valore valido (per esempio 0755 o 755), le directory
+create avranno i permessi specificati nella forma di umask, altrimenti
+vengono assegnati i permessi predefiniti: 0755.
+.TP 
+\fBSETGID_HOME\fP
+Se impostato a \fIyes\fP le directory home degli utenti con un proprio gruppo
+(\fIUSERGROUPS=yes\fP) hanno il bit setgid attivo; questo era il comportamento
+predefinito per le versioni di adduser << 3.13. Sfortunatamente
+questa impostazione ha alcune controindicazioni e quindi nella
+configurazione predefinita non è più attiva, benché sia possibile attivarla.
+.TP 
+\fBQUOTAUSER\fP
+Se impostato a un valore non vuoto, i nuovi utenti avranno le quote d'uso
+copiate da quella dell'utente specificato. Il valore predefinito è vuoto.
+.TP 
+\fBNAME_REGEX\fP
+I nomi di utenti e gruppi sono controllati usando questa espressione
+regolare. La creazione dell'utente e del gruppo viene rifiutata se il nome
+non soddisfa questa espressione regolare, a meno che non sia attivata
+l'opzione \-\-force\-badname; in questo caso viene effettuato un controllo più
+debole. Il valore predefinito, scelto con molta prudenza, è
+^[a\-z][\-a\-z0\-9]*$.
+.TP 
+\fBSKEL_IGNORE_REGEX\fP
+I file in /etc/skel/ sono confrontati con questa espressione regolare e, se
+verificano l'espressione, non sono copiati nella directory home. Il valore
+predefinito è una espressione regolare che esclude la copia dei file di
+configurazione non uniti (dpkg\-(old|new|dist)).
+.TP 
+\fBADD_EXTRA_GROUPS\fP
+Se impostato con un valore diverso da 0 (il valore predefinito) adduser
+aggiunge i nuovi utenti normali ai gruppi definiti in EXTRA_GROUPS.
+.TP 
+\fBEXTRA_GROUPS\fP
+Elenco dei gruppi a cui vengono aggiunti gli utenti normali al momento della
+loro creazione. Il valore predefinito è "dialout cdrom floppy audio video
+plugdev users games".
+.SH NOTE
+.TP 
+\fBVALID NAMES\fP
+adduser e addgroup obbligano la conformità allo standard IEEE 1003.1\-2001,
+che ammette solo l'uso dei seguenti caratteri nei nomi di utenti e gruppi:
+lettere, cifre, sottolineature (_), punti (.), chioccioline (@) e trattini
+(\-). Il nome non dovrebbe iniziare con un trattino. È ammesso l'uso del
+carattere dollaro ($) come carattere finale del nome utente (per conformità
+con samba).
+
+Un ulteriore controllo può essere impostato tramite il parametro di
+configurazione NAME_REGEX in modo far rispettare una politica locale.
+
+.SH FILE
+\fI/etc/adduser.conf\fP
+.SH "VEDERE ANCHE"
+\fBaddgroup\fP(8), \fBadduser\fP(8), \fBdelgroup\fP(8), \fBdeluser\fP(8),
+\fBdeluser.conf\fP(5)
+.SH TRADUTTORE
+Questa pagina di manuale è stata tradotta da Luca Monducci il 4 febbraio 2006.
+
+Se in questa traduzione si riscontrano degli errori, si prega di segnalarli
+sulla mailing list 
+.nh
+<\fIdebian\-l10n\-italian@lists.debian.org\fR>
+.hy

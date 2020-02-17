@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Wireshark
+Name[fr]=Wireshark
+Comment=Tool for scanning all trames in network
+Comment[fr]=Outil pour scanner toutes les trames sur le réseau 
+Exec=sh -c "gksudo wireshark"
+Icon=wireshark
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

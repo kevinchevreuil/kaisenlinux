@@ -1,0 +1,2 @@
+Test-Command: cd testsuite/ && ./runsuite.sh
+Restrictions: allow-stderr breaks-testbed needs-root

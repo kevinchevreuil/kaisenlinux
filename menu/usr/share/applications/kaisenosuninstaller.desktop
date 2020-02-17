@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=os-uninstaller
+Name[fr]=os-uninstaller
+Comment=Uninstaller at operating systems
+Comment[fr]=Désinstallateur de systèmes d'exploitation
+Exec=os-uninstaller
+Icon=/usr/share/boot-sav/x-os-uninstaller.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Boot

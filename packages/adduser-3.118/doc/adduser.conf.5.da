@@ -1,0 +1,125 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek
+.\"
+.\" This is free software; see the GNU General Public Lisence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH adduser.conf 5 "Version VERSION" "Debian GNU/Linux" 
+.SH NAVN
+/etc/adduser.conf \- konfigurationsfil for \fBadduser(8)\fP og \fBaddgroup(8)\fP.
+.SH BESKRIVELSE
+Filen \fI/etc/adduser.conf\fP indeholder standarder for programmerne
+\fBadduser\fP(8), \fBaddgroup\fP(8), \fBdeluser\fP(8) og \fBdelgroup\fP(8).  Hver linje
+indeholder et enkelt værdipar i formen \fItilvalg\fP = \fIværdi\fP.  Enkelte eller
+dobbelte anførelsestegn er tilladt omkring værdien, det samme er mellemrum
+omkring tegnet =. Kommentarlinjer skal have en havelåge (#) i den første
+kolonne.
+
+De gyldige konfigurationstilvalg er:
+.TP 
+\fBDSHELL\fP
+Logindskallen for alle nye brugere. Standarden er \fI/bin/bash\fP.
+.TP 
+\fBDHOME\fP
+Mappen hvor nye hjemmemapper oprettes. Standarden er \fI/home\fP.
+.TP 
+\fBGROUPHOMES\fP
+Hvis denne er sat til \fIyes\fP, så vil hjemmemapperne blive oprettet som
+\fI/home/[gruppenavn]/bruger\fP. Standard er \fIno\fP.
+.TP 
+\fBLETTERHOMES\fP
+Hvis denne er sat til \fIyes\fP, så vil hjemmemapperne få en ekstra mappe
+indsat, som er det første tal for logindnavnet. For eksempel:
+\fI/home/u/bruger\fP. Standarden er \fIno\fP.
+.TP 
+\fBSKEL\fP
+Mappen hvorfra skeletfiler for brugerkonfiguration skal kopieres. Standard
+er \fI/etc/skel\fP.
+.TP 
+\fBFIRST_SYSTEM_UID\fP og \fBLAST_SYSTEM_UID\fP
+angiv et inkluderende interval af UID'er hvorfra system\-UID'er dynamisk kan
+allokeres. Standard er \fI100\fP \- \fI999\fP. Bemærk venligst at systemprogrammer,
+såsom brugerne allokeret af pakken base\-passwd kan antage at UID'er mindre
+end 100 er uallokerede.
+.TP 
+\fBFIRST_UID\fP og \fBLAST_UID\fP
+angiv et inkluderende interval af UID'er hvorfra normale brugeres UID'er
+dynamisk kan allokeres. Standard er \fI1000\fP \- \fI59999\fP.
+.TP 
+\fBFIRST_SYSTEM_GID\fP og \fBLAST_SYSTEM_GID\fP
+angiv et inkluderende interval af GID'er hvorfra system\-GID'er dynamisk kan
+allokeres. Standard er \fI100\fP \- \fI999\fP.
+.TP 
+\fBFIRST_GID\fP og \fBLAST_GID\fP
+angiv et inkluderende interval af GID'er hvorfra normale gruppers GID'er
+dynamisk kan allokeres. Standard er \fI1000\fP \- \fI59999\fP.
+.TP 
+\fBUSERGROUPS\fP
+Hvis denne er angivet til \fIyes\fP, så vil hver oprettet bruger blive givet
+deres egen gruppe at bruge. Hvis den er \fIno\fP, så vil hver oprettet bruger
+blive placeret i gruppen hvis GID er \fBUSERS_GID\fP (se nedenfor). Standarden
+er \fIyes\fP.
+.TP 
+\fBUSERS_GID\fP
+Hvis \fBUSERGROUPS\fP er \fIno\fP, så er \fBUSERS_GID\fP GID'en givet til alle nyligt
+oprettede brugere. Standardværdien er \fI100\fP.
+.TP 
+\fBDIR_MODE\fP
+Hvis angivet som en gyldig værdi (f.eks. 0755 eller 755) så vil oprettede
+mapper have de specificerede rettigheder som umask. Ellers bruges 0755 som
+standard.
+.TP 
+\fBSETGID_HOME\fP
+Hvis denne er sat til \fIyes\fP, så vil hjemmemapper for brugere med deres egen
+gruppe (\fIUSERGROUPS=yes\fP have setgid\-bitsættet. Dette var
+standardindstillingen for versionerne << 3.13 for adduser. Desværre
+har det nogle uheldige sideeffekter, så det gør vi ikke længere som
+standard. Hvis du stadig ønsker dette, så kan du aktivere det her.
+.TP 
+\fBQUOTAUSER\fP
+Hvis angivet som en værdi der ikke er tom, så vil nye brugere få kvoter
+kopieret fra den bruger. Standarden er tom.
+.TP 
+\fBNAME_REGEX\fP
+Bruger\- og gruppenavne kontrolleres mod dette regulære udtryk. Hvis navnet
+ikke matcher dette regulære udtryk, så nægtes bruger\- og gruppeoprettelse i
+adduser med mindre \-\-force\-badname er angivet. Med \-\-force\-badname angivet,
+så foretages der kun svage kontroller. Standarden er den mest konservative
+^[a\-z][\-a\-z0\-9]*$.
+.TP 
+\fBSKEL_IGNORE_REGEX\fP
+Filer i /etc/skel/ kontrolleres imod dette regulære udtryk og kopieres ikke
+til den nyligt oprettede hjemmemappe hvis de er ens. Dette er som standard
+sat til det regulære udtryks matchningsfiler tilbage fra ikke sammenføjede
+konfigurationsfiler (dpkg\-(old|new|dist)).
+.TP 
+\fBADD_EXTRA_GROUPS\fP
+Angivelse af denne til noget andet end 0 (standarden) vil få adduser til at
+tilføje nyligt oprettede brugere der ikke er systembrugere til listen over
+grupper defineret af EXTRA_GROUPS (nedenfor).
+.TP 
+\fBEXTRA_GROUPS\fP
+Dette er listen over grupper som nye brugere, der ikke er systembrugere, vil
+blive tilføjet til. Som standard er denne liste »dialout cdrom floppy audio
+video plugdev users games«.
+.SH BEMÆRKNINGER
+.TP 
+\fBVALID NAMES\fP
+adduser og addgroup kræver konformitet med IEEE Std 1003.1\-2001, som kun
+tillader at de følgende tegn fremgår i gruppe\- og brugernavne: bogstaver,
+tal, understregninger, punktummer, snabel\-a (@) og skråstreger. Navnet må
+ikke starte med en skråstreg. Tegnet »$« er tilladt i slutningen af
+brugernavne (for at hænge sammmen med samba).
+
+En yderligere kontrol kan justeres via konfigurationsparameteren NAME_REGEX
+til at kræve en lokal politik.
+
+.SH FILER
+\fI/etc/adduser.conf\fP
+.SH "SE OGSÅ"
+\fBaddgroup\fP(8), \fBadduser\fP(8), \fBdelgroup\fP(8), \fBdeluser\fP(8),
+\fBdeluser.conf\fP(5)

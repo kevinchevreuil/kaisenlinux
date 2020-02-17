@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Anydesk
+Name[fr]=Anydesk
+Comment=Tool for remote maintenance 
+Comment[fr]=Outil de télémaintenance
+Exec=anydesk
+Icon=anydesk
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=RemoteMaintenance

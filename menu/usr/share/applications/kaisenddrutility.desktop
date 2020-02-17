@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ddrutility
+Name[fr]=ddrutility
+Comment=Tool for recovery data 
+Comment[fr]=Outil de récupération de données
+Exec=terminator -e "zsh -c 'ddrutility -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

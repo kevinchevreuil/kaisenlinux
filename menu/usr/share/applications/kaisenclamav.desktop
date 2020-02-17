@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=clamscan
+Name[fr]=clamscan
+Comment=Tool for scanning virus with CLI 
+Comment[fr]=Outil pour scanner des virus avec CLI
+Exec=terminator -e "zsh -c 'clamscan --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=VirusAnalysis

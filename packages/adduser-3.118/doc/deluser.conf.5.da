@@ -1,0 +1,69 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek
+.\"
+.\" This is free software; see the GNU General Public Lisence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH deluser.conf 5 "Version VERSION" "Debian GNU/Linux" 
+.SH NAVN
+/etc/deluser.conf \- konfigurationsfil for \fBdeluser(8)\fP og \fBdelgroup(8)\fP.
+.SH BESKRIVELSE
+Filen \fI/etc/deluser.conf\fP indeholder standarder for programmerne
+\fBdeluser\fP(8) og \fBdelgroup\fP(8). Hver indstilling har formen \fIindstilling\fP
+= \fIværdi\fP. Enkelte eller dobbelte anførelsestegn er tilladt omkring
+værdien. Kommentarlinjer skal have en havelåge (#) i begyndelsen af linjen.
+
+\fBdeluser(8)\fP and \fBdelgroup(8)\fP læser også \fI/etc/adduser.conf\fP, se
+\fBadduser.conf(5);\fP\-indstillinger i \fIdeluser.conf\fP kan overskrive
+indstillinger i \fIadduser.conf\fP.
+
+De gyldige konfigurationstilvalg er:
+.TP 
+\fBREMOVE_HOME\fP
+Fjerner hjemmemappen og postpuljen for brugeren der er ved at blive
+fjernet. Værdien kan være 0 (slet ikke) eller 1 (slet).
+.TP 
+\fBREMOVE_ALL_FILES\fP
+Fjerner alle filer på systemet ejet af brugeren der skal fjernes. Hvis denne
+indstilling er aktiveret har \fBREMOVE_HOME\fP ingen effekt. Værdier kan være 0
+eller 1.
+.TP 
+\fBBACKUP\fP
+Hvis \fBREMOVE_HOME\fP eller \fBREMOVE_ALL_FILES\fP er aktiveret så laves der
+sikkerhedskopier af alle filer før de fjernes. Sikkerhedskopifilen som
+oprettes er som standard brugernavn.tar(.gz|.bz2) i mappen angivet af
+\fBBACKUP_TO\fP\-indstillingen. Komprimeringsmetoden vælges som den bedst
+tilgængelige. Værdier kan være 0 eller 1.
+.TP 
+\fBBACKUP_TO\fP
+Hvis \fBBACKUP\fP er aktiveret, så angiver \fBBACKUP_TO\fP mappen som
+sikkerhedskopien skrives til. Standard er den aktuelle mappe.
+.TP 
+\fBNO_DEL_PATHS\fP
+En liste af regulære udtryk, adskilt af mellemrum. Alle filer som vil blive
+slettet under sletning af hjemmemapper eller sletning af filer ejet af
+brugeren til sletning kontrolleres mod hver af disse regulære udtryk. Hvis
+et match detekteres, så slettes filen ikke. Standard er en liste af
+systemmapper, efterladende kun /home.
+
+Med andre ord: Som standard så slettes kun filer under mappen /home
+tilhørende den specifikke bruger.
+
+.TP 
+\fBONLY_IF_EMPTY\fP
+Slet kun en gruppe hvis der ikke er en bruger, som tilhører denne
+gruppe. Standard er 0.
+.TP 
+\fBEXCLUDE_FSTYPES\fP
+Et regulært udtryk som beskriver alle filsystemer, som skal ekskluderes når
+der kigges efter filer fra en bruger der skal slettes. Standard er
+»(proc|sysfs|usbfs|devpts|tmpfs|afs)«.
+
+.SH FILER
+\fI/etc/deluser.conf\fP
+.SH "SE OGSÅ"
+\fBadduser.conf\fP(5), \fBdelgroup\fP(8), \fBdeluser(8)\fP

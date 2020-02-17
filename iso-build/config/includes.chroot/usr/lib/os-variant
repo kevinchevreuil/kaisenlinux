@@ -1,10 +1,10 @@
-PRETTY_NAME="Kaisen #OSNAME# 20200211 (titanic)"
+PRETTY_NAME="Kaisen #OSNAME# 20200212 (avatar)"
 NAME="Kaisen #OSNAME#"
-VERSION_ID="20200211"
-VERSION="20200211 (titanic)"
-VERSION_CODENAME=titanic
+VERSION_ID="20200212"
+VERSION="20200212 (avatar)"
+VERSION_CODENAME=avatar
 ID=kaisen
 ID_LIKE=debian
-HOME_URL="https://kaisen-liux.org"
+HOME_URL="https://kaisen-linux.org"
 SUPPORT_URL="https://community.kaisen-linux.org"
 BUG_REPORT_URL="https://bugs.kaisen-linux.org"

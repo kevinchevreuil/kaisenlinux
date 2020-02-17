@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=openssh-client
+Name[fr]=openssh-client
+Comment=Tool for administration UNIX servers with openssh
+Comment[fr]=Outil pour l'administration des serveurs UNIX avec openssh
+Exec=terminator -e "zsh -c 'ssh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=RemoteAdministration

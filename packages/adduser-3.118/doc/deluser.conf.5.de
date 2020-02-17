@@ -1,0 +1,73 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek
+.\"
+.\" This is free software; see the GNU General Public Lisence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH deluser.conf 5 "Version VERSION" "Debian GNU/Linux" 
+.SH BEZEICHNUNG
+/etc/deluser.conf \- Konfigurationsdatei für \fBdeluser(8)\fP und \fBdelgroup(8)\fP
+.SH BESCHREIBUNG
+Die Datei \fI/etc/deluser.conf\fP enthält Vorgabewerte für die Programme
+\fBdeluser\fP(8) und \fBdelgroup\fP(8). Jede Option hat die Form \fIoption\fP =
+\fIvalue\fP.  Die Werte können von einfachen oder doppelten Anführungszeichen
+eingeschlossen werden. Kommentarzeilen müssen mit dem Raute\-Zeichen (#)
+beginnen.
+
+\fBdeluser(8)\fP und \fBdelgroup(8)\fP werten auch \fI/etc/adduser.conf\fP aus, siehe
+\fBadduser.conf(5)\fP. Einstellungen in \fIdeluser.conf\fP können Einstellungen
+aus \fIadduser.conf\fP überschreiben.
+
+Die gültigen Konfigurationsoptionen sind:
+.TP 
+\fBREMOVE_HOME\fP
+Löscht das Home\-Verzeichnis und den E\-Mail\-Puffer des zu entfernenden
+Benutzers. Mögliche Werte sind 0 (nicht löschen) oder 1 (löschen).
+.TP 
+\fBREMOVE_ALL_FILES\fP
+Löscht im System alle Dateien des Benutzers, der entfernt wird. Wenn diese
+Option aktiviert ist, hat \fBREMOVE_HOME\fP keine Auswirkung. Mögliche Werte
+sind 0 oder 1.
+.TP 
+\fBBACKUP\fP
+Wenn eine der Optionen \fBREMOVE_HOME\fP oder \fBREMOVE_ALL_FILES\fP aktiviert
+ist, wird von allen Dateien eine Sicherungskopie angelegt, bevor sie
+entfernt werden. Die Backup\-Datei trägt standardmäßig den Namen
+»username.tar(gz|Bz2)« und wird in dem durch \fBBACKUP_TO\fP vorgegebenen
+Verzeichnis gespeichert. Als Kompressionsmethode wird die beste verfügbare
+gewählt. Mögliche Werte sind 0 oder 1.
+.TP 
+\fBBACKUP_TO\fP
+Wenn \fBBACKUP\fP aktiviert ist, legt \fBBACKUP_TO\fP das Verzeichnis fest, in das
+die Backupdatei geschrieben wird. Der Standardwert hierfür ist das aktuelle
+Verzeichnis.
+.TP 
+\fBNO_DEL_PATHS\fP
+Eine Liste von regulären Ausdrücken, getrennt durch Leerzeichen. Alle zu
+löschenden Dateien des Benutzers (einschließlich denen des
+Home\-Verzeichnisses) werden mit jedem der regulären Ausdrücke
+verglichen. Wenn eine Übereinstimmung erkannt wird, wird die Datei nicht
+gelöscht. Standardmäßig wird eine Liste der System\-Verzeichnisse vorgegeben,
+sodass nur /home übrig bleibt.
+
+Mit anderen Worten: Standardmäßig werden nur die Dateien des Benutzers
+unterhalb von /home gelöscht.
+
+.TP 
+\fBONLY_IF_EMPTY\fP
+Eine Gruppe wird nur gelöscht, wenn diese Gruppe keine Mitglieder hat. Der
+Standardwert ist 0.
+.TP 
+\fBEXCLUDE_FSTYPES\fP
+Dieser reguläre Ausdruck beschreibt alle Dateisysteme, die nicht durchsucht
+werden, wenn Dateien eines Benutzers gelöscht werden sollen. Der
+Standardwert ist »(proc|sysfs|usbfs|devpts|tmpfs|afs)«.
+
+.SH DATEIEN
+\fI/etc/deluser.conf\fP
+.SH "SIEHE AUCH"
+\fBadduser.conf\fP(5), \fBdelgroup\fP(8), \fBdeluser(8)\fP

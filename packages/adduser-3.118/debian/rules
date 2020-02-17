@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+package = adduser
+version = $(DEB_VERSION_UPSTREAM)
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) -C po all adduser.pot
+	# generate man pages
+	cd doc/po4a && po4a --previous po4a.conf
+
+override_dh_auto_clean:
+	$(MAKE) -C po update clean
+	debconf-updatepo
+	cd doc/po4a && po4a --previous --rm-translations po4a.conf
+
+override_dh_auto_install:
+	$(MAKE) -C po install DESTDIR=`pwd`/debian/adduser
+
+override_dh_install:
+	dh_install
+	sed -e s/VERSION/$(version)/g adduser > debian/adduser/usr/sbin/adduser
+	sed -e s/VERSION/$(version)/g deluser > debian/adduser/usr/sbin/deluser
+	sed -e s/VERSION/$(version)/g AdduserCommon.pm > debian/adduser/usr/share/perl5/Debian/AdduserCommon.pm
+	chmod 755 debian/adduser/usr/sbin/*
+	ln -s adduser debian/adduser/usr/sbin/addgroup
+	ln -s deluser debian/adduser/usr/sbin/delgroup
+
+	./debian/scripts/install-manpages.pl $(version) doc/ debian/adduser/usr/share/man/
+
+#	install -o root -g root -m644 TODO debian/adduser/usr/share/doc/adduser/
+	install -o root -g root -m0755 -d debian/adduser/DEBIAN
+	po2debconf debian/templates > debian/adduser/DEBIAN/templates
+
+override_dh_compress:
+	dh_compress -X examples/adduser.local
+

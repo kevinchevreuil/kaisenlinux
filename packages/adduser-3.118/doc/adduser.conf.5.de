@@ -1,0 +1,138 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek
+.\"
+.\" This is free software; see the GNU General Public Lisence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH adduser.conf 5 "Version VERSION" "Debian GNU/Linux" 
+.SH BEZEICHNUNG
+/etc/adduser.conf \- Konfigurationsdatei für \fBadduser\fP(8) und
+\fBaddgroup\fP(8).
+.SH BESCHREIBUNG
+Die Datei \fI/etc/adduser.conf\fP enthält Vorgabewerte für die Programme
+\fBadduser\fP(8), \fBaddgroup\fP(8), \fBdeluser\fP(8) und \fBdelgroup\fP(8). Jede Zeile
+enthält eine Option in der Form \fIOption\fP = \fIWert\fP. Die Werte können von
+einfachen oder doppelten Anführungszeichen, das Gleich\-Zeichen von
+Whitespace eingeschlossen werden. Kommentarzeilen müssen mit dem
+Raute\-Zeichen (#) beginnen.
+
+Die gültigen Konfigurationsoptionen sind:
+.TP 
+\fBDSHELL\fP
+die Login\-Shell (mit ihr arbeitet ein Benutzer, nachdem er sich beim System
+angemeldet hat) für alle neuen Benutzer; Standardwert ist \fI/bin/bash\fP
+.TP 
+\fBDHOME\fP
+In diesem Verzeichnis sollen die neuen HOME\-Verzeichnisse erzeugt werden
+(Standard ist \fIhome\fP).
+.TP 
+\fBGROUPHOMES\fP
+Wird diese Option auf \fIyes\fP gesetzt, heißen die Home\-Verzeichnisse
+\fI/home/[gruppenname]/benutzer\fP. Der Vorgabewert ist \fIno\fP.
+.TP 
+\fBLETTERHOMES\fP
+Wird diese Option auf \fIyes\fP gesetzt, wird beim Anlegen der
+Home\-Verzeichnisse ein zusätzliches Verzeichnis angelegt, dessen Name der
+erste Buchstabe des Benutzernamens ist, z. B. \fI/home/b/benutzer\fP. Der
+Vorgabewert ist \fIno\fP.
+.TP 
+\fBSKEL\fP
+Aus diesem Verzeichnis wird eine Grundausstattung von Konfigurationsdateien
+für den Benutzer kopiert (Standard ist \fI/etc/skel\fP.
+.TP 
+\fBFIRST_SYSTEM_UID\fP und \fBLAST_SYSTEM_UID\fP
+geben einen Bereich von UIDs (einschließlich der beiden Konstanten mit den
+Standardwerten \fI100\fP und \fI999\fP) an, aus dem System\-UIDs dynamisch
+zugewiesen werden können. Bitte beachten Sie, dass System\-Software, wie zum
+Beispiel die vom Paket base\-passwd zugewiesenen Benutzer, davon ausgehen
+kann, dass UIDs unter 100 nicht zugewiesen sind.
+.TP 
+\fBFIRST_UID\fP und \fBLAST_UID\fP
+geben einen Bereich von UIDs (einschließlich der beiden Konstanten mit den
+Standardwerten \fI1000\fP und \fI59999\fP) an, aus dem Benutzer\-IDs dynamisch
+zugewiesen werden können.
+.TP 
+\fBFIRST_SYSTEM_GID\fP und \fBLAST_SYSTEM_GID\fP
+geben einen Bereich von GIDs (einschließlich der beiden Konstanten mit den
+Standardwerten \fI100\fP und \fI999\fP) an, aus dem Systemgruppen\-IDs dynamisch
+zugewiesen werden können.
+.TP 
+\fBFIRST_GID\fP und \fBLAST_GID\fP
+geben einen Bereich von Gruppen\-IDs (einschließlich der beiden Konstanten
+mit den Standardwerten \fI1000\fP und \fI59999\fP) an, aus dem Gruppen\-IDs
+dynamisch zugewiesen werden können.
+.TP 
+\fBUSERGROUPS\fP
+Wurde dieser Option der Wert \fIyes\fP zugewiesen, wird jedem eingerichteten
+Benutzer seine eigene Gruppe zugeordnet. Ist der Wert \fIno\fP, wird jeder neu
+eingerichtete Benutzer Mitglied der Gruppe, deren GID gleich \fBUSERS_GID\fP
+ist (siehe unten). Der Standardwert ist \fIyes\fP.
+.TP 
+\fBUSERS_GID\fP
+Wenn \fBUSERGROUPS\fP gleich \fIno\fP ist, wird allen neu erstellten Benutzern
+\fBUSERS_GID\fP als GID zugewiesen. Der Standardwert ist \fI100\fP.
+.TP 
+\fBDIR_MODE\fP
+Wenn dieser Option ein gültiger Wert (z. B. 0755 oder 755) zugewiesen ist,
+werden erstellte Verzeichnisse die angegebenen Berechtigungen als Umask
+haben. Ansonsten wird 0755 als Standard verwendet.
+.TP 
+\fBSETGID_HOME\fP
+Wenn der Wert \fIyes\fP ist, dann wird für Home\-Verzeichnisse von Benutzern mit
+einer eigenen Gruppe (\fIUSERGROUPS=yes\fP) das Setgid\-Bit gesetzt. Dies war
+die Standardeinstellung für Adduser\-Versionen << 3.13. Leider hat
+das einige üble Nebenwirkungen, so dass dieser Wert nicht mehr standardmäßig
+gesetzt wird. Wenn Sie es trotzdem wünschen, können Sie die Option hier
+aktivieren.
+.TP 
+\fBQUOTAUSER\fP
+Wird hier ein nicht leerer Wert angegeben, übernehmen neue Benutzer die
+Ressourcen\-Beschränkungen (quotas) dieses Benutzers. Die Voreinstellung ist
+leer.
+.TP 
+\fBNAME_REGEX\fP
+Benutzer\- und Gruppennamen werden mit diesem regulären Ausdruck
+überprüft. Wenn der Name nicht zum regulären Ausdruck passt, verweigert
+Adduser die Erstellung von Benutzer und Gruppe \- es sei denn, die Option
+\fB\-\-force\-badname\fP wurde gewählt. Das Setzen von \fB\-\-force\-badname\fP lässt
+Adduser nur schwache Kontrollen durchführen. Der Standardwert ist der
+konservativste ^[az][\-a\-z0\-9]*$.
+.TP 
+\fBSKEL_IGNORE_REGEX\fP
+Mit diesem regulären Ausdruck werden Dateien aus /etc/skel verglichen. Bei
+Übereinstimmung mit dem Ausdruck werden die entsprechenden Dateien nicht in
+das neue Home\-Verzeichnis kopiert. Der Standardwert für den regulären
+Ausdruck erfasst Dateien, die beim Zusammenführen von Konfigurationsdateien
+übrig blieben (dpkg\-(old|new|dist)).
+.TP 
+\fBADD_EXTRA_GROUPS\fP
+Wird hier etwas anderes als (der Vorgabewert) 0 angegeben, wird Adduser die
+neu eingerichteten Nicht\-System\-Benutzer zu Mitgliedern der in EXTRA_GROUPS
+(unten) angegebenen Gruppen machen.
+.TP 
+\fBEXTRA_GROUPS\fP
+Die neu eingerichteten Nicht\-System\-Benutzer werden diesen Gruppen
+zugeordnet. Die Standardgruppen sind »dialout cdrom floppy audio video
+plugdev users games«.
+.SH ANMERKUNGEN
+.TP 
+\fBVALID NAMES\fP
+Adduser und Addgroup erzwingen Konformität zu IEEE Std 1.003,1\-2001. Damit
+sind nur die folgenden Zeichen in Gruppen\- und Benutzernamen erlaubt:
+Buchstaben, Ziffern, Unterstriche, Punkte, At\-Zeichen (@) und
+Bindestriche. Der Name darf nicht mit einem Bindestrich beginnen. Das
+»$«\-Zeichen wird am Ende von Benutzernamen erlaubt (zwecks
+Samba\-Konformität).
+
+Mit dem Konfigurationsparameter NAME_REGEX kann eine zusätzliche Kontrolle
+eingeführt werden, um eine lokale Richtlinie durchzusetzen.
+
+.SH DATEIEN
+\fI/etc/adduser.conf\fP
+.SH "SIEHE AUCH"
+\fBaddgroup\fP(8), \fBadduser\fP(8), \fBdelgroup\fP(8), \fBdeluser\fP(8),
+\fBdeluser.conf\fP(5)

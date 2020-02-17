@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=parted
+Name[fr]=parted
+Comment=Tool for partitioning
+Comment[fr]=Outil de partitionnement 
+Exec=terminator -e "zsh -c 'sudo parted -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Partitioning

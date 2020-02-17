@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=rdesktop
+Name[fr]=rdesktop
+Comment=Tool for connecting remote server
+Comment[fr]=Outil pour se connecter sur un serveur distant
+Exec=terminator -e "zsh -c 'rdesktop -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=RemoteAdministration

@@ -1,0 +1,287 @@
+.\" Someone tell emacs that this is an -*- nroff -*- source file.
+.\" Copyright 1997, 1998, 1999 Guy Maor.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek,
+.\" With much borrowing from the original adduser copyright 1994 by
+.\" Ian Murdock.
+.\" This is free software; see the GNU General Public License version
+.\" 2 or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH ADDUSER 8 "Version VERSION" "Debian GNU/Linux" 
+.SH BEZEICHNUNG
+adduser, addgroup \- richtet im System einen Benutzer oder eine Gruppe ein
+.SH ÜBERSICHT
+\fBadduser\fP [Optionen] [\-\-home VERZEICHNIS] [\-\-shell SHELL]
+[\-\-no\-create\-home] [\-\-uid ID] [\-\-firstuid ID] [\-\-lastuid ID] [\-\-ingroup
+GRUPPE | \-\-gid ID] [\-\-disabled\-password] [\-\-disabled\-login] [\-\-gecos GECOS]
+[\-\-add_extra_groups] Benutzer
+.PP
+\fBadduser\fP \-\-system [Optionen] [\-\-home VERZEICHNIS] [\-\-shell SHELL]
+[\-\-no\-create\-home] [\-\-uid ID] [\-\-group | \-\-ingroup GROUP | \-\-gid ID]
+[\-\-disabled\-password] [\-\-disabled\-login] [\-\-gecos GECOS] Benutzer
+.PP
+\fBaddgroup\fP [Optionen] [\-\-gid ID] Gruppe
+.PP
+\fBaddgroup\fP \-\-system [Optionen] [\-\-gid ID] Gruppe
+.PP
+\fBadduser\fP [Optionen] Benutzer Gruppe
+.SS "GEMEINSAME OPTIONEN"
+.br
+[\-\-quiet] [\-\-debug] [\-\-force\-badname] [\-\-help|\-h] [\-\-version] [\-\-conf DATEI]
+.SH BESCHREIBUNG
+.PP
+Die Befehle \fBadduser\fP und \fBaddgroup\fP richten im System Benutzer und
+Gruppen ein, deren Eigenschaften durch die Befehlszeilen\-Optionen und die
+Konfigurationsinformationen in \fI/etc/adduser.conf\fP festgelegt werden. Sie
+sind freundlichere Frontends für systemnahe Werkzeuge wie die Programme
+\fBuseradd\fP, \fBgroupadd\fP und \fBusermod\fP. Standardmäßig werden zu der
+Debian\-Richtlinie konforme Werte für UID und GID gewählt, ein
+Home\-Verzeichnis mit einer Grundkonfiguration eingerichtet, ein
+benutzerdefiniertes Skript ausgeführt und andere Funktionen. \fBadduser\fP und
+\fBaddgroup\fP können in einem von fünf Modi betrieben werden:
+.SS "Einen normalen Benutzer einrichten"
+Wird \fBadduser\fP ohne die Optionen \fB\-\-system\fP oder \fB\-\-group\fP und mit einem
+nicht optionalen Argument aufgerufen, richtet \fBadduser\fP einen normalen
+Benutzer ein.
+
+\fBadduser\fP wird die erste noch freie UID aus dem in der Konfigurationsdatei
+für normale Benutzer festgelegten Bereich auswählen. Mit der Option \fB\-\-uid\fP
+können Sie eine von Ihnen gewünschte UID bestimmen.
+
+Der in der Konfigurationsdatei festgelegte Bereich kann mit den Optionen
+\fB\-\-firstuid\fP und \fB\-\-lastuid\fP außer Kraft gesetzt werden.
+
+Standardmäßig wird jedem Benutzer in Debian GNU/Linux eine Gruppe mit dem
+gleichen Namen zugeordnet. Benutzergruppen ermöglichen die einfache
+Einrichtung von Verzeichnissen, für die mehrere Benutzer Schreibrechte
+haben. Es müssen nur die betreffenden Benutzer zu Mitgliedern einer Gruppe
+erklärt, das Set\-Group\-ID\-Bit des Verzeichnisses gesetzt und sichergestellt
+werden, dass alle Benutzer eine Umask von 002 verwenden. Wird diese Option
+deaktiviert, indem Sie auf \fBUSERGROUPS\fP auf \fIno\fP setzen, werden die GIDs
+aller Nutzer auf \fBUSERS_GID\fP gesetzt. Die anfängliche Gruppenzugehörigkeit
+eines Benutzers kann auch auf der Befehlszeile mit den Optionen \fB\-\-gid\fP
+oder \fB\-\-ingroup\fP überschrieben werden, um die Gruppen\-ID oder den
+Gruppennamen zu setzen. Außerdem können Nutzer zu einer oder mehreren in
+adduser.conf definierten Gruppen hinzugefügt werden, indem entweder in
+adduser.conf ADD_EXTRA_GROUPS auf 1 gesetzt oder auf der Befehlszeile
+\fB\-\-add_extra_groups\fP übergeben wird.
+
+\fBadduser\fP wird ein Home\-Verzeichnis abhängig von \fBDHOME\fP, \fBGROUPHOMES\fP
+und \fBLETTERHOMES\fP erzeugen. Das Home\-Verzeichnis kann von der Befehlszeile
+mit der Option \fB\-\-home\fP und die Shell mit \fB\-\-shell\fP überschrieben
+werden. Wenn \fBUSERGROUPS\fP den Wert \fIyes\fP hat, wird Set\-Group\-ID\-Bit des
+Home\-Verzeichnis so gesetzt, dass alle im Home\-Verzeichnis des Benutzers
+erstellten Dateien die richtige Gruppe haben.
+
+\fBadduser\fP wird Dateien von \fBSKEL\fP in das Home\-Verzeichnis kopieren und zur
+Eingabe von Finger\-Informationen (Gecos) und eines Passworts auffordern. Die
+Gecos können auch mit der Option \fB\-\-Gecos\fP übergeben werden. Mit der Option
+\fB\-\-disabled\-login\fP wird das Benutzerkonto erstellt, aber bis zur Festlegung
+eines Passworts deaktiviert. Die Option \fB\-\-disabled\-password\fP legt kein
+Passwort fest, aber eine Anmeldung ist dennoch möglich (zum Beispiel mit
+SSH\-RSA\-Schlüsseln).
+
+Wenn die Datei \fB/usr/local/sbin/adduser.local\fP existiert, wird sie nach der
+Einrichtung des Benutzerkontos ausgeführt, um lokale Einstellungen
+vorzunehmen. An \fBadduser.local\fP werden die folgenden Argumente übergeben:
+.br
+Benutzername, UID, GID und Home\-Verzeichnis.
+.br
+Die Umgebungsvariable VERBOSE wird mit der folgenden Regel gesetzt:
+.TP  
+0 wenn 
+\fB\-\-quiet\fP angegeben wurde
+.TP  
+1 wenn weder 
+\fB\-\-quiet\fP noch \fB\-\-debug\fP angegeben wurde
+.TP  
+2 wenn 
+\fB\-\-debug\fP angegeben wurde
+
+(Das gleiche gilt für die Variable DEBUG, aber DEBUG ist veraltet und wird
+in einer zukünftigen Version von \fBadduser\fP entfernt werden.)
+
+.SS "Einen System\-Benutzer einrichten"
+Wird \fBadduser\fP mit der Option \fB\-\-system\fP und mit einem nicht optionalen
+Argument aufgerufen, richtet \fBadduser\fP einen System\-Benutzer ein. Wenn
+schon ein Benutzer mit demselben Namen existiert und seine UID in den
+Systembereich fällt (oder wenn eine UID angegeben wird, die schon an einen
+Benutzer vergeben ist), wird sich adduser beenden und eine Warnung
+ausgeben. Diese Warnung kann unterdrückt werden, indem Sie die Option
+\fB\-\-quiet\fP wählen.
+
+\fBadduser\fP wird die erste noch freie UID aus dem in der Konfigurationsdatei
+für Systembenutzer festgelegten Bereich (FIRST_SYSTEM_UID und
+LAST_SYSTEM_UID) auswählen. Wenn Sie eine spezielle UID vergeben wollen,
+können Sie diese mit der Option \fB\-\-uid\fP festlegen.
+
+Standardmäßig werden Systembenutzer Mitglieder der Gruppe \fBnogroup\fP. Soll
+der neue Systembenutzer Mitglied in einer bereits bestehenden Gruppe werden,
+nutzen Sie die Optionen \fB\-\-gid\fP oder \fB\-\-ingroup\fP. Soll der neue Benutzer
+eine eigene Gruppe mit der gleichen ID bekommen, ist die Option \fB\-\-group\fP
+das Richtige für Sie.
+
+Das Home\-Verzeichnis wird nach den gleichen Regeln wie denen für einfache
+Benutzer erzeugt. Dem neuen Benutzer wird als Shell \fI/usr/sbin/nologin\fP
+zugewiesen (es sei denn, das wird durch die Option \fB\-\-shell\fP geändert) und
+normale Anmeldungen werden deaktiviert. In sein Home\-Verzeichnis werden
+keine Konfigurationsdateien aus /etc/skel kopiert.
+.SS "Eine Benutzergruppe einrichten"
+Wird \fBadduser\fP mit der Option \fB\-\-group\fP und ohne die Option \fB\-\-system\fP
+aufgerufen oder wird \fBaddgroup\fP aufgerufen, wird eine Benutzergruppe
+eingerichtet.
+
+
+Die GID wird aus dem in der Konfigurationsdatei für GIDs festgelegten
+Bereich (FIRST_GID, LAST_GID) gewählt. Sie können diesen Mechanismus außer
+Kraft setzen, indem Sie die GID mit der Option \fB\-\-gid\fP festlegen.
+
+Die erzeugte Gruppe ist leer, hat also keine Mitglieder.
+.SS "Eine Systemgruppe einrichten"
+Wird \fBaddgroup\fP mit der Option \fB\-\-system\fP aufgerufen, wird eine
+Systemgruppe eingerichtet.
+
+Es wird eine GID aus dem in der Konfigurationsdatei für System\-GIDs
+festgelegten Bereich (FIRST_SYSTEM_GID, LAST_SYSTEM_GID) gewählt. Sie können
+diesen Mechanismus außer Kraft setzen, indem Sie die GID mit der Option
+\fB\-\-gid\fP festlegen.
+
+Die erzeugte Gruppe ist leer, hat also keine Mitglieder.
+.SS "Einen bestehenden Benutzer zu einer bestehenden Gruppe hinzufügen"
+Wird \fBadduser\fP mit zwei nicht optionalen Argumenten aufgerufen, wird ein
+bestehender Benutzer zu einer bestehenden Gruppe hinzugefügt.
+.SH OPTIONEN
+.TP 
+\fB\-\-conf DATEI\fP
+DATEI anstelle von \fI/etc/adduser.conf\fP benutzen
+.TP 
+\fB\-\-disabled\-login\fP
+Passwd wird nicht aufgerufen. Der Benutzer kann sein Konto erst nutzen,
+nachdem ein Passwort vergeben wurde.
+.TP 
+\fB\-\-disabled\-password\fP
+Wie \fB\-\-disabled\-login\fP; Anmeldungen sind noch möglich (z.B. mit
+SSH\-RSA\-Schlüsseln), aber nicht mittels Passwort.
+.TP 
+\fB\-\-force\-badname\fP
+Benutzer\- und Gruppennamen werden standardmäßig mit dem konfigurierbaren
+regulären Ausdruck \fBNAME_REGEX\fP verglichen, der in der Konfigurationsdatei
+festgelegt ist. Diese Option zwingt \fBadduser\fP und \fBaddgroup\fP, nur eine
+schwache Kontrolle für die Gültigkeit der Namen durchzuführen. \fBNAME_REGEX\fP
+ist in \fBadduser.conf\fP(5) beschrieben.
+.TP 
+\fB\-\-gecos GECOS\fP
+Diese Option setzt das Gecos\-Feld für den neu erzeugten Eintrag. \fBadduser\fP
+wird nicht nach Finger\-Informationen fragen, wenn diese Option gewählt ist.
+.TP 
+\fB\-\-gid ID\fP
+Wird eine neue Gruppe eingerichtet, setzt diese Option deren Gruppen\-ID auf
+die übergebene Zahl. Wird ein Benutzer eingerichtet, macht ihn diese Option
+zu einem Mitglied der Gruppe.
+.TP 
+\fB\-\-group\fP
+Zusammen mit \fB\-\-system\fP richtet diese Optionen eine Gruppe mit dem gleichen
+Namen und der gleichen ID wie der System\-Benutzer ein. Wird sie nicht
+zusammen mit \fB\-\-system\fP verwendet, wird eine Gruppe mit dem angegebenen
+Namen erstellt. Dies ist das Standardverhalten, wenn das Programm als
+\fBaddgroup\fP aufgerufen wird.
+.TP 
+\fB\-\-help\fP
+Kurzanleitung anzeigen
+.TP 
+\fB\-\-home VERZEICHNIS\fP
+Verwendet VERZEICHNIS als Home\-Verzeichnis des Benutzers anstatt der in der
+Konfigurationsdatei festgelegten Vorgabe. Existiert das VERZEICHNIS nicht,
+wird es erzeugt und Dateien aus /etc/skel dorthin kopiert.
+.TP 
+\fB\-\-shell SHELL\fP
+Verwendet SHELL als Login\-Shell des Benutzers anstatt der in der
+Konfigurationsdatei festgelegten Vorgabe.
+.TP 
+\fB\-\-ingroup GRUPPE\fP
+Der neue Benutzer wird Mitglied von GRUPPE; Vorgaben der Konfigurationsdatei
+bezüglich einer Benutzergruppe oder der durch \fBUSERS_GID\fP festgelegten
+Standardgruppe kommen nicht zum Tragen. Dies betrifft die primäre Gruppe des
+Benutzers. Mit der Option \fBadd_extra_groups\fP kann der Benutzer weiteren
+Gruppen zugeordnet werden.
+.TP 
+\fB\-\-no\-create\-home\fP
+kein Home\-Verzeichnis einrichten, auch wenn es nicht existiert
+.TP 
+\fB\-\-quiet\fP
+Meldungen mit Informationscharakter unterdrücken, nur Warnungen und Fehler
+anzeigen
+.TP 
+\fB\-\-debug\fP
+ausführliche Fehlermeldungen ausgeben; nützlich, wenn Probleme mit adduser
+gelöst werden sollen
+.TP 
+\fB\-\-system\fP
+einen neuen Systembenutzer oder eine neue Systemgruppe einrichten
+.TP 
+\fB\-\-uid ID\fP
+Die Option soll die ID des neuen Benutzers auf die angegebene Zahl
+setzen. \fBAdduser\fP wird fehlschlagen, wenn die Benutzer\-ID bereits vergeben
+ist.
+.TP 
+\fB\-\-firstuid ID\fP
+Überschreibt die erste Benutzer\-ID des Bereichs, aus dem die ID gewählt wird
+(also \fBFIRST_UID\fP in der Konfigurationsdatei).
+.TP 
+\fB\-\-lastuid ID\fP
+analog zu \fB\-\-firstuid ID\fP; überschreibt \fBLAST_UID\fP
+.TP 
+\fB\-\-add_extra_groups\fP
+Macht den neuen Benutzer zum Mitglied weiterer Gruppen, die in der
+Konfigurationsdatei festgelegt sind.
+.TP 
+\fB\-\-version\fP
+Anzeige der Version und von Copyright\-Informationen
+
+.SH RÜCKGABEWERTE
+
+.TP 
+\fB0\fP
+Der beschriebene Benutzer existiert. Das kann zwei Gründe haben: Der
+Benutzer wurde von \fBadduser\fP erzeugt oder er war schon vor dem Aufruf von
+\fBadduser\fP im System eingerichtet. War der Rückgabewert von \fBadduser\fP 0,
+wird ein zweiter Aufruf des Programms mit den gleichen Parametern wie zuvor
+auch 0 zurückgeben.
+.TP 
+\fB1\fP
+Das Erzeugen des Benutzers oder der Gruppe schlug fehl, weil er/sie schon
+existiert und eine andere UID/GID hat. Der Benutzer\- oder Gruppenname wurden
+abgewiesen, weil er nicht zu den konfigurierten regulären Ausdrücken passte
+(siehe \fBadduser.conf\fP(5)). Adduser wurde mit einem Signal
+(Software\-Interrupt) abgebrochen.
+.br
+Oder es war einer von vielen anderen noch undokumentierten Gründen, die dann
+auf der Konsole ausgegeben werden. Sie können dann überlegen, ob Sie
+\fBadduser\fP ohne \fB\-\-quiet\fP aufrufen, um mehr Einzelheiten auszugeben.
+
+.SH DATEIEN
+.TP  
+/etc/adduser.conf
+Standard\-Konfigurationsdatei für \fBadduser\fP und \fBaddgroup\fP
+.TP 
+/usr/local/sbin/adduser.local
+Optionale benutzerspezifische Add\-Ons.
+
+.SH "SIEHE AUCH"
+\fBadduser.conf\fP(5), \fBdeluser\fP(8), \fBgroupadd\fP(8), \fBuseradd\fP(8),
+\fBusermod\fP(8), Debian Policy 9.2.2.
+
+.SH COPYRIGHT
+Copyright (C) 1997, 1998, 1999 Guy Maor. Veränderungen durch Roland
+Bauerschmidt und Marc Haber. Zusätzliche Patches von Joerg Hoh und Stephen
+Gran.
+.br
+Copyright (C) 1995 Ted Hajek. Er übernahm sehr viel von der ursprünglichen
+Debian\-Version von \fBadduser\fP.
+.br
+Copyright (C) 1994 Ian Murdock. \fBAdduser\fP ist freie Software; siehe die GNU
+General Public Licence Version 2 oder später für die Kopierbedingungen. Es
+wird \fIkeine\fP Garantie gewährt.

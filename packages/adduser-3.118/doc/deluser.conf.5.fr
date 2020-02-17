@@ -1,0 +1,87 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Adduser and this manpage are copyright 1995 by Ted Hajek
+.\"
+.\" This is free software; see the GNU General Public Lisence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH deluser.conf 5 "Version VERSION" "Debian GNU/Linux" 
+.SH NOM
+/etc/deluser.conf \- Fichier de configuration de \fBdeluser\fP(8) et
+\fBdelgroup\fP(8).
+.SH DESCRIPTION
+Le fichier \fI/etc/deluser.conf\fP contient les valeurs par défaut des
+programmes \fBdeluser\fP(8) et \fBdelgroup\fP(8). Chaque option est de la forme
+\fIoption\fP = \fIvaleur\fP. Les guillemets simples ou doubles sont autorisés
+autour de la valeur. Les lignes de commentaires doivent avoir un caractère #
+en début de ligne.
+
+\fBdeluser\fP(8) et \fBdelgroup\fP(8) lisent aussi \fI/etc/adduser.conf\fP, consultez
+\fBadduser.conf\fP(8); les paramètres de \fIdeluser.conf\fP peuvent surcharger des
+paramètres de \fIadduser.conf\fP.
+
+Les options de configuration valables sont\ :
+.TP 
+\fBREMOVE_HOME\fP
+Supprime le répertoire personnel et la boîte aux lettres de l'utilisateur à
+retirer. La valeur peut être 0 (ne pas supprimer) ou 1 (supprimer).
+.TP 
+\fBREMOVE_ALL_FILES\fP
+Supprime tous les fichiers du système qui appartiennent à l'utilisateur à
+retirer. Si cette option est activée, \fBREMOVE_HOME\fP n'a aucun effet. La
+valeur peut être 0 ou 1.
+.TP 
+\fBBACKUP\fP
+Si \fBREMOVE_HOME\fP ou \fBREMOVE_ALL_FILES\fP sont activées, tous les fichiers
+sont sauvegardés avant d'être supprimés. Les fichiers de sauvegarde sont
+créés par défaut sous nom_utilisateur.tar(.gz|.bz2) dans le répertoire
+indiqué par l'option \fBBACKUP_TO\fP. La meilleure méthode de compression
+trouvée est utilisée. La valeur peut être 0 ou 1.
+.TP 
+\fBBACKUP_TO\fP
+Si \fBBACKUP\fP est activé, \fBBACKUP_TO\fP indique le répertoire dans lequel la
+sauvegarde est écrite. Par défaut, le répertoire courant est utilisé.
+.TP 
+\fBNO_DEL_PATHS\fP
+Liste d'expressions rationnelles, séparées par des espaces. Tous les
+fichiers à détruire lors de la suppression d'un répertoire personnel, ou
+lors de la suppression de tous les fichiers de l'utilisateur à retirer, sont
+comparés à chacune de ces expressions rationnelles. Si l'une d'entre elles
+correspond, le fichier n'est pas détruit. La valeur par défaut est une liste
+de répertoires système, ne laissant que /home.
+
+En d'autres termes\ : par défaut, seuls les fichiers dans /home qui
+appartiennent à cet utilisateur seront détruits.
+
+.TP 
+\fBONLY_IF_EMPTY\fP
+Ne supprime un groupe que s'il n'y a plus aucun utilisateur appartenant à ce
+groupe. La valeur par défaut est \fB0\fP.
+.TP 
+\fBEXCLUDE_FSTYPES\fP
+Une expression rationnelle qui décrit les systèmes de fichiers à exclure
+lors de la recherche des fichiers de l'utilisateur à supprimer. La valeur
+par défaut est "(proc|sysfs|usbfs|devpts|tmpfs|afs)".
+
+.SH FICHIERS
+\fI/etc/deluser.conf\fP
+.SH "VOIR AUSSI"
+\fBadduser.conf\fP(5), \fBdelgroup\fP(8), \fBdeluser(8)\fP
+.SH TRADUCTION
+Ce document est une traduction, réalisée par Nicolas FRANÇOIS le
+29 octobre 2004.
+
+L'équipe de traduction a fait le maximum pour réaliser une adaptation
+française de qualité.
+
+La version anglaise de ce document est toujours consultable
+en ajoutant l'option «\ \-L C\ » à la commande \fBman\fR.
+
+N'hésitez pas à signaler à l'auteur ou à la liste de traduction
+.nh
+<\fIdebian\-l10n\-french@lists.debian.org\fR>,
+.hy
+selon le cas, toute erreur dans cette page de manuel.

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=GSmartControl
+Name[fr]=GSmartControl
+Comment=Tool for check health on disks
+Comment[fr]=Outil pour vérifier la santé d'un disque
+Exec=sh -c "gksudo gsmartcontrol"
+Icon=gsmartcontrol
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis

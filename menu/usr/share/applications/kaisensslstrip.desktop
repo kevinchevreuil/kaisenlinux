@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=sslstrip
+Name[fr]=sslstrip
+Comment=Tool for MITM SSL/TLS
+Comment[fr]=Outil pour MITM SSL/TLS
+Exec=terminator -e "zsh -c 'sslstrip -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity
+
