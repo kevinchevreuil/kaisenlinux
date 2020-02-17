@@ -1,3 +1,12 @@
 [submodule "skel/.oh-my-zsh"]
 	path = skel/.oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "fork-source/etc/skel/.oh-my-zsh"]
+	path = fork-source/etc/skel/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "fork-source/root/.oh-my-zsh"]
+	path = fork-source/root/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "iso-build/config/includes.chroot/etc/skel/.oh-my-zsh"]
+	path = iso-build/config/includes.chroot/etc/skel/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
