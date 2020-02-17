@@ -19,7 +19,9 @@ rm -f /usr/share/applications/gsmartcontrol.desktop
 rm -f /usr/share/applications/guymager.desktop
 rm -f /usr/share/applications/htop.desktop
 rm -f /usr/share/applications/hydra-gtk.desktop
+rm -f /usr/share/applications/kismet.desktop
 rm -f /usr/share/applications/linguist-qt5.desktop
+rm -f /usr/share/applications/lstopo.desktop
 rm -f /usr/share/applications/mate-disk-usage-analyzer.desktop
 rm -f /usr/share/applications/minicom.desktop
 rm -f /usr/share/applications/ophcrack.desktop

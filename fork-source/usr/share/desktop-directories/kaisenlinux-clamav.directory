@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ClamAV
+Name[fr]=ClamAV
+Comment=ClamAV service             
+Comment[fr]=Service ClamAV                   
+Icon=kaisen
+Type=Directory

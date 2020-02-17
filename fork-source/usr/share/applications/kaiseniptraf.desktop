@@ -10,4 +10,4 @@ Icon=utilities-terminal
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=NetworkSecurity
+Categories=IP

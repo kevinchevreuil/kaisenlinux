@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/bin/conky
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[fr_FR]=conky
-Name=conky
-Comment[fr_FR]=
-Comment=

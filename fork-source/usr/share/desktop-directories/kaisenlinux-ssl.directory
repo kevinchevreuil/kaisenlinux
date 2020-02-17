@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=SSL
+Name[fr]=SSL
+Comment=Tools for SSL trafic analyse
+Comment[fr]=Outils pour analyser le trafic SSL
+Icon=router
+Type=Directory
+

@@ -10,4 +10,4 @@ Icon=wireshark
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=NetworkSecurity
+Categories=PCAP

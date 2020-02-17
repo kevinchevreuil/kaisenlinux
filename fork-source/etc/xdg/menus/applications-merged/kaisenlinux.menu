@@ -65,6 +65,15 @@
           <Category>DisksAnalysis</Category>
         </And>
       </Include>
+    <Menu>
+      <Name>Bitlocker</Name>
+      <Directory>kaisenlinux-bitlocker.directory</Directory>
+      <Include>
+        <And>
+          <Category>Bitlocker</Category>
+        </And>
+      </Include>
+    </Menu>
     </Menu>
     <Menu>
       <Name>USB boot</Name>
@@ -123,6 +132,87 @@
         </And>
       </Include>
     </Menu>
+    <Menu>
+      <Name>SSL</Name>
+      <Directory>kaisenlinux-ssl.directory</Directory>
+      <Include>
+        <And>
+          <Category>SSL</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>TCP</Name>
+      <Directory>kaisenlinux-tcp.directory</Directory>
+      <Include>
+        <And>
+          <Category>TCP</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>DNS</Name>
+      <Directory>kaisenlinux-dns.directory</Directory>
+      <Include>
+        <And>
+          <Category>DNS</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>PCAP</Name>
+      <Directory>kaisenlinux-pcap.directory</Directory>
+      <Include>
+        <And>
+          <Category>PCAP</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>DHCP</Name>
+      <Directory>kaisenlinux-dhcp.directory</Directory>
+      <Include>
+        <And>
+          <Category>DHCP</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>MAC</Name>
+      <Directory>kaisenlinux-mac.directory</Directory>
+      <Include>
+        <And>
+          <Category>MAC</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Scanners</Name>
+      <Directory>kaisenlinux-scanners.directory</Directory>
+      <Include>
+        <And>
+          <Category>Scanner</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>IP</Name>
+      <Directory>kaisenlinux-ip.directory</Directory>
+      <Include>
+        <And>
+          <Category>IP</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Wi-Fi</Name>
+      <Directory>kaisenlinux-wifi.directory</Directory>
+      <Include>
+        <And>
+          <Category>WIFI</Category>
+        </And>
+      </Include>
+    </Menu>
     </Menu>
     <Menu>
       <Name>System</Name>
@@ -151,6 +241,87 @@
           <Category>Services</Category>
         </And>
       </Include>
+    <Menu>
+      <Name>Anydesk</Name>
+      <Directory>kaisenlinux-anydesk.directory</Directory>
+      <Include>
+        <And>
+          <Category>SAnydesk</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Avahi</Name>
+      <Directory>kaisenlinux-avahi.directory</Directory>
+      <Include>
+        <And>
+          <Category>SAvahi</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>ClamAV</Name>
+      <Directory>kaisenlinux-clamav.directory</Directory>
+      <Include>
+        <And>
+          <Category>SClamAV</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Cups</Name>
+      <Directory>kaisenlinux-cups.directory</Directory>
+      <Include>
+        <And>
+          <Category>SCups</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Docker</Name>
+      <Directory>kaisenlinux-docker.directory</Directory>
+      <Include>
+        <And>
+          <Category>SDocker</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>OpenVPN</Name>
+      <Directory>kaisenlinux-openvpn.directory</Directory>
+      <Include>
+        <And>
+          <Category>SOpenVPN</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Rsync</Name>
+      <Directory>kaisenlinux-rsync.directory</Directory>
+      <Include>
+        <And>
+          <Category>SRsync</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>Smartmontools</Name>
+      <Directory>kaisenlinux-smartmontools.directory</Directory>
+      <Include>
+        <And>
+          <Category>SSmartmontools</Category>
+        </And>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>TeamViewer</Name>
+      <Directory>kaisenlinux-teamviewer.directory</Directory>
+      <Include>
+        <And>
+          <Category>STeamViewer</Category>
+        </And>
+      </Include>
+    </Menu>
     </Menu>
     </Menu>
 

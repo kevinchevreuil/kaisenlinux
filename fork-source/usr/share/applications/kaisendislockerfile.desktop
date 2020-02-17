@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=dislocker-file
+Name[fr]=dislocker-file
+Comment=Tool for bitlocker disk
+Comment[fr]=Outil pour les disques bitlocker
+Exec=terminator -e "zsh -c 'dislocker-file;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Bitlocker
+

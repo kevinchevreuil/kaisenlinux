@@ -3,5 +3,5 @@ Name=User applications
 Name[fr]=Applications utilisateur
 Comment=User applications section (internet, music and more...)
 Comment[fr]=Section des applications utilisateur (musique, internet et autres...)
-Icon=debian
+Icon=kaisen
 Type=Directory

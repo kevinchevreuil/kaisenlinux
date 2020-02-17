@@ -10,4 +10,4 @@ Icon=/usr/share/zenmap/pixmaps/zenmap.png
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=NetworkSecurity
+Categories=Scanner

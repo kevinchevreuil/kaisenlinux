@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DHCP
+Name[fr]=DHCP
+Comment=Tools for DHCP protocol
+Comment[fr]=Outils pour le protocole DHCP
+Icon=router
+Type=Directory
+
