@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=lmsensors-disable
+Name[fr]=lmsensors-désactivé
+Comment=Disable lmsensors daemon
+Comment[fr]=Désactiver service lmsensors
+Exec=terminator -e "zsh -c '/opt/services/lmsensors-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SLMSensors

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Services
+Name[fr]=Services
+Comment=Section for control all additionnals services
+Comment[fr]=Section pour contrôler tous les services additionnels
+Icon=kaisen
+Type=Directory
+

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Htop
+Name[fr]=Htop
+Comment=Tool for viewing processus in real time
+Comment[fr]=Outil pour voir les processus en temps réel
+Exec=terminator -e "zsh -c 'htop;/bin/zsh'"
+Icon=htop
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SystemSecurity

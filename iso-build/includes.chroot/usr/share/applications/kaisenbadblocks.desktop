@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=badblocks
+Name[fr]=badblocks
+Comment=Tool for bad clusters analyse in HDD or SSD 
+Comment[fr]=Outil pour analyser les clusters défectueux sur un HDD ou SSD
+Exec=terminator -e "zsh -c 'sudo badblocks;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis

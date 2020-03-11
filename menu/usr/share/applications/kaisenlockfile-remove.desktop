@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=lockfile-remove
+Name[fr]=lockfile-remove
+Comment=Tool for remove protected file
+Comment[fr]=Outil pour supprimer un fichier protégé
+Exec=terminator -e "zsh -c 'lockfile-remove;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Dataprotection
+

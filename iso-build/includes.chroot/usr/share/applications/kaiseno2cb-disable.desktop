@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=o2cb-disable
+Name[fr]=o2cb-désactivé
+Comment=Disable o2cb daemon
+Comment[fr]=Désactiver service o2cb
+Exec=terminator -e "zsh -c '/opt/services/o2cb-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SOCFS2

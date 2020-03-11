@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ocfs2-enable
+Name[fr]=ocfs2-activé
+Comment=Enable ocfs2 daemon
+Comment[fr]=Activer service ocfs2
+Exec=terminator -e "zsh -c '/opt/services/ocfs2-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SOCFS2

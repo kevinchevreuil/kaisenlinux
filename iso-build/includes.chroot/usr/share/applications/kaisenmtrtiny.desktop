@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mtr
+Name[fr]=mtr
+Comment=Traceroute with ncurses librairies
+Comment[fr]=Traceroute avec des librairies ncurses
+Exec=terminator -e "zsh -c 'mtr;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Scanner

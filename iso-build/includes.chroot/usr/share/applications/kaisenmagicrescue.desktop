@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=magicrescue
+Name[fr]=magicrescue
+Comment=Tool for recovery datas with magicals bytes
+Comment[fr]=Outil pour récupérer des données avec les octets magiques
+Exec=terminator -e "zsh -c 'magicrescue;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery
+

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ntpdate
+Name[fr]=ntpdate
+Comment=Tool for update time and date
+Comment[fr]=Outil pour mettre à jour la date et l'heure
+Exec=terminator -e "zsh -c 'sudo ntpdate;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

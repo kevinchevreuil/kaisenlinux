@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=hwinfo
+Name[fr]=hwinfo
+Comment=Tool for get hardware informations
+Comment[fr]=Outil pour obtenir les informations matérielles
+Exec=terminator -e "zsh -c 'sudo hwinfo;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware

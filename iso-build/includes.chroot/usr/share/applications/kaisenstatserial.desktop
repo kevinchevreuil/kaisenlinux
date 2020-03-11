@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=statserial
+Name[fr]=statserial
+Comment=Tool for display port console informations
+Comment[fr]=Outil pour afficher les informations du port console
+Exec=terminator -e "zsh -c 'sudo statserial;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ConsolePort
+

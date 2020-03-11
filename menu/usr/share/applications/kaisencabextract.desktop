@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cabextract
+Name[fr]=cabextract
+Comment=Tool for extrate .cab file
+Comment[fr]=Outil pour extraire les fichiers .cab
+Exec=terminator -e "zsh -c 'cabextract --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Microsoft

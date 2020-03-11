@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=iperf3
+Name[fr]=iperf3
+Comment=Tool for analyse network perfs
+Comment[fr]=Outil pour analyser les performances réseau
+Exec=terminator -e "zsh -c 'iperf --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Monitoring

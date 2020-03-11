@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+rm /boot/config-4.19.0-8-amd64
+rm /boot/initrd.img-4.19.0-8-amd64
+rm /boot/System.map-4.19.0-8-amd64
+rm /boot/vmlinuz-4.19.0-8-amd64
+rm -rvf /usr/src/linux-headers-4.19.0-8-amd64
+rm -rvf /usr/src/linux-headers-4.19.0-8-common
+rm -rvf /usr/src/linux-kbuild-4.19
+dpkg -i /var/cache/apt/archives/linux-image-5.4.24-kaisenlinux_1.0_amd64.deb
+dpkg -i /var/cache/apt/archives/linux-headers-5.4.24-kaisenlinux_1.0_amd64.deb
+cd /
+rm -f initrd.img
+rm -f initrd.img.old
+rm -f vmlinuz
+rm -f vmlinuz.old
+ln -s boot/initrd.img-5.4.24-kaisenlinux initrd.img
+ln -s boot/initrd.img-5.4.24-kaisenlinux initrd.img.old
+ln -s boot/vmlinuz-5.4.24-kaisenlinux vmlinuz
+ln -s boot/vmlinuz-5.4.24-kaisenlinux vmlinuz.old

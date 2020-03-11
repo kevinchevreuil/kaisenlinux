@@ -1,0 +1,11 @@
+[Image]
+Architecture: amd64
+Archive-Areas: main contrib non-free
+Distribution-Chroot: buster
+Distribution-Binary: buster
+Mirror-Bootstrap: http://deb.debian.org/debian/
+
+[FIXME]
+Configuration-Version: 1:20191221
+Name: kaisenlinux20200307
+Type: iso-hybrid

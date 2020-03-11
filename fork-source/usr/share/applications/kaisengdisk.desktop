@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gdisk
+Name[fr]=gdisk
+Comment=Tool for manipulate GPT partitions
+Comment[fr]=Outil pour manipuler les partitions GPT
+Exec=terminator -e "zsh -c sudo gdisk;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Partitioning
+

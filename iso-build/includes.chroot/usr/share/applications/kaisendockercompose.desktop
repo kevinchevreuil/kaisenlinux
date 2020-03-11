@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=docker-compose
+Name[fr]=docker-compose
+Comment=Development environement for Linux containers
+Comment[fr]=Environnement de développement pour les conteneurs Linux
+Exec=terminator -e "zsh -c 'sudo docker-compose --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Docker

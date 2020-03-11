@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=baculafd-disable
+Name[fr]=baculafd-désactivé
+Comment=Disable baculafd daemon
+Comment[fr]=Désactiver service baculafd
+Exec=terminator -e "zsh -c '/opt/services/baculafd-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SBacula

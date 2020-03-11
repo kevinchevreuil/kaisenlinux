@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=lFTP
+Name[fr]=lFTP
+Comment=FTP CLI client 
+Comment[fr]=Client FTP CLI
+Exec=terminator -e "zsh -c 'lftp;/bin/zsh'"
+Icon=lftp-icon
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=FTP

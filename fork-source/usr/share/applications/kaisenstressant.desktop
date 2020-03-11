@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=stressant
+Name[fr]=stressant
+Comment=Tool for stress test hardware
+Comment[fr]=Outil pour faire un stress test du matériel
+Exec=terminator -e "zsh -c 'sudo stressant --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware

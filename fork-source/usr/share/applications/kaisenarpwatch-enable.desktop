@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=arpwatch-enable
+Name[fr]=arpwatch-activé
+Comment=Enable arpwatch daemon
+Comment[fr]=Activer service arpwatch
+Exec=terminator -e "zsh -c '/opt/services/arpwatch-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SArpwatch
+

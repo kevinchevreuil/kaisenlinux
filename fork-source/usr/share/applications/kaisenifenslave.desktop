@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ifenslave
+Name[fr]=ifenslave
+Comment=Tool for create slave network
+Comment[fr]=Outil pour créer un réseau esclave
+Exec=terminator -e "zsh -c 'sudo ifenslave -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=irqbalance-disable
+Name[fr]=irqbalance-désactivé
+Comment=Disable irqbalance daemon
+Comment[fr]=Désactiver service irqbalance
+Exec=terminator -e "zsh -c '/opt/services/irqbalance-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Sirqbalance

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=arpalert
+Name[fr]=arpalert
+Comment=Tool for alert receive arp protocol
+Comment[fr]=Outil pour recevoir des alertes sur le protocole ARP
+Exec=terminator -e "zsh -c 'sudo arpalert --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MAC
+

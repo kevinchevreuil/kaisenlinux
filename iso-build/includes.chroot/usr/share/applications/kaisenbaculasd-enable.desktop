@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=baculasd-enable
+Name[fr]=baculasd-activé
+Comment=Enable bacula daemon
+Comment[fr]=Activer service bacula
+Exec=terminator -e "zsh -c '/opt/services/baculasd-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SBacula

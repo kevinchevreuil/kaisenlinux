@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=udp-receiver
+Name[fr]=udp-receiver
+Comment=Tool for receive udp packets
+Comment[fr]=Outil pour recevoir des paquets udp
+Exec=terminator -e "zsh -c 'udp-receiver;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=UDP

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=iptstate
+Name[fr]=iptstate
+Comment=Tool for display iptables rules
+Comment[fr]=Outil pour afficher les règles iptables
+Exec=terminator -e "zsh -c 'sudo iptstate;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Firewall

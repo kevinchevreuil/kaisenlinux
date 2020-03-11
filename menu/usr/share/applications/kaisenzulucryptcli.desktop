@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zuluCryptCLI
+Name[fr]=zuluCryptCLI
+Comment=Tool for crypt disk
+Comment[fr]=Outil pour chiffrer des disques
+Icon=zuluCrypt.xpm
+Exec=terminator -e "zsh -c 'sudo zuluCrypt-cli;/bin/zsh'"
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Dataprotection

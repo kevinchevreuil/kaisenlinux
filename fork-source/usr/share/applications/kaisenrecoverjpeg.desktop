@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=recoverjpeg
+Name[fr]=recoverjpeg
+Comment=Tool for recover jpeg pictures
+Comment[fr]=Outil pour récupérer desimages jpeg
+Exec=terminator -e "zsh -c 'recoverjpeg;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery

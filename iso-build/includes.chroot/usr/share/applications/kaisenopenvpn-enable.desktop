@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=openvpn-enable
+Name[fr]=openvpn-activé
+Comment=Enable openvpn daemon
+Comment[fr]=Activer service openvpn
+Exec=terminator -e "zsh -c '/opt/services/openvpn-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SOpenVPN

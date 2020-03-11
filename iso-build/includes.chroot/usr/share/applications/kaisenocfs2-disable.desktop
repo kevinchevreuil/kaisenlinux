@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ocfs2-disable
+Name[fr]=ocfs2-désactivé
+Comment=Disable ocfs2 daemon
+Comment[fr]=Désactiver service ocfs2   
+Exec=terminator -e "zsh -c '/opt/services/ocfs2-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SOCFS2

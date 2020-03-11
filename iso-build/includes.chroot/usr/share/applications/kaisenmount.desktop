@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mount
+Name[fr]=mount 
+Comment=Tool for mount filesystems
+Comment[fr]=Outil pour monter des systèmes de fichiers
+Exec=terminator -e "zsh -c 'mount -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Mount

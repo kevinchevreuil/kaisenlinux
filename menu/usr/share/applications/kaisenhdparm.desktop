@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=hdparm
+Name[fr]=hdparm
+Comment=Tool for get informations at hard drive
+Comment[fr]=Outil pour obtenir des informations sur un disque dur
+Exec=terminator -e "zsh -c 'sudo hdparm;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis
+

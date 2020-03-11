@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ssh-disable
+Name[fr]=ssh-désactivé
+Comment=Disable ssh daemon
+Comment[fr]=Désactiver service ssh
+Exec=terminator -e "zsh -c '/opt/services/ssh-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SSSH

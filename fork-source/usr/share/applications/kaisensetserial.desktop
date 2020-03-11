@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=setserial
+Name[fr]=setserial
+Comment=Tool for display informations in console port
+Comment[fr]=Outil pour afficher les informations sur le port console
+Exec=terminator -e "zsh -c 'setserial;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ConsolePort

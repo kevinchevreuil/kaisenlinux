@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=o2cb-enable
+Name[fr]=o2cb-activé
+Comment=Enable o2cb daemon
+Comment[fr]=Activer service o2cb   
+Exec=terminator -e "zsh -c '/opt/services/o2cb-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SOCFS2

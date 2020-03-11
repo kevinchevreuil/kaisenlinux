@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Ethernet
+Name[fr]=Ethernet
+Comment=Tools for Ethernet protocol analysis
+Comment[fr]=Outils pour analyser le protocole Ethernet
+Icon=router
+Type=Directory

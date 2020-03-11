@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=smartmontools-enable
+Name[fr]=smartmontools-activé
+Comment=Enable smartmontools daemon
+Comment[fr]=Activer service smartmontools
+Exec=terminator -e "zsh -c '/opt/services/smartmontools-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SSmartmontools

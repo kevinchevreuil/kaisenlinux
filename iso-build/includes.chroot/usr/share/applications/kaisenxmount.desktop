@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=xmount
+Name[fr]=xmount
+Comment=Tool for mount fuse drivers
+Comment[fr]=Outil pour monter des drivers fuse
+Exec=terminator -e "zsh -c 'sudo xmount;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Mount

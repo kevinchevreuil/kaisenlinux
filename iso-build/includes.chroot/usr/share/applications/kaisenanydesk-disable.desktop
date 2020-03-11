@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=anydesk-disable
+Name[fr]=anydesk-désactivé
+Comment=Disable anydesk daemon
+Comment[fr]=Désactiver service anydesk
+Exec=terminator -e "zsh -c '/opt/services/anydesk-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SAnydesk

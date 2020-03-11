@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=USB boot
-Name[fr]=Démarrage USB
-Comment=Tools for create bootable USB 
-Comment[fr]=Outils pour créer des clés USB bootables 
-Icon=usbboot
-Type=Directory

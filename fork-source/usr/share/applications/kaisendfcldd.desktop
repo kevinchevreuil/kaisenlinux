@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=dcfldd
+Name[fr]=dcfldd
+Comment=Tool for cloning ext4 partitions and USB bootable create (dd amelioration)
+Comment[fr]=Outil pour le clonage de partitons ext4 et la création de clé USB bootable (amélioration de dd)
+Exec=terminator -e "zsh -c 'dcfldd --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Cloning;USBBoot;Partitioning

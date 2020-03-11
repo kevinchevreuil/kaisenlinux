@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=zuluMountGUI
+Name[fr]=zuluMountGUI
+Comment=Encrypted volumes and partition mounter
+Comment[fr]=Volumes chiffrés et partitions montées
+Icon=zuluMount.xpm
+Exec=sh -c "gksudo zuluMount-gui"
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Mount

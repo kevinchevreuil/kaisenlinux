@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=p7zip-full
+Name[fr]=p7zip-full
+Comment=Tool for archive and decompress 7z archives
+Comment[fr]=Outil pour archiver et décompresser des archives 7z
+Exec=terminator -e "zsh -c '7z;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ZIP

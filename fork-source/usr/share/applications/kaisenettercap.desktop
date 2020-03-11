@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Ettercap
+Name[fr]=Ettercap
+Comment=Multipurpose Network sniffer/analyser/interceptor/logger
+Comment[fr]=Sniffer/Analyser/Intercepteur/Logger Réseau
+Exec=ettercap-pkexec -G
+Icon=ettercap
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Scanner

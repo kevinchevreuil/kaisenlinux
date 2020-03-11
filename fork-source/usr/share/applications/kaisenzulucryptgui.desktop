@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zuluCryptGUI
+Name[fr]=zuluCryptGUI
+Comment=Graphical front end for zulucrypt-cli
+Comment[fr]=Interface graphique pour zulucrypt-cli
+Icon=zuluCrypt.xpm
+Exec=sh -c "gksudo zuluCrypt-gui"
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Dataprotection

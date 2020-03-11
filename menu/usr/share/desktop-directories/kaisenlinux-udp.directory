@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=UDP
+Name[fr]=UDP
+Comment=Tools for UDP protocol
+Comment[fr]=Outils pour le protocole UDP
+Icon=router
+Type=Directory

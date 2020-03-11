@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=lockfile-touch
+Name[fr]=lockfile-touch
+Comment=Tool for protected datas with lockfile
+Comment[fr]=Outil pour les fichiers protégés avec lockfile
+Exec=terminator -e "zsh -c 'lockfile-touch;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Dataprotection

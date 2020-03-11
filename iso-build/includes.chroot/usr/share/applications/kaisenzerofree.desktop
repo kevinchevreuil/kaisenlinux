@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zerofree
+Name[fr]=zerofree
+Comment=Tool for reallocate sector in ext partitions
+Comment[fr]=Outil pour reallouer les secteurs sur les partitions ext
+Exec=terminator -e "zsh -c 'sudo zerofree;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Partitioning

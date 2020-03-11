@@ -1,0 +1,154 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+  <Name>Control Center</Name>
+  <Directory>matecc.directory</Directory>
+
+  <!-- Read standard .directory and .desktop file locations -->
+  <DefaultAppDirs/>
+  <DefaultDirectoryDirs/>
+
+  <!-- Read in overrides and child menus from matecc-merged/ -->
+  <DefaultMergeDirs/>
+
+   <!-- Sort the control center categories -->
+   <Layout>
+     <Menuname>Administration</Menuname>
+     <Menuname>Hardware</Menuname>
+     <Menuname>Internet and Network</Menuname>
+     <Menuname>Look and Feel</Menuname>
+     <Menuname>Personal</Menuname>
+     <Menuname>Universal Access</Menuname>
+     <Merge type="all" />
+   </Layout>
+
+  <!-- Define what appears in the Other category -->
+  <Include>
+    <And>
+      <Category>Settings</Category>
+      <Not><Category>Accessibility</Category></Not>
+      <Not><Category>System</Category></Not>
+      <Not><Category>DesktopSettings</Category></Not>
+      <Not><Category>HardwareSettings</Category></Not>
+      <Not><Category>Security</Category></Not>
+      <Not><Category>Archiving</Category></Not>
+      <Not><Category>Qt</Category></Not>
+      <Not><Category>X-MATE-NetworkSettings</Category></Not>
+      <Not><Category>X-GNOME-NetworkSettings</Category></Not>
+      <Not><Category>X-MATE-PersonalSettings</Category></Not>
+      <Not><Category>X-GNOME-PersonalSettings</Category></Not>
+    </And>
+  </Include>
+  <Exclude>
+    <Filename>matecc.desktop</Filename>
+  </Exclude>
+
+  <!-- Avoid the shell having a launcher for itself -->
+  <Exclude>
+    <Filename>matecc.desktop</Filename>
+  </Exclude>
+
+  <!-- Administration category -->
+  <Menu>
+    <Name>Administration</Name>
+    <Directory>mate-settings-system.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Category>System</Category>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>System</Category>
+        <Category>Printing</Category>
+      </And>
+    </Include>
+  </Menu> <!-- End Administration -->
+
+  <!-- Hardware category -->
+  <Menu>
+    <Name>Hardware</Name>
+    <Directory>mate-hardware.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Category>HardwareSettings</Category>
+        <Not><Category>System</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Hardware -->
+
+  <!-- Internet and Network category -->
+  <Menu>
+    <Name>Internet and Network</Name>
+    <Directory>mate-internet-and-network.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Category>X-MATE-NetworkSettings</Category>
+        <Not><Category>System</Category></Not>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>X-GNOME-NetworkSettings</Category>
+        <Not><Category>System</Category></Not>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>Security</Category>
+        <Not><Category>System</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Internet and Network -->
+
+  <!-- Look and Feel category -->
+  <Menu>
+    <Name>Look and Feel</Name>
+    <Directory>mate-look-and-feel.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Category>DesktopSettings</Category>
+        <Not><Category>System</Category></Not>
+        <Not><Category>Security</Category></Not>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>Qt</Category>
+        <Not><Category>System</Category></Not>
+        <Not><Category>Security</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Look and Feel category -->
+
+
+  <!-- Personal category -->
+  <Menu>
+    <Name>Personal</Name>
+    <Directory>mate-personal.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Category>X-MATE-PersonalSettings</Category>
+        <Not><Category>System</Category></Not>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>X-GNOME-PersonalSettings</Category>
+        <Not><Category>System</Category></Not>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>X-GNOME-SystemSettings</Category>
+        <Category>Archiving</Category>
+      </And>
+      <And>
+        <Category>Settings</Category>
+        <Category>Accessibility</Category>
+        <Not><Category>Utility</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Personal -->
+
+</Menu> <!-- End CC -->

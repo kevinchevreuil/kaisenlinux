@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cups-browsed-enable
+Name[fr]=cups-browsed-activé
+Comment=Enable cups-browsed
+Comment[fr]=Activer cups-browsed
+Exec=terminator -e "zsh -c '/opt/services/cups-browsed-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SCups

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=SSH
+Name[fr]=SSH
+Comment=SSH service
+Comment[fr]=Service SSH
+Icon=kaisen
+Type=Directory

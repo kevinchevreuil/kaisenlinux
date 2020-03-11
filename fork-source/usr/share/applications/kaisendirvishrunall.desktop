@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=dirvish-runall
+Name[fr]=dirvish-runall
+Comment=Tool for backup filesystem
+Comment[fr]=Outil pour sauvegarder un système de fichiers
+Exec=terminator -e "zsh -c 'sudo dirvish-runall;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Dirvish
+

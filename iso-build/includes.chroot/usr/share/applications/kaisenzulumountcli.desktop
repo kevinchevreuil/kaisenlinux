@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zuluMountCLI
+Name[fr]=zuluMountCLI
+Comment=Encrypted volumes and partition mounter
+Comment[fr]=Volumes chiffrés et partitions montées
+Icon=zuluMount.xpm
+Exec=terminator -e "zsh -c 'sudo zuluMount-cli;/bin/zsh'"
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Mount

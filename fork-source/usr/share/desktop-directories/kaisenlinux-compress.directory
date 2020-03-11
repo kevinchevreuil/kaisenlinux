@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Compress/Decompress
+Name[fr]=Compression/Décompression
+Comment=Tools for compress or decompress file and folder
+Comment[fr]=Outils pour compresser et décompresser des fichiers et dossiers
+Icon=compress
+Type=Directory

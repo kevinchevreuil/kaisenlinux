@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=file
+Name[fr]=file
+Comment=Tool for analyse content file
+Comment[fr]=Outil pour analyser le contenu d'un fichier
+Exec=terminator -e "zsh -c 'file;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Analysis

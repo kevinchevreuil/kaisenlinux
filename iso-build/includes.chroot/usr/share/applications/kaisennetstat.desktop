@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=netstat
+Name[fr]=netstat
+Comment=Tool for listing internet active connections
+Comment[fr]=Outil pour lister les connexions internet actives
+Exec=terminator -e "zsh -c 'netstat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=TCP

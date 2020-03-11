@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=hostapd-enable
+Name[fr]=hostapd-activé
+Comment=Enable hostapd daemon
+Comment[fr]=Activer service hostapd
+Exec=terminator -e "zsh -c '/opt/services/hostapd-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SHostapd
+

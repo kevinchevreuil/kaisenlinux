@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+
+systemctl disable anydesk
+systemctl disable arpwatch
+systemctl disable avahi-daemon
+systemctl disable bacula-fd
+systemctl disable bacula-sd
+systemctl disable clamav-daemon
+systemctl disable clamav-freshclam
+systemctl disable cups-browsed
+systemctl disable cups
+systemctl disable docker
+systemctl disable etc-setserial
+systemctl disable hostapd
+systemctl disable irqbalance
+systemctl disable lm-sensors
+systemctl disable ntp
+systemctl disable o2cb
+systemctl disable ocfs2
+systemctl disable openvpn
+systemctl disable rsync
+systemctl disable setserial
+systemctl disable ssh
+systemctl disable sysstat
+systemctl disable smartmontools
+systemctl disable teamviewerd

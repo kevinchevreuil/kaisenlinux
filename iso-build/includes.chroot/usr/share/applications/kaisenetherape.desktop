@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=EtherApe
+Name[fr]=EtherApe
+Comment=Graphical Network Monitor
+Comment[fr]=Surveillance graphique du réseau
+Exec=sh -c "gksudo etherape"
+Terminal=false
+Type=Application
+Icon=etherape
+StartupNotify=true
+Categories=Monitoring

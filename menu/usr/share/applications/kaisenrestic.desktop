@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=restic
+Name[fr]=restic
+Comment=Backup tool with versioning
+Comment[fr]=Outil de sauvegarde avec versioning
+Exec=terminator -e "zsh -c 'restic;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Backup

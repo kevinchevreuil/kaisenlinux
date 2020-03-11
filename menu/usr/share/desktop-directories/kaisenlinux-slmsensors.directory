@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=LMSensors
+Name[fr]=LMSensors
+Comment=lm-sensors service
+Comment[fr]=Service lm-sensors
+Icon=kaisen
+Type=Directory

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=unzip
+Name[fr]=unzip
+Comment=Tool for decompress zip file
+Comment[fr]=Outil pour décompresser les fichiers zip
+Exec=terminator -e "zsh -c 'unzip;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ZIP

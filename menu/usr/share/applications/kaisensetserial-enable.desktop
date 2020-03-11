@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=setserial-enable
+Name[fr]=setserial-activé
+Comment=Enable setserial daemon
+Comment[fr]=Activer service setserial
+Exec=terminator -e "zsh -c '/opt/services/setserial-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SSetSerial

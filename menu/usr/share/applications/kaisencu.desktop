@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cu
+Name[fr]=cu
+Comment=Tool for connecting at another system
+Comment[fr]=Outil pour se connecter sur un autre système
+Exec=terminator -e "zsh -c 'cu --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ConsolePort

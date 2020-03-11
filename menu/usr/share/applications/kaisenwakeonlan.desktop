@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=wakeonlan
+Name[fr]=wakeonlan
+Comment=Tool for send magics packages for Ethernet adaptators
+Comment[fr]=Outil pour envoyer des paquets magiques sur les adaptateurs Ethernet
+Exec=terminator -e "zsh -c 'wakeonlan -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity

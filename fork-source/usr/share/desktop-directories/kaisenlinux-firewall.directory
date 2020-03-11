@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Firewall
+Name[fr]=Firewall
+Comment=Tools for firewalling
+Comment[fr]=Outils de pare-feu
+Icon=firewall
+Type=Directory

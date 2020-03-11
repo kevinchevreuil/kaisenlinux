@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ssmping
+Name[fr]=ssmping
+Comment=Tool for testing multicast diffusion
+Comment[fr]=Outil pour tester la connectivité multi-diffusion
+Exec=terminator -e "zsh -c 'ssmping;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=TCP
+

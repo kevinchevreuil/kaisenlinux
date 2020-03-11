@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=tcptraceroute
+Name[fr]=tcptraceroute
+Comment=Tool for implementation TCP protocol in traceroute
+Comment[fr]=Outil pou l'implementation du protocole TCP sur traceroute
+Exec=terminator -e "zsh -c 'tcptraceroute;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=TCP

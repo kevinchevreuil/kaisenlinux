@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gpart
+Name[fr]=gpart
+Comment=Tool for analyse lost partition disks 
+Comment[fr]=Outil pour analyser les partitions disques perdues
+Exec=terminator -e "zsh -c 'sudo gpart;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis
+

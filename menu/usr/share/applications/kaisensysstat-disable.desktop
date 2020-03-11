@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=sysstat-disable
+Name[fr]=sysstat-désactivé
+Comment=Disable sysstat daemon
+Comment[fr]=Désactiver service sysstat
+Exec=terminator -e "zsh -c '/opt/services/sysstat-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SSysstat

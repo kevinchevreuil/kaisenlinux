@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=hostapd
+Name[fr]=hostapd
+Comment=Tool for AP create and management 
+Comment[fr]=Outil pour créer et manager les AP
+Exec=terminator -e "zsh -c 'sudo hostapd;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=WIFI

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=pcapfix
+Name[fr]=pcapfix
+Comment=Tool for repair broken pcap files 
+Comment[fr]=Outil pour réparer les fichiers pcap cassés
+Exec=terminator -e "zsh -c 'pcapfix;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=PCAP

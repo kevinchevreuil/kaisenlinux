@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=flashrom
+Name[fr]=flashrom
+Comment=Tool for manipulate BIOS firmware
+Comment[fr]=Outil pour manipuler le BIOS
+Exec=terminator -e "zsh -c 'sudo flashrom --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware
+

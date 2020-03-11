@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=bonnie++
+Name[fr]=bonnie++
+Comment=Tool for disk performance analysis
+Comment[fr]=Outil d'analyse de performance de disque
+Exec=terminator -e "zsh -c 'sudo bonnie++;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis

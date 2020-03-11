@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=tshark
+Name[fr]=tshark
+Comment=Tool for capture packet 
+Comment[fr]=Outil pour faire de la capture de paquets
+Exec=terminator -e "zsh -c 'sudo tshark;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=PCAP

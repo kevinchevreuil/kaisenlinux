@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=arp-scan
+Name[fr]=arp-scan
+Comment=Tool for scan arp protocol
+Comment[fr]=Outil pour scanner le protocole ARP
+Exec=terminator -e "zsh -c 'sudo arp-scan --help;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MAC

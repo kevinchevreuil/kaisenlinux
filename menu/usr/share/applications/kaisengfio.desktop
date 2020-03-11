@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gfio
+Name[fr]=gfio
+Comment=Tool for testing E/S (fio GUI)
+Comment[fr]=Outil pour tester E/S (fio GUI)
+Exec=gfio
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware
+

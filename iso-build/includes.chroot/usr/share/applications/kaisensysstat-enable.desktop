@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=sysstat-enable
+Name[fr]=sysstat-activé
+Comment=Enable sysstat daemon
+Comment[fr]=Activer service sysstat
+Exec=terminator -e "zsh -c '/opt/services/sysstat-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SSysstat

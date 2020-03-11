@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=driftnet
+Name[fr]=drifnet
+Comment=Tool for sniffing wifi trafic
+Comment[fr]=Outil pour scanner le trafic wifi
+Exec=sh -c "gksudo driftnet"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Scanner

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Bacula Administration Tool
+Name[fr]=Bacula Administration Tool
+Comment=Bacula Director Console
+Comment[fr]=Bacula Console Directeur
+Exec=/usr/sbin/bat -c /etc/bacula/bat.conf
+Icon=/usr/share/pixmaps/bat_icon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Backup

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=arping
+Name[fr]=arping
+Comment=Tool for ping ARP address
+Comment[fr]=Outil pour pinger une adresse ARP
+Exec=terminator -e "zsh -c 'arping;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MAC

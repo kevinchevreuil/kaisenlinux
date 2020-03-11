@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fio
+Name[fr]=fio
+Comment=Tool for testing E/S
+Comment[fr]=Outil pour tester E/S
+Exec=terminator -e "zsh -c 'fio;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware
+

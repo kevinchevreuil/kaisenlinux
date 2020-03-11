@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Mount
+Name[fr]=Montage
+Comment=Tools for mount filesystems
+Comment[fr]=Outils pour monter des systèmes de fichiers
+Icon=mount
+Type=Directory

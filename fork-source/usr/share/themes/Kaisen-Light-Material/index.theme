@@ -9,5 +9,5 @@ Encoding=UTF-8
 GtkTheme=Kaisen-Light-Material
 MetacityTheme=Kaisen-Light-Material
 IconTheme=Kaisen-MATE
-CursorTheme=Kaisen
+CursorTheme=Adwaita
 ButtonLayout=menu:minimize,maximize,close

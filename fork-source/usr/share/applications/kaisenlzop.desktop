@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=lzop
+Name[fr]=lzop
+Comment=Similar gzip tool
+Comment[fr]=Outil similaire à gzip
+Exec=terminator -e "zsh -c 'lzop;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ZIP

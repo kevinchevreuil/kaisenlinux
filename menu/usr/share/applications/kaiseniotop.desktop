@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=iotop
+Name[fr]=iotop
+Comment=Tool for display network process
+Comment[fr]=Outil pour afficher les processus réseaux
+Exec=terminator -e "zsh -c 'sudo iotop;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Monitoring
+

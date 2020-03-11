@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=KeePassXC
+Name[fr]=KeePassXC
+Comment=Community-driven port of the Windows application “KeePass Password Safe”
+Comment[fr]=Port du logiciel KeePass de Windows
+Exec=keepassxc %f
+TryExec=keepassxc
+Icon=keepassxc
+StartupWMClass=keepassxc
+Terminal=false
+Type=Application
+Version=1.0
+Categories=Passwords
+MimeType=application/x-keepass2;

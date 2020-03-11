@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=FileZilla
+Name[fr]=Filezilla
+Comment=Download and upload files via FTP, FTPS and SFTP
+Comment[fr]=Transférer des fichiers via FTP, FTPS et SFTP
+Exec=filezilla
+Terminal=false
+Icon=filezilla
+Type=Application
+StartupNotify=true
+Categories=FTP

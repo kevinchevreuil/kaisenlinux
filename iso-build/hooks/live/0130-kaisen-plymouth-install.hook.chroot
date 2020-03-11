@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+rm -f /usr/share/plymouth/themes/futureprototype/logo_circle.png
+rm -f /usr/share/plymouth/themes/futureprototype/debian.png
+rm -f /usr/share/plymouth/themes/futureprototype/plymouth_background_future.png
+plymouth-set-default-theme -R futureprototype

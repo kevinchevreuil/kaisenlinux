@@ -10,5 +10,4 @@ Icon=gftp.png
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=SystemSecurity
-
+Categories=FTP

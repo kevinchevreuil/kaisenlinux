@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=dstat
+Name[fr]=dstat
+Comment=Tool for analyse ressource
+Comment[fr]=Outil pour analyser les ressources systèmes
+Exec=terminator -e "zsh -c 'dstat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Analysis
+

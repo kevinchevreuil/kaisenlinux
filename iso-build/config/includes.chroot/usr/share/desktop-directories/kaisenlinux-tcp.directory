@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=TCP
-Name[fr]=TCP
-Comment=Tools for TCP trafic analyse
-Comment[fr]=Outils pour analyser le trafic TCP
-Icon=router
-Type=Directory

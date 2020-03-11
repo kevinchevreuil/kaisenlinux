@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=apg
+Name[fr]=apg
+Comment=Tool for password generator
+Comment[fr]=Outil pour générer des mots de passe
+Exec=terminator -e "zsh -c 'apg -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Passwords
