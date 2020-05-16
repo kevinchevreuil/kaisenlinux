@@ -1,3 +1,5 @@
+#!/usr/bin/env xdg-open
+
 [Desktop Entry]
 Name=fdisk
 Name[fr]=fdisk
@@ -9,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Partitioning
+X-Kaisen-Package=kaisen-partitioning-erase;kaisen-technicians-tools

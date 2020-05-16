@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=nast
+Name[fr]=nast
+Comment=Packets sniffer
+Comment[fr]=Sniffeur de paquets
+Exec=terminator -e "zsh -c 'sudo nast;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Scanner
+X-Kaisen-Package=nast;kaisen-network-tools

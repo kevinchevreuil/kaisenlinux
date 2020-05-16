@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=crack
+Name[fr]=crack
+Comment=Tool for cracking password
+Comment[fr]=Outil pour cracker un mot de passe
+Exec=terminator -e "zsh -c 'sudo Crack;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Passwords
+X-Kaisen-Package=crack;kaisen-password-tools;kaisen-technicians-tools

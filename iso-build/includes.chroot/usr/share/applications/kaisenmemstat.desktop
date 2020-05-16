@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=memstat
+Name[fr]=memstat
+Comment=Tool for analyse RAM utilisation
+Comment[fr]=Outil pour analyser l'utilisation de la RAM
+Exec=terminator -e "zsh -c 'memstat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Analysis
+X-Kaisen-Package=kaisen-various-analysis;kaisen-technicians-tools;memstat

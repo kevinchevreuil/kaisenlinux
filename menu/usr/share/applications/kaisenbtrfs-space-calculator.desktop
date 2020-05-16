@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=btrfs-space-calculator
+Name[fr]=btrfs-space-calculator
+Comment=Tool for manage BTRFS
+Comment[fr]=Outil pour gérer BTRFS
+Exec=terminator -e "zsh -c 'btrfs-space-calculator;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=BTRFS
+X-Kaisen-Package=btrfs-progs;kaisen-filesystems

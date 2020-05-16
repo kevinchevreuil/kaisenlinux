@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Partitioning
+X-Kaisen-Package=parted;kaisen-cloning;kaisen-techncians-tools

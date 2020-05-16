@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fsck.reiser4
+Name[fr]=fsck.reiser4
+Comment=Tool for repair REISER4 partition damaged
+Comment[fr]=Outil pour réparer une partition REISER4 endommagée
+Exec=terminator -e "zsh -c 'sudo fsck.reiser4;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=REISER4
+X-Kaisen-Package=kaisen-filesystems;reiser4progs

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Monitoring
+X-Kaisen-Package=iftop;kaisen-network-tools

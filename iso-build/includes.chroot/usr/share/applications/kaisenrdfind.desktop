@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=rdfind
+Name[fr]=rdfind
+Comment=Tool for research duplicates files in directory 
+Comment[fr]=Outil pour rechercher les fichiers dupliqués dans un répertoire
+Exec=terminator -e "zsh -c 'rdfind;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Analysis
+X-Kaisen-Package=rdfind;kaisen-various-analysis;kaisen-technicians-tools

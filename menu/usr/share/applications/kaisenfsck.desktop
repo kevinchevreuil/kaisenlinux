@@ -10,4 +10,4 @@ Icon=utilities-terminal
 Terminal=false
 Type=Application
 Categories=DisksAnalysis
-
+X-Kaisen-Package=kaisen-technicians-tools;kaisen-disks-analysis

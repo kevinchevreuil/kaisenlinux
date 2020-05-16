@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SCups
+X-Kaisen-Package=kaisen-services-management;cups;kaisen-sysadmin-tools

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=recoverdm
+Name[fr]=recoverdm
+Comment=Tool for recovery datas in bad disk sectors
+Comment[fr]=Outil pour récupérer des données sur des diques défectueux
+Exec=terminator -e "zsh -c 'recoverdm;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Recovery
+X-Kaisen-Package=recoverdm;kaisen-technicians-tools;kaisen-data-recovery

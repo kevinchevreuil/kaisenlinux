@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Mount
+X-Kaisen-Package=kaisen-mount;xmount;kaisen-technicians-tools

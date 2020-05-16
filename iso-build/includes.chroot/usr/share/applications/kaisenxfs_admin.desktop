@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=xfs_admin
+Name[fr]=xfs_admin
+Comment=Tool for XFS partition
+Comment[fr]=Outil pour partition XFS
+Exec=terminator -e "zsh -c 'sudo xfs_admin;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=XFS
+X-Kaisen-Package=kaisen-filesystems

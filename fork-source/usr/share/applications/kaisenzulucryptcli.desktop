@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Dataprotection
+X-Kaisen-Package=kaisen-data-protection;zulucrypt-cli;kaisen-technicians-tools

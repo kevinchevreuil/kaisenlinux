@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gfs2fsck
+Name[fr]=gfs2fsck
+Comment=Tool for repair GFS2 partition damaged
+Comment[fr]=Outil pour réparer une partition GFS2 endommagée
+Exec=terminator -e "zsh -c 'sudo gfs2_fsck -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GFS2
+X-Kaisen-Package=kaisen-filesystems

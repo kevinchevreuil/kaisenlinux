@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=btrfs-heatmap
+Name[fr]=btrfs-heatmap
+Comment=Tool for manage BTRFS
+Comment[fr]=Outil pour gérer BTRFS
+Exec=terminator -e "zsh -c 'sudo btrfs-heatmap;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=BTRFS
+X-Kaisen-Package=btrfs-heatmap;kaisen-filesystems

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SLMSensors
+X-Kaisen-Package=kaisen-services-management

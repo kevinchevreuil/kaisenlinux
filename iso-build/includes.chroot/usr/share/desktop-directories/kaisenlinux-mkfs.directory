@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=MKFS
+Name[fr]=MKFS
+Comment=Tools for create filesystems
+Comment[fr]=Outils pour créer des systèmes de fichiers
+Icon=kaisen
+Type=Directory
+

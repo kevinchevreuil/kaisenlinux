@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Passwords
-
+X-Kaisen-Package=crunch;kaisen-technicians-tools;kaisen-password-tools

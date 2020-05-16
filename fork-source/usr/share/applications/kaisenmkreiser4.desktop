@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkreiser4
+Name[fr]=mkreiser4
+Comment=Tool for create REISER4 partition
+Comment[fr]=Outil pour créer une partition REISER4
+Exec=terminator -e "zsh -c 'sudo mkreiser4;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=REISER4
+X-Kaisen-Package=kaisen-filesystems

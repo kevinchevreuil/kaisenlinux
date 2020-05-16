@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=bluetooth-enable
+Name[fr]=bluetooth-activé
+Comment=Enable bluetooth daemon
+Comment[fr]=Activer service bluetooth
+Exec=terminator -e "zsh -c '/opt/services/bluetooth-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SBluetooth
+X-Kaisen-Package=kaisen-services-management

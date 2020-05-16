@@ -3,7 +3,7 @@
 [Desktop Entry]
 Name=iperf
 Name[fr]=iperf
-Comment=Tool for analyse network perfs
+Comment=Tool for analyse network performances
 Comment[fr]=Outil pour analyser les performances réseau
 Exec=terminator -e "zsh -c 'iperf --help;/bin/zsh'"
 Icon=utilities-terminal
@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Monitoring
-
+X-Kaisen-Package=iperf;kaisen-network-tools

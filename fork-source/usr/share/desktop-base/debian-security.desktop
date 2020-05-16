@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.1
-Name=Debian Security Updates
-Comment=Learn about new fixed packages
-Icon=/usr/share/pixmaps/debian-security.png
-Type=Link
-URL=https://www.debian.org/security/

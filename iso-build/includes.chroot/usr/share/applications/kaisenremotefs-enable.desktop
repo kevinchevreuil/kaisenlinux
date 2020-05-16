@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=remotefs-enable
+Name[fr]=remotefs-activé
+Comment=Enable remote-fs daemon
+Comment[fr]=Activer service remote-fs
+Exec=terminator -e "zsh -c '/opt/services/remotefs-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SRemotefs
+X-Kaisen-Package=remote-fs;kaisen-services-management

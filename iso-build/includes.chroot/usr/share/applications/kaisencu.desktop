@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=ConsolePort
+X-Kaisen-Package=cu;kaisen-network-tools

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=WIFI
+X-Kaisen-Package=iw;kaisen-hardware;kaisen-technicians-tools

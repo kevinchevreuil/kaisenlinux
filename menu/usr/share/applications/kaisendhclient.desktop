@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=DHCP
+X-Kaisen-Package=kaisen-network-tools

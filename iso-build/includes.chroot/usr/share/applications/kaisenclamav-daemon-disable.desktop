@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SClamAV
+X-Kaisen-Package=clamav;kaisen-services-management

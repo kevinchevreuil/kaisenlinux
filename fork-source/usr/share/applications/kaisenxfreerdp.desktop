@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=RemoteAdministration
+X-Kaisen-Package=freerdp2-x11; kaisen-sysadmin-tools

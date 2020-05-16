@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=nilfs-resize
+Name[fr]=nilfs-resize
+Comment=Tool for resize NILFS partition
+Comment[fr]=Outil pour redimensionner une partition NILFS
+Exec=terminator -e "zsh -c 'sudo nilfs-resize -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NILFS
+X-Kaisen-Package=kaisen-filesystems

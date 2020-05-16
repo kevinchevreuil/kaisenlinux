@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=IP
+X-Kaisen-Package=ipcalc;kaisen-network-tools

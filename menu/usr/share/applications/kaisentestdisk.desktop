@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=DisksAnalysis
+X-Kaisen-Package=kaisen-testdisk;kaisen-disks-analysis;kaisen-technicians-tools

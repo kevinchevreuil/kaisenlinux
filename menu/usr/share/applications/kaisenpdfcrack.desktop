@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Passwords
+X-Kaisen-Package=pdfcrack;kaisen-password-tools;kaisen-technicians-tools

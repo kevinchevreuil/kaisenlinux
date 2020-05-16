@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Sirqbalance
+X-Kaisen-Package=kaisen-services-management;kaisen-sysadmin-tools;irqblance

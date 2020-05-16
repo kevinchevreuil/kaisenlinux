@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=bruteforce-luks
+Name[fr]=bruteforce-luks
+Comment=Tool for recovery password on luks disk
+Comment[fr]=Outil pour récupérer un mot de passe d'un disque luks
+Exec=terminator -e "zsh -c 'bruteforce-luks;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Passwords
+X-Kaisen-Package=bruteforce-luks;kaisen-password-tools;kaisen-technicians-tools;

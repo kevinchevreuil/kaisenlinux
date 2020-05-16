@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fscrypt
+Name[fr]=fscrypt
+Comment=Tool for encrypted filesystems
+Comment[fr]=Outil pour chiffrer des systèmes de fichiers
+Exec=terminator -e "zsh -c 'fscrypt;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Dataprotection
+X-Kaisen-Package=fscrypt;kaisen-data-protection;kaisen-technicians-tools

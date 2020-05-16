@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Hardware
-
+X-Kaisen-Package=gfio;kaisen-hardware;kaisen-technicians-tools;

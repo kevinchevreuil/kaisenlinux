@@ -10,3 +10,4 @@ Icon=utilities-terminal
 Terminal=false
 Type=Application
 Categories=Cloning;USBBoot;Partitioning
+X-Kaisen-Package=kaisen-usb-boot;kaisen-technicians-tools;dd

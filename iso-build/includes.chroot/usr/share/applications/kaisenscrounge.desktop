@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Recovery
-
+X-Kaisen-Package=scrounge-ntfs;kaisen-data-recovery;kaisen-technicians-tools

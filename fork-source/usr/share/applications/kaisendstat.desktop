@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Analysis
-
+X-Kaisen-Package=dstat;kaisen-various-analysis;kaisen-technicians-tools

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cbm
+Name[fr]=cbm
+Comment=Tool for analyse network speed in real time
+Comment[fr]=Outil pour analyser en temps réel la vitesse réseau
+Exec=terminator -e "zsh -c 'cbm;/bin/zsh'"
+Terminal=false
+Type=Application
+Icon=utilities-terminal
+StartupNotify=true
+Categories=Monitoring
+X-Kaisen-Package=cbm;kaisen-network-tools

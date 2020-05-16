@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=PCAP
+X-Kaisen-Package=ngrep;kaisen-network-tools

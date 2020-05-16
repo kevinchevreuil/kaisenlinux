@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=jfs_debugfs
+Name[fr]=jfs_debugfs
+Comment=Tool for debug JFS partition
+Comment[fr]=Outil pour déboguer une partition JFS
+Exec=terminator -e "zsh -c 'sudo jfs_debugfs;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=JFS
+X-Kaisen-Package=kaisen-filesystems

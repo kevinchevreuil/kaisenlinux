@@ -10,4 +10,4 @@ Terminal=false
 Type=Application
 Categories=Recovery
 StartupNotify=true
-
+X-Kaisen-Package=ddrescue-gui;kaisen-data-recovery;kaisen-technicians-tools

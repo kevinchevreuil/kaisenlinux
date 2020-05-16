@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=sockstat
+Name[fr]=sockstat
+Comment=Tool for analyse active sockets connections
+Comment[fr]=Outil pour analyser les connexions sockets actives
+Exec=terminator -e "zsh -c 'sudo sockstat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Monitoring
+X-Kaisen-Package=sockstat;kaisen-network-tools

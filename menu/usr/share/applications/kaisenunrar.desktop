@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=ZIP
+X-Kaisen-Package=unrar;kaisen-zip;kaisen-technicians-tools

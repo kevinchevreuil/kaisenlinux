@@ -11,3 +11,4 @@ Icon=filezilla
 Type=Application
 StartupNotify=true
 Categories=FTP
+X-Kaisen-Package=filezilla;kaisen-sysadmin-tools

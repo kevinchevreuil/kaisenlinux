@@ -1,8 +1,8 @@
-PRETTY_NAME="Kaisen GNU/Linux 20200307 (armageddon)"
+PRETTY_NAME="Kaisen GNU/Linux 20200413 (final)"
 NAME="Kaisen GNU/Linux"
-VERSION_ID="20200307"
-VERSION="20200307 (armageddon)"
-VERSION_CODENAME=armageddon
+VERSION_ID="20200413"
+VERSION="20200413 (final)"
+VERSION_CODENAME=final
 ID=kaisen
 ID_LIKE=debian
 HOME_URL="https://kaisen-linux.org"

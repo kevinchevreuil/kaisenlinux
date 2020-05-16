@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Bitlocker
-
+X-Kaisen-Package=dislocker;kaisen-mount;kaisen-techncians-tools

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=2ping
+Name[fr]=2ping
+Comment=Tool for analyse ICMP packets losts 
+Comment[fr]=Outil pour analyser les paquets ICMP perdus
+Exec=terminator -e "zsh -c '2ping;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NetworkSecurity
+X-Kaisen-Package=2ping

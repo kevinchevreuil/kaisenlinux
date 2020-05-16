@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=btrfs-orphan-cleaner-progress
+Name[fr]=btrfs-orphan-cleaner-progress
+Comment=Tool for manage BTRFS
+Comment[fr]=Outil pour gérer BTRFS
+Exec=terminator -e "zsh -c 'btrfs-orphan-cleaner-progress;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=BTRFS
+X-Kaisen-Package=btrfs-progs;kaisen-filesystems

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=nilfs-tune
+Name[fr]=nilfs-tune
+Comment=Tool for manage parameters NILFS volumes
+Comment[fr]=Outil pour gérer les paramètres des volumes NILFS
+Exec=terminator -e "zsh -c 'sudo nilfs-tune -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NILFS
+X-Kaisen-Package=kaisen-filesystems

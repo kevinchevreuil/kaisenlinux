@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Passwords
+X-Kaisen-Package=samdump2;kaisen-password-tools;kaisen-technicians-tools

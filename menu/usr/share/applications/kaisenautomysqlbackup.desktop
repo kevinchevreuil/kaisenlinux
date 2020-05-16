@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=automysqlbackup
+Name[fr]=automysqlbackup
+Comment=Tool for backup mysql databases
+Comment[fr]=Outil pour sauvegarder des bases de données mysql
+Exec=terminator -e "zsh -c 'sudo automysqlbackup;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Backup
+X-Kaisen-Package=automysqlbackup

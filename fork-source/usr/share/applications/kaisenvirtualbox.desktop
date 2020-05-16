@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SystemSecurity
-
+X-Kaisen-Package=virtualbox;kaisen-ssyadmin-tools

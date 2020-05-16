@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.btrfs
+Name[fr]=mkfs.btrfs
+Comment=Tool for create btrfs partition
+Comment[fr]=Outil pour créer une partition btrfs
+Exec=terminator -e "zsh -c 'sudo mkfs.btrfs;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems;

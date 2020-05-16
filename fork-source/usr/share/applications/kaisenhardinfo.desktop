@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Hardinfo
+Name[fr]=Hardinfo
+Comment=Displays system informations
+Comment[fr]=Afficher les informations système
+Exec=hardinfo
+Icon=/usr/share/hardinfo/pixmaps/logo.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware;
+X-Kaisen-Package=hardinfo;kaisen-hardware;kaisen-technicians-tools

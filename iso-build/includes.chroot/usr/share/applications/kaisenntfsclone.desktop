@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ntfsclone 
+Name[fr]=ntfsclone 
+Comment=Tool for NTFS partition
+Comment[fr]=Outil pour partition NTFS
+Exec=terminator -e "zsh -c 'sudo ntfsclone;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NTFS
+X-Kaisen-Package=kaisen-filesystems

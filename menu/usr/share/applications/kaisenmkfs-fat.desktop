@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.fat 
+Name[fr]=mkfs.fat 
+Comment=Tool for create fat partition
+Comment[fr]=Outil pour créer une partition fat 
+Exec=terminator -e "zsh -c 'sudo mkfs.fat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=chkrootkit
+Name[fr]=chkrootkit
+Comment=Tool for scanning rootkit presence
+Comment[fr]=Outil pour scanner la présence de rootkit
+Exec=terminator -e "zsh -c 'sudo chkrootkit;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=VirusAnalysis
+X-Kaisen-Package=chkrootkit;kaisen-technicians-tools;kaisen-virus-analysis

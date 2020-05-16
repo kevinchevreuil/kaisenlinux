@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fsck.ext2
+Name[fr]=fsck.ext2
+Comment=Tool for repair ext2 partition
+Comment[fr]=Outil pour réparer une partition ext2
+Exec=terminator -e "zsh -c 'sudo fsck.ext2;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=FSCK
+X-Kaisen-Package=kaisen-filesystems

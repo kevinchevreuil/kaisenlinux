@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SOpenVPN
+X-Kaisen-Package=kaisen-services-management;openvpn

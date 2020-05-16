@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=f2fscrypt
+Name[fr]=f2fscrypt
+Comment=Tool for crypt F2FS partition
+Comment[fr]=Outil pour chiffrer une partition F2FS
+Exec=terminator -e "zsh -c 'sudo f2fscrypt;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=F2FS
+X-Kaisen-Package=kaisen-filesystems

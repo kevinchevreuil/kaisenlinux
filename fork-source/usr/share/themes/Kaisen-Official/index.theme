@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 Name=Kaisen-Official
 GtkTheme=Kaisen-Official
-IconTheme=Kaisen-MATE
+IconTheme=Kaisen
 CursorTheme=Adwaita
 MetacityTheme=Kaisen-Official

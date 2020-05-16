@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=arptables
+Name[fr]=arptables
+Comment=Tool for manage arp tables
+Comment[fr]=Outil pour manipuler les tables ARP
+Exec=terminator -e "zsh -c 'sudo arptables -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MAC
+X-Kaisen-Package=arptables

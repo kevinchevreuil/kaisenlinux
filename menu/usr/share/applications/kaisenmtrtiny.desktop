@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Scanner
+X-Kaisen-Package=mtr;kaisen-network-tools;

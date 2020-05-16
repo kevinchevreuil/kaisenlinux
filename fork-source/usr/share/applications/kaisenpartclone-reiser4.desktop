@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=partclone.reiser4
+Name[fr]=partclone.reiser4
+Comment=Tool for clone REISER4 partition
+Comment[fr]=Outil pour cloner une partition REISER4
+Exec=terminator -e "zsh -c 'sudo partclone.reiser4;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=REISER4
+X-Kaisen-Package=kaisen-filesystems

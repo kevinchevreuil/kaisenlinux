@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mitmproxy
+Name[fr]=mitmproxy
+Comment=Tool for testing MITM attacks possibility
+Comment[fr]=Outil pour tester la possibilité d'une attaque MITM
+Exec=terminator -e "zsh -c 'mitmproxy;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Scanner
+X-Kaisen-Package=mitmproxy;kaisen-network-tools

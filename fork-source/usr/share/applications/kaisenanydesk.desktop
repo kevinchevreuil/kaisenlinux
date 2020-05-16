@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=RemoteMaintenance
+X-Kaisen-Package=anydesk

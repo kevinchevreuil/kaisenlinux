@@ -9,3 +9,4 @@ Icon=grdesktop
 Terminal=false
 Type=Application
 Categories=RemoteAdministration
+X-Kaisen-Package=grdesktop;kaisen-sysadmin-tools

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=iproute
+Name[fr]=iproute
+Comment=Tool for analyse routes
+Comment[fr]=Outil pour analyser les routes 
+Exec=terminator -e "zsh -c 'ip route;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=IP
+X-Kaisen-Package=kaisen-network-tools

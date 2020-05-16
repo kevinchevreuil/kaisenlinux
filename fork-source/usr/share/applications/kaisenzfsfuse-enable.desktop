@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zfsfuse-enable
+Name[fr]=zfsfuse-activé
+Comment=Enable zfs-fuse daemon
+Comment[fr]=Activer service zfs-fuse
+Exec=terminator -e "zsh -c '/opt/services/zfsfuse-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SZFSfuse
+X-Kaisen-Package=kaisen-filesystems;kaisen-services-management

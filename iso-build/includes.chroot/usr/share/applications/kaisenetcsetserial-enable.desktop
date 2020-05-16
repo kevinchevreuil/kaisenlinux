@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SETCSetSerial
+X-Kaisen-Package=statserial;kaisen-services-management;kaisen-network-tools

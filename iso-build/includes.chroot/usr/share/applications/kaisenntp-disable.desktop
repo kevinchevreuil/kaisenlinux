@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SNTP
+X-Kaisen-Package=kaisen-services-management;ntpdate;kaisen-network-tools

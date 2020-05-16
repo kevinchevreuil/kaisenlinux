@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cephfuse-disable
+Name[fr]=cephfuse-désactivé
+Comment=Disable ceph-fuse daemon
+Comment[fr]=Désactiver service ceph-fuse
+Exec=terminator -e "zsh -c '/opt/services/cephfuse-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SCephfuse
+X-Kaisen-Package=ceph-fuse;kaisen-services-management

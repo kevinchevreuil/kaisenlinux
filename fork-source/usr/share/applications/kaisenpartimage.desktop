@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Cloning
+X-Kaisen-Package=partimage;kaisen-technicians-tools;kaisen-cloning

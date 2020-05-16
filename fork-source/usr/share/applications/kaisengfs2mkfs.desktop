@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=gfs2mkfs
+Name[fr]=gfs2mkfs
+Comment=Tool for create GFS2 partition
+Comment[fr]=Outil pour créer une partition GFS2
+Exec=terminator -e "zsh -c 'sudo gfs2_mkfs -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GFS2
+X-Kaisen-Package=kaisen-filesystems

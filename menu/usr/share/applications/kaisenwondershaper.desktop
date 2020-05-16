@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=NetworkSecurity
+X-Kaisen-Package=wondershaper;kaisen-network-tools

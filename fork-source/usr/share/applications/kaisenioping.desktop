@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ioping
+Name[fr]=ioping
+Comment=Tool for analyse disk latency
+Comment[fr]=Outil pour analyser les latences de disques
+Exec=terminator -e "zsh -c 'ioping;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis
+X-Kaisen-Package=ioping;kaisen-disks-analysis;kaisen-technicians-tools

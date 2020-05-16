@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.ext3 
+Name[fr]=mkfs.ext3 
+Comment=Tool for create ext3 partition
+Comment[fr]=Outil pour créer une partition ext3 
+Exec=terminator -e "zsh -c 'sudo mkfs.ext3;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems

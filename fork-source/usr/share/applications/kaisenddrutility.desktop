@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Recovery
+X-Kaisen-Package=ddrutility;kaisen-technicians-tools;kaisen-data-recovery

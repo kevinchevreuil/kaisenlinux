@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ntfswipe 
+Name[fr]=ntfswipe 
+Comment=Tool for NTFS partition
+Comment[fr]=Outil pour partition NTFS
+Exec=terminator -e "zsh -c 'ntfswipe;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NTFS
+X-Kaisen-Package=kaisen-filesystems

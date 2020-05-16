@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.exfat
+Name[fr]=mkfs.exfat
+Comment=Tool for create exfat partition
+Comment[fr]=Outil pour créer une partition exfat
+Exec=terminator -e "zsh -c 'sudo mkfs.exfat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems

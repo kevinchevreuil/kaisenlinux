@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SArpwatch
+X-Kaisen-Package=arpwatch;kaisen-services-management

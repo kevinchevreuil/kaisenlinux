@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Docker
+X-Kaisen-Package=docker-compose;kaisen-sysadmin-tools

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Hardware
+X-Kaisen-Package=stressant;kaisen-hardware;kaisen-technicians-tools

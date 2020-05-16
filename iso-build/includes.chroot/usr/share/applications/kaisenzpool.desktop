@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zpool
+Name[fr]=zpool
+Comment=Tool for manage ZFS pools
+Comment[fr]=Outil pour gérer les pools ZFS
+Exec=terminator -e "zsh -c 'sudo zpool;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ZFS
+X-Kaisen-Package=kaisen-filesystems

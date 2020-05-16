@@ -4,7 +4,7 @@ set -e
 
 update-alternatives --install /usr/share/images/desktop-base/desktop-background desktop-background /usr/share/desktop-base/kaisen-theme/wallpaper/contents/images/1920x1080.png 300
 update-alternatives --install /usr/share/images/desktop-base/desktop-background.xml desktop-background.xml /usr/share/desktop-base/kaisen-theme/wallpaper/gnome-background.xml 300
-update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png desktop-grub /usr/share/desktop-base/kaisen-theme/grub/grub-4x3.png 300
+update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png desktop-grub /usr/share/desktop-base/kaisen-theme/grub/grub-16x9.png 300
 update-alternatives --install /usr/share/images/desktop-base/desktop-lockscreen.xml desktop-lockscreen.xml /usr/share/desktop-base/kaisen-theme/lockscreen/gnome-background.xml 300
 update-alternatives --install /usr/share/images/desktop-base/login-background.svg desktop-login-background /usr/share/desktop-base/kaisen-theme/login/background.png 300
 update-alternatives --install /usr/share/wallpapers/DebianTheme desktop-plasma5-wallpaper /usr/share/desktop-base/kaisen-theme/wallpaper 300

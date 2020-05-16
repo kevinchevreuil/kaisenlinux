@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=TCP
+X-Kaisen-Package=tcpxtract;kaisen-network-tools

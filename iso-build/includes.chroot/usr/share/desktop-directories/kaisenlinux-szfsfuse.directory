@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ZFS-fuse
+Name[fr]=ZFS-fuse
+Comment=ZFS-fuse service
+Comment[fr]=Service ZFS-fuse
+Icon=kaisen
+Type=Directory

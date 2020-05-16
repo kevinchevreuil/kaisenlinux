@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=jfs_fsck
+Name[fr]=jfs_fsck
+Comment=Tool for repair JFS partition
+Comment[fr]=Outil pour réparer une partition JFS
+Exec=terminator -e "zsh -c 'sudo jfs_fsck;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=JFS
+X-Kaisen-Package=kaisen-filesystems

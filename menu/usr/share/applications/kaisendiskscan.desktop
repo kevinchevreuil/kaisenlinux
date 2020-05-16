@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=diskscan
+Name[fr]=diskscan
+Comment=Tool for detect bad sector at disk
+Comment[fr]=Outil pour détecter les secteurs défectueux sur un disque
+Exec=terminator -e "zsh -c 'diskscan;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DisksAnalysis
+X-Kaisen-Package=diskscan;kaisen-disks-analysis;kaisen-technicians-tools

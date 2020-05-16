@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=RemoteMaintenance
+X-Kaisen-Package=kaisen-remote-maintenance,teamviewer;kaisen-technicians-tools

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Recovery
+X-Kaisen-Package=kaisen-photorec;kaisen-data-recovery;kaisen-technicians-tools

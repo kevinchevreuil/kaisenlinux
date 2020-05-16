@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Cloning
-
+X-Kaisen-Package=clonezilla;kaisen-cloning;kaisen-technicians-tools

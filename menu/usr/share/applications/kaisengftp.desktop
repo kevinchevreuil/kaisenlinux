@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=FTP
+X-Kaisen-Package=gftp;kaisen-sysadmin-tools

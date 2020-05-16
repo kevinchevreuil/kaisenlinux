@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=jfs_tune
+Name[fr]=jfs_tune
+Comment=Tool for manage parameters JFS partition
+Comment[fr]=Outil pour gérer les paramètres d'une partition JFS
+Exec=terminator -e "zsh -c 'sudo jfs_tune;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=JFS
+X-Kaisen-Package=kaisen-filesystems

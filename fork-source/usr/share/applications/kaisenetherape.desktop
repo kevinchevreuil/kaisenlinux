@@ -11,3 +11,4 @@ Type=Application
 Icon=etherape
 StartupNotify=true
 Categories=Monitoring
+X-Kaisen-Package=etherape;kaisen-network-tools;

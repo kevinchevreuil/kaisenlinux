@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 Categories=Partitioning;
 StartupNotify=true
+X-Kaisen-Package=gparted;kaisen-partitioning-erase;kaisen-technicians-tools;

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=ZIP
+X-Kaisen-Package=p7zip-full

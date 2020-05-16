@@ -3,5 +3,5 @@ Name=Kaisen Linux
 Name[fr]=Kaisen Linux
 Comment=Tools for Kaisen Linux 
 Comment[fr]=Applications pour Kaisen Linux
-Icon=linux
+Icon=kaisen
 Type=Directory

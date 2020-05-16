@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ifstat
+Name[fr]=ifstat
+Comment=Tool for monitoring interface network
+Comment[fr]=Outil pour monitorer une interface réseau
+Exec=terminator -e "zsh -c 'ifstat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Monitoring
+X-Kaisen-Package=ifstat;kaisen-network-tools

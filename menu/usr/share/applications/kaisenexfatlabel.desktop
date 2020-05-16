@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=exfatlabel
+Name[fr]=exfatlabel
+Comment=Tool for exfat partitions
+Comment[fr]=Outil pour partitions exfat
+Exec=terminator -e "zsh -c 'sudo exfatlabel;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=EXFAT
+X-Kaisen-Package=exfat-utils;kaisen-filesystems

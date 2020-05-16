@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SDocker
+X-Kaisen-Package=docker;kaisen-sysadmin-tools;kaisen-services-management

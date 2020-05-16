@@ -12,3 +12,4 @@ Type=Application
 Version=1.0
 Categories=Passwords
 MimeType=application/x-keepass2;
+X-Kaisen-Package=keepassxc;kaisen-password-tools;kaisen-technicians-tools

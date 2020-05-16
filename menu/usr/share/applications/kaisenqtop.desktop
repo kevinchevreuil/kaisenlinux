@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=qtop
+Name[fr]=qtop
+Comment=Tool for viewing processus with window
+Comment[fr]=Outil pour voir les processus avec une fenêtre graphique
+Exec=qtop
+Icon=htop
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Analysis
+X-Kaisen-Package=qtop;kaisen-various-analysis;kaisen-technicians-tools

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=vmfs-lvm
+Name[fr]=vmfs-lvm
+Comment=Tool for manage VMFS (VMWare volumes)
+Comment[fr]=Outil pour gérer VMFS (VMWare volumes)
+Exec=terminator -e "zsh -c 'sudo vmfs-lvm -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=VMFS
+X-Kaisen-Package=kaisen-filesystems

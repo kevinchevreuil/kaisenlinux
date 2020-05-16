@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cpulimit
+Name[fr]=cpulimit
+Comment=Tool for limit CPU performace
+Comment[fr]=Outil pour limiter les performances du CPU
+Exec=terminator -e "zsh -c 'cpulimit;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware
+X-Kaisen-Package=cpulimit;kaisen-hardware;kaisen-technicians-tools

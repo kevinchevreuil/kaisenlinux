@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=discover
+Name[fr]=discover
+Comment=Tool for list hardware
+Comment[fr]=Outil pour lister le matériel
+Exec=terminator -e "zsh -c 'sudo discover;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware
+X-Kaisen-Package=discover;kaisen-hardware;kaisen-technicians-tools

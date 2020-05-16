@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=jfs_fscklog
+Name[fr]=jfs_fscklog
+Comment=Tool for repair JFS partition (logs)
+Comment[fr]=Outil pour réparer une partition JFS (logs)
+Exec=terminator -e "zsh -c 'sudo jfs_fscklog;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=JFS
+X-Kaisen-Package=kaisen-filesystems

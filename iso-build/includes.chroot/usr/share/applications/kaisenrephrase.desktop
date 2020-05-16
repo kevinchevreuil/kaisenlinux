@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=rephrase
+Name[fr]=rephrase
+Comment=Tool for cracking gpg passwords
+Comment[fr]=Outil pour cracker un mot de passe gpg
+Exec=terminator -e "zsh -c 'rephrase;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Passwords
+X-Kaisen-Package=rephrase;kaisen-technicians-tools;kaisen-password-tools

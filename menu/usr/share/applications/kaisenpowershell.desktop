@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Microsoft
+X-Kaisen-Package=powershell;kaisen-sysadmin-tools

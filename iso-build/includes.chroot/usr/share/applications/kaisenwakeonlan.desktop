@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=NetworkSecurity
+X-Kaisen-Package=wakeonlan;kaisen-network-tools

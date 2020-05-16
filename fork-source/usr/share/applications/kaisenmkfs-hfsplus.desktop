@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.hfsplus 
+Name[fr]=mkfs.hfsplus 
+Comment=Tool for create hfsplus partition
+Comment[fr]=Outil pour créer une partition hfsplus 
+Exec=terminator -e "zsh -c 'sudo mkfs.hfsplus;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems

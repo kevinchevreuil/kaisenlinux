@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SBacula
+X-Kaisen-Package=bacula-sd;kaisen-services-management

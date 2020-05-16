@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=TCP
+X-Kaisen-Package=tcpbridge;kaisen-network-tools

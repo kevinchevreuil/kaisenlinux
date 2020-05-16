@@ -5,10 +5,10 @@ Name=gdisk
 Name[fr]=gdisk
 Comment=Tool for manipulate GPT partitions
 Comment[fr]=Outil pour manipuler les partitions GPT
-Exec=terminator -e "zsh -c sudo gdisk;/bin/zsh'"
+Exec=terminator -e "zsh -c 'sudo gdisk;/bin/zsh'"
 Icon=utilities-terminal
 Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Partitioning
-
+X-Kaisen-Package=kaisen-partitioning-erase; kaisen-technicians-tools; gdisk

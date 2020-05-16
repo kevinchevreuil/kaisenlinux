@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SOCFS2
+X-Kaisen-Package=kaisen-services-management;ocfs2-tools

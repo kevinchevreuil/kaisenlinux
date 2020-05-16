@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Backup
+X-Kaisen-Package=dump;kaisen-sysadmin-tools

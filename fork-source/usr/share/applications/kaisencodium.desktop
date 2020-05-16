@@ -14,8 +14,8 @@ Categories=Microsoft
 MimeType=text/plain;inode/directory;
 Actions=new-empty-window;
 Keywords=vscode;
-
 X-Desktop-File-Install-Version=0.23
+X-Kaisen-Package=codium;kaisen-sysadmin-tools;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window

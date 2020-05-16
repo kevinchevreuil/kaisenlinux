@@ -4,13 +4,3 @@ eatmydata
 grub-efi
 grub-efi-amd64
 efibootmgr
-grub-common
-gettext-base
-libefiboot1
-libefivar1
-libfreetype6
-libfuse2
-libpng16-16
-os-prober
-ucf
-dpkg

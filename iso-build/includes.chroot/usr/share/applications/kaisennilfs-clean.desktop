@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=nilfs-clean
+Name[fr]=nilfs-clean
+Comment=Tool for manage NILFS
+Comment[fr]=Outil pour gérer NILFS
+Exec=terminator -e "zsh -c 'sudo nilfs-clean -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NILFS
+X-Kaisen-Package=kaisen-filesystems

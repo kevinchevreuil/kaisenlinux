@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Recovery
+X-Kaisen-Package=scalpel;kaisen-password-tools;kaisen-technicians-tools;

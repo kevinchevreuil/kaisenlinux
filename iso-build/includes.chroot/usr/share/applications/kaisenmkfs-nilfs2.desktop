@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.nilfs2 
+Name[fr]=mkfs.nilfs2 
+Comment=Tool for create nilfs2 partition
+Comment[fr]=Outil pour créer une partition nilfs2 
+Exec=terminator -e "zsh -c 'sudo mkfs.nilfs2;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems

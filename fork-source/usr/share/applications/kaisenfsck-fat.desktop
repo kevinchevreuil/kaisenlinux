@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fsck.fat
+Name[fr]=fsck.fat
+Comment=Tool for repair fat partition
+Comment[fr]=Outil pour réparer une partition fat
+Exec=terminator -e "zsh -c 'sudo fsck.fat;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=FSCK
+X-Kaisen-Package=kaisen-filesystems

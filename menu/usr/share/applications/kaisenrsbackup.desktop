@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=rsbackup
+Name[fr]=rsbackup
+Comment=Backup tool based at rsync
+Comment[fr]=Outil de sauevgarde basé sur rsync
+Exec=terminator -e "zsh -c 'rsbackup -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Backup
+X-Kaisen-Package=rsbackup;kaisen-sysadmin-tools

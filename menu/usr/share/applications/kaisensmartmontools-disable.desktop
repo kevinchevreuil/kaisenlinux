@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SSmartmontools
+X-Kaisen-Package=kaisen-services-management;smartmontools;kaisen-disks-analysis;kaisen-technicians-tools

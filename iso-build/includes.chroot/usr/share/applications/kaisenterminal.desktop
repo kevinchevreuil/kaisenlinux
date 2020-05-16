@@ -12,6 +12,7 @@ StartupNotify=true
 X-Ubuntu-Gettext-Domain=terminator
 X-Ayatana-Desktop-Shortcuts=NewWindow;
 Keywords=terminal;shell;prompt;command;commandline;
+X-Kaisen-Package=zsh;terminator
 [NewWindow Shortcut Group]
 Name=Open a New Window
 Exec=terminator

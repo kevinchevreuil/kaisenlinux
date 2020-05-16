@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SSL
+X-Kaisen-Package=sslsplit;kaisen-network-tools

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fsck.ocfs2
+Name[fr]=fsck.ocfs2
+Comment=Tool for repair ocfs2 partition
+Comment[fr]=Outil pour réparer une partition ocfs2
+Exec=terminator -e "zsh -c 'sudo fsck.ocfs2;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=FSCK
+X-Kaisen-Package=kaisen-filesystems;ocfs2-tools

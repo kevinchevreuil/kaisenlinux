@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=reiserfsck
+Name[fr]=reiserfsck
+Comment=Tool for repair REISERFS partition damaged
+Comment[fr]=Outil pour réparer une partition REISERFS endommagée
+Exec=terminator -e "zsh -c 'sudo reiserfsck;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=REISERFS
+X-Kaisen-Package=kaisen-filesystems

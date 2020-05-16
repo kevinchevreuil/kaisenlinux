@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=SSSH
+X-Kaisen-Package=ssh;kaisen-network-tools;kaisen-services-management

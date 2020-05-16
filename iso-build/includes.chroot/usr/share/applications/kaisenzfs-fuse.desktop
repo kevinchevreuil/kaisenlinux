@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zfs-fuse
+Name[fr]=zfs-fuse
+Comment=Tool for manage ZFS
+Comment[fr]=Outil pour gérer ZFS
+Exec=terminator -e "zsh -c 'sudo zfs-fuse -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ZFS
+X-Kaisen-Package=kaisen-filesystems

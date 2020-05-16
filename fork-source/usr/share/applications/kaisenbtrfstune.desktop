@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=btrfstune
+Name[fr]=btrfstune
+Comment=Tool for manage parameters at BTRFS volumes
+Comment[fr]=Outil pour gérer les paramètres des volumes BTRFS
+Exec=terminator -e "zsh -c 'btrfstune;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=BTRFS
+X-Kaisen-Package=btrfs-progs;kaisen-filesystems

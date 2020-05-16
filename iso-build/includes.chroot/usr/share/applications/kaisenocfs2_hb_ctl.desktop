@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ocfs2_hb_ctl
+Name[fr]=ocfs2_hb_ctl
+Comment=Tool for manage OCFS2 
+Comment[fr]=Outil pour gérer OCFS2
+Exec=terminator -e "zsh -c 'sudo ocfs2_hb_ctl;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Filesystems
+X-Kaisen-Package=kaisen-filesystems;ocfs2-tools

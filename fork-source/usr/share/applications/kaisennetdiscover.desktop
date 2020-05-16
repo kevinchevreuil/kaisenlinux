@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Scanner
-
+X-Kaisen-Package=netdiscover;kaisen-network-tools

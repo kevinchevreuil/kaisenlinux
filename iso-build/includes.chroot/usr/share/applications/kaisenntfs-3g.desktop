@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=ntfs-3g
+Name[fr]=ntfs-3g
+Comment=Tool for NTFS partition
+Comment[fr]=Outil pour partition NTFS
+Exec=terminator -e "zsh -c 'ntfs-3g;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=NTFS
+X-Kaisen-Package=ntfs-3g;kaisen-filesystems

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fsck.hfs
+Name[fr]=fsck.hfs
+Comment=Tool for repair hfs partition
+Comment[fr]=Outil pour réparer une partition hfs
+Exec=terminator -e "zsh -c 'sudo fsck.hfs;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=FSCK
+X-Kaisen-Package=kaisen-filesystems

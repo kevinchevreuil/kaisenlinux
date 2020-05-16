@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mkfs.ext2
+Name[fr]=mkfs.ext2
+Comment=Tool for create ext2 partition
+Comment[fr]=Outil pour créer une partition ext2
+Exec=terminator -e "zsh -c 'sudo mkfs.ext2;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MKFS
+X-Kaisen-Package=kaisen-filesystems

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=WIFI
+X-Kaisen-Package=hostapd;kaisen-network-tools

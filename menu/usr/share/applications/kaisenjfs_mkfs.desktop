@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=jfs_mkfs
+Name[fr]=jfs_mkfs
+Comment=Tool for create JFS partition
+Comment[fr]=Outil pour créer une partition JFS
+Exec=terminator -e "zsh -c 'sudo jfs_mkfs;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=JFS
+X-Kaisen-Package=kaisen-filesystems

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=reiserfstune
+Name[fr]=reiserfstune
+Comment=Tool for manage parameters REISERFS partition
+Comment[fr]=Outil pour gérer les paramètres d'une partition REISERFS
+Exec=terminator -e "zsh -c 'sudo reiserfstune;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=REISERFS
+X-Kaisen-Package=kaisen-filesystems

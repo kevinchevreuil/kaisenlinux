@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=xfs_repair
+Name[fr]=xfs_repair
+Comment=Tool for repair XFS partition
+Comment[fr]=Outil pour réparer une partition XFS
+Exec=terminator -e "zsh -c 'sudo xfs_repair;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=XFS
+X-Kaisen-Package=kaisen-filesystems

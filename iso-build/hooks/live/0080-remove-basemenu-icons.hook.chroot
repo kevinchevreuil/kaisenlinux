@@ -24,6 +24,7 @@ rm -f /usr/share/applications/gparted.desktop
 rm -f /usr/share/applications/grdesktop.desktop
 rm -f /usr/share/applications/gsmartcontrol.desktop
 rm -f /usr/share/applications/guymager.desktop
+rm -f /usr/share/applications/hardinfo.desktop
 rm -f /usr/share/applications/htop.desktop
 rm -f /usr/share/applications/hydra-gtk.desktop
 rm -f /usr/share/applications/kismet.desktop
@@ -36,6 +37,8 @@ rm -f /usr/share/applications/ophcrack.desktop
 rm -f /usr/share/applications/org.gnome.baobab.desktop
 rm -f /usr/share/applications/org.keepassxc.KeePassXC.desktop
 rm -f /usr/share/applications/os-uninstaller.desktop
+rm -f /usr/share/applications/psensor.desktop
+rm -f /usr/share/applications/qtop.desktop
 rm -f /usr/share/applications/terminator.desktop
 rm -f /usr/share/applications/unetbootin.desktop
 rm -f /usr/share/applications/virtualbox.desktop

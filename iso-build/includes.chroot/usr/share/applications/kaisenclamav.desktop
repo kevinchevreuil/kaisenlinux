@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=VirusAnalysis
+X-Kaisen-Package=clamdscan;kaisen-virus-analysis;kaisen-technicians-tools

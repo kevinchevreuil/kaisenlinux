@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=dnstop
+Name[fr]=dnstop
+Comment=Tool for analyse DNS trafic
+Comment[fr]=Outil pour analyser le trafic DNS
+Exec=terminator -e "zsh -c 'dnstop;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DNS
+X-Kaisen-Package=dnstop;kaisen-network-tools

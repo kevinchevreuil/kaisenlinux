@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zfsfuse-disable
+Name[fr]=zfsfuse-désactivé
+Comment=Disable zfs-fuse daemon
+Comment[fr]=Désactiver service zfs-fuse
+Exec=terminator -e "zsh -c '/opt/services/zfsfuse-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SZFSfuse
+X-Kaisen-Package=kaisen-filesystems;kaisen-services-management

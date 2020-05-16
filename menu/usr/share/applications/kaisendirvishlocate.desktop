@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Dirvish
-
+X-Kaisen-Package=dirvish;kaisen-sysadmin-tools

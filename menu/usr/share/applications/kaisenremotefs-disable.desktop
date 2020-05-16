@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=remotefs-disable
+Name[fr]=remotefs-désactivé
+Comment=Disable remote-fs daemon
+Comment[fr]=Désactiver service remote-fs
+Exec=terminator -e "zsh -c '/opt/services/remotefs-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SRemotefs
+X-Kaisen-Package=remote-fs;kaisen-services-management

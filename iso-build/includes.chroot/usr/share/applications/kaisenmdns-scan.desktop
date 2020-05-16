@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=mdns-scan
+Name[fr]=mdns-scan
+Comment=Tool for reshearch DNS services in LAN
+Comment[fr]=Outil pour rechercher des services DNS sur un LAN
+Exec=terminator -e "zsh -c 'mdns-scan;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DNS
+X-Kaisen-Package=mdns-scan;kaisen-network-tools

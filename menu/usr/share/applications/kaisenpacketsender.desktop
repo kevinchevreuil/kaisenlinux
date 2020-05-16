@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=UDP
+X-Kaisen-Package=kaisen-network-tools

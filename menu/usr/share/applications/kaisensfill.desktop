@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Partitioning
+X-Kaisen-Package=secure-delete;kaisen-partitioning-erase;kaisen-technicians-tools;

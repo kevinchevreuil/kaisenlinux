@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Hardware
+X-Kaisen-Package=dmidecode;kaisen-hardware;kaisen-technicians-tools

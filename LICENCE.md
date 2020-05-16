@@ -1,7 +1,6 @@
 ### AUTHOR
 
 Copyright (C) Kevin Chevreuil - Kaisen
-Copyright (C) Kaisen Linux
 
 ### GNU AFFERO GENERAL PUBLIC LICENSE
 

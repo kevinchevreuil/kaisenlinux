@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=jfs_logdump
+Name[fr]=jfs_logdump
+Comment=Tool for dump JFS logs
+Comment[fr]=Outil pour dumper les logs JFS
+Exec=terminator -e "zsh -c 'sudo jfs_logdump;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=JFS
+X-Kaisen-Package=kaisen-filesystems

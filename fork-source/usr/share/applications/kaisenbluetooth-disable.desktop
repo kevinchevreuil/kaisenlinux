@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=bluetooth-disable
+Name[fr]=bluetooth-désactivé
+Comment=Disable bluetooth daemon
+Comment[fr]=Désactiver service bluetooth
+Exec=terminator -e "zsh -c '/opt/services/bluetooth-disable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SBluetooth
+X-Kaisen-Package=kaisen-services-management;

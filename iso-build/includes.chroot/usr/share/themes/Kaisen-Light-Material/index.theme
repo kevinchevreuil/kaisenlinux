@@ -8,6 +8,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Kaisen-Light-Material
 MetacityTheme=Kaisen-Light-Material
-IconTheme=Kaisen-MATE
+IconTheme=Kaisen
 CursorTheme=Adwaita
 ButtonLayout=menu:minimize,maximize,close

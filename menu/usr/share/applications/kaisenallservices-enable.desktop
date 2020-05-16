@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Services
-
+X-Kaisen-Package=kaisen-services-management

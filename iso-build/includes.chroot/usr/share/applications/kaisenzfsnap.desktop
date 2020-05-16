@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=zfSnap
+Name[fr]=zfSnap
+Comment=Tool for snapshot ZFS volume
+Comment[fr]=Outil pour faire un snapshot d'un volume ZFS
+Exec=terminator -e "zsh -c 'sudo zfSnap;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=ZFS
+X-Kaisen-Package=kaisen-filesystems

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=dhcping
+Name[fr]=dhcping
+Comment=Tool for ping DHCP daemon
+Comment[fr]=Outil pour ping un service DHCP
+Exec=terminator -e "zsh -c 'sudo dhcping;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=DHCP
+X-Kaisen-Package=dhcping;kaisen-network-tools

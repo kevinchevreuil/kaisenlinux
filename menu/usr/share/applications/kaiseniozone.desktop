@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=iozone
+Name[fr]=iozone
+Comment=Tool for testing hardware
+Comment[fr]=Outil pour tester le matériel
+Exec=terminator -e "zsh -c 'sudo iozone -h;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Hardware
+X-Kaisen-Package=iozone;kaisen-hardware;kaisen-technicians-tools

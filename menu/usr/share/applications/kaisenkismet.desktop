@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=WIFI;Monitoring
+X-Kaisen-Package=kismet;kaisen-network-tools;

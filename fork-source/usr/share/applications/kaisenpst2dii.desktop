@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=pst2dii
+Name[fr]=pst2dii
+Comment=Tool for analyse PST file
+Comment[fr]=Outil pour analyser un fichier PST
+Exec=terminator -e "zsh -c 'pst2dii;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=PST
+X-Kaisen-Package=kaisen-pst-tools;kaisen-technicians-tools;pst-utils

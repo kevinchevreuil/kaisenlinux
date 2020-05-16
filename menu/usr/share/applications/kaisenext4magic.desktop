@@ -11,4 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Recovery
-
+X-Kaisen-Package=kaisen-data-recovery;kaisen-technicians-tools;ext4magic

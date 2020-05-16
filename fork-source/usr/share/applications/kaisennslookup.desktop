@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=DNS
+X-Kaisen-Package=net-tools;kaisen-network-tools

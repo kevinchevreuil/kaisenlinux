@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=arp
+Name[fr]=arp
+Comment=Tool for watching arp connection
+Comment[fr]=Outil pour afficher la connexion ARP
+Exec=terminator -e "zsh -c 'sudo arp;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=MAC
+X-Kaisen-Package=arp

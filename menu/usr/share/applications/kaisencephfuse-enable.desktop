@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=cephfuse-enable
+Name[fr]=cephfuse-activé
+Comment=Enable ceph-fuse daemon
+Comment[fr]=Activer service ceph-fuse
+Exec=terminator -e "zsh -c '/opt/services/cephfuse-enable.sh;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=SCephfuse
+X-Kaisen-Package=kaisen-services-management;ceph-fuse

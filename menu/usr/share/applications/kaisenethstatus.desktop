@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Ethernet
+X-Kaisen-Package=ethstatus;kaisen-network-tools

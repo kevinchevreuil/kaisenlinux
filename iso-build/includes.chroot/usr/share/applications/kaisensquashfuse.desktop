@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=squashfuse
+Name[fr]=squashfuse
+Comment=Tool for manage SQUASHFS
+Comment[fr]=Outil pour gérer SQUASHFS
+Exec=terminator -e "zsh -c 'squashfuse;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Filesystems
+X-Kaisen-Package=kaisen-filesystems;squashfs-fuse

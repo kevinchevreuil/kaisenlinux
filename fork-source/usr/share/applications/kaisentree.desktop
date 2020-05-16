@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=tree
+Name[fr]=tree
+Comment=Tool for analyse all arborescence
+Comment[fr]=Outil pour analyser une arborescence complète
+Exec=terminator -e "zsh -c 'tree;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Analysis
+X-Kaisen-Package=tree;kaisen-various-analysis;kaisen-technicians-tools

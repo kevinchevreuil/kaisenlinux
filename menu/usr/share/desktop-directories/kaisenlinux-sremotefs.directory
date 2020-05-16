@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Remote-FS
+Name[fr]=Remote-FS
+Comment=Remote-FS service
+Comment[fr]=Service Remote-FS
+Icon=kaisen
+Type=Directory

@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Monitoring
+X-Kaisen-Package=nethogs;kaisen-network-tools

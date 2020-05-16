@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=xfs_mdrestore
+Name[fr]=xfs_mdrestore
+Comment=Tool for XFS partition
+Comment[fr]=Outil pour partition XFS
+Exec=terminator -e "zsh -c 'sudo xfs_mdrestore;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=XFS
+X-Kaisen-Package=kaisen-filesystems

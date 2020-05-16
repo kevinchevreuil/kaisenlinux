@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=fuseiso
+Name[fr]=fuseiso
+Comment=Tool for manage ISO files
+Comment[fr]=Outil pour gérer des fichiers ISO
+Exec=terminator -e "zsh -c 'fuseiso;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Filesystems
+X-Kaisen-Package=kaisen-filesystems;fuseiso

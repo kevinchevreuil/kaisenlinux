@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=exfatfsck
+Name[fr]=exfatfsck
+Comment=Tool for repair exfat partitions
+Comment[fr]=Outil pour réparer des partitions exfat
+Exec=terminator -e "zsh -c 'sudo exfatfsck;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=EXFAT
+X-Kaisen-Package=kaisen-filesystems;exfat-utils

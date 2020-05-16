@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=btrfsck
+Name[fr]=btrfsck
+Comment=Tool for repair BTRFS partition damaged
+Comment[fr]=Outil pour réparer une partition BTRFS endommagée
+Exec=terminator -e "zsh -c 'btrfsck;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=BTRFS
+X-Kaisen-Package=btrfs-tools;kaisen-filesystems

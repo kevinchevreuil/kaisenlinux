@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=debugfs.reiser4
+Name[fr]=debugfs.reiser4
+Comment=Tool for debug REISER4 partition damaged
+Comment[fr]=Outil pour déboguer une partition REISER4 endommagée
+Exec=terminator -e "zsh -c 'sudo debugfs.reiser4;/bin/zsh'"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=REISER4
+X-Kaisen-Package=reiser4progs;kaisen-filesystems

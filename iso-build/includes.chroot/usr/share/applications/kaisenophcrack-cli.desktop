@@ -11,3 +11,4 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Passwords
+X-Kaisen-Package=kaisen-technicians-tools;kaisen-password-tools;ophcrack-cli
